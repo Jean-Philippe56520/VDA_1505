@@ -228,7 +228,7 @@ Le nom tombe plus bas que les autres.
 > « Il y a des morts qui terminent une guerre.  
 > Et d’autres qui commencent une pourriture. »
 
-On raconte qu’à Saint-Germain, pendant que les portes cédaient et que les paysans de la Madeleine envahissaient les rues, deux vampires restèrent seuls au sommet de la tour.
+On raconte qu’au sommet de la Porte Saint-Germain, dans Rennes même, pendant que les portes cédaient et que les paysans de la Madeleine envahissaient les rues, deux vampires restèrent seuls au-dessus du tumulte.
 
 Mikolai von Hohenberg — le Toreador brillant, prestigieux, trop éclatant pour qu’on imagine sa lumière s’éteindre ainsi.  
 Et Guillaume.
