@@ -2,13 +2,13 @@ from __future__ import annotations
 
 """Métadonnées runtime du générateur de chasse.
 
-Le référentiel mécanique reste le Drive canonique. Ce module fournit à
-l'application une projection compacte des styles de prédation V5 et des
-modificateurs validés pour Rennes 1505. Il ne canonise aucun événement et ne
-remplace pas les fiches PJ.
+Le référentiel mécanique et géographique reste le Drive canonique. Ce module
+projette pour l'application les Predator Types V5, les incompatibilités stables
+des points d'intérêt et quelques préréglages ergonomiques des tables locales.
+Les préréglages Git ne définissent jamais le Predator Type canonique d'un PJ.
 """
 
-from typing import TypedDict
+from typing import Literal, TypedDict
 
 
 class PredatorType(TypedDict):
@@ -111,14 +111,26 @@ PREDATOR_TYPES: dict[str, PredatorType] = {
 }
 
 
-# Tables narratives locales déjà présentes dans data/hunt_tables.py. Elles ne
-# redéfinissent pas les Predator Types officiels : certaines sont des variantes
-# adaptées à un PJ ou à une fonction de la chronique.
 LOCAL_HUNT_TABLE_NOTES: dict[str, str] = {
     "osiris_muse": "Variante locale d'Osiris centrée sur l'art et les admirateurs.",
     "rat_egouts": "Variante locale consensualiste centrée sur le barbier-chirurgien.",
-    "justicier_nocturne": "Style local Justicier ; ne pas le présenter comme un Predator Type officiel distinct.",
-    "roi_de_la_nuit": "Style local du Trémère du Chapitre ; ne pas l'assimiler automatiquement à un Predator Type officiel.",
+    "justicier_nocturne": "Style local Justicier ; le préréglage de compatibilité proposé est Alleycat.",
+    "roi_de_la_nuit": "Style local du Trémère du Chapitre ; le préréglage de compatibilité proposé est Scene Queen.",
+}
+
+# Préréglages ergonomiques uniquement. Ils sont toujours modifiables dans l'UI.
+LOCAL_HUNT_TABLE_DEFAULT_PREDATOR: dict[str, str] = {
+    "osiris_muse": "osiris",
+    "rat_egouts": "consensualist",
+    "justicier_nocturne": "alleycat",
+    "roi_de_la_nuit": "scene_queen",
+}
+
+LOCAL_HUNT_TABLE_DEFAULT_CONTEXT: dict[str, tuple[str, str]] = {
+    "osiris_muse": ("cot_main_prince", "loc_place_lices"),
+    "rat_egouts": ("cot_gardiens_sacre", "loc_cathedrale_st_pierre"),
+    "justicier_nocturne": ("cot_heritiers_alexandrie", "loc_tanneries"),
+    "roi_de_la_nuit": ("cot_fondation_pierre_noire", "loc_archives_chapitre"),
 }
 
 
@@ -128,12 +140,64 @@ HUNT_DIFFICULTY_OPTIONS: dict[str, tuple[str, int]] = {
     "balance_resonance": ("Chercher une résonance différente", 1),
     "known_target": ("Cibler un mortel connu", 1),
     "cautious": ("Chasse prudente", 1),
-    # Canon local courant. Une préférence MJ pour -1 dé a été évoquée mais
-    # n'a pas encore remplacé explicitement cette règle dans le Drive.
     "different_style": ("Style de prédation ponctuellement différent", 1),
     "inappropriate_point": ("Style inadapté au point d'intérêt", 2),
 }
 
+# Projection de 05_REGIONS_LIEUX_ROUTES.chasse_compatibilite_stable.
+# Un style absent de la liste est normal et ne reçoit aucun bonus automatique.
+HUNT_POINT_INADAPTED_STYLES: dict[str, frozenset[str]] = {
+    "loc_place_lices": frozenset({"cleaver", "sandman", "graverobber", "grim_reaper", "trapdoor"}),
+    "loc_maison_bourgeois": frozenset({"alleycat", "farmer", "roadside_killer", "graverobber", "grim_reaper", "montero"}),
+    "loc_grand_comptoir": frozenset({"cleaver", "sandman", "graverobber", "grim_reaper", "trapdoor"}),
+    "loc_cathedrale_st_pierre": frozenset({"alleycat", "farmer", "siren", "roadside_killer", "montero", "trapdoor"}),
+    "loc_cloitre_chanoines": frozenset({"alleycat", "farmer", "siren", "roadside_killer", "montero", "trapdoor"}),
+    "loc_archives_chapitre": frozenset({"alleycat", "farmer", "roadside_killer", "graverobber", "grim_reaper", "montero"}),
+    "loc_tanneries": frozenset({"cleaver", "osiris", "sandman", "siren", "graverobber", "grim_reaper", "tithe_collector"}),
+    "loc_caves_souterrains": frozenset({"bagger", "cleaver", "consensualist", "osiris", "scene_queen", "siren", "roadside_killer", "extortionist", "grim_reaper", "montero", "tithe_collector"}),
+    "loc_quartier_paroisses_populaires": frozenset(),
+    "loc_faubourg_saint_michel": frozenset(),
+    "loc_saint_georges": frozenset(),
+    "loc_abbaye_saint_georges": frozenset({"alleycat", "farmer", "siren", "roadside_killer", "montero", "trapdoor"}),
+    "loc_faubourg_saint_helier": frozenset(),
+    "loc_bourg_eveque": frozenset(),
+    "loc_relais_marchands": frozenset({"cleaver", "graverobber", "grim_reaper"}),
+    "loc_faubourg_saint_germain": frozenset(),
+    "loc_tanneries_fleuve": frozenset({"cleaver", "osiris", "sandman", "siren", "graverobber", "grim_reaper", "tithe_collector"}),
+    "loc_pont_vilaine": frozenset({"bagger", "cleaver", "sandman", "osiris", "graverobber", "grim_reaper", "trapdoor", "tithe_collector"}),
+    "zone_lisiere_bois_saint_germain": frozenset({"bagger", "cleaver", "consensualist", "osiris", "sandman", "scene_queen", "siren", "graverobber", "grim_reaper", "trapdoor", "tithe_collector"}),
+    "loc_faubourg_madeleine": frozenset(),
+    "loc_saint_yves": frozenset({"alleycat", "farmer", "roadside_killer", "montero"}),
+    "loc_hopital_pelerins": frozenset({"alleycat", "farmer", "montero"}),
+    "loc_faubourg_saint_martin": frozenset(),
+    "loc_jardins_vignes": frozenset({"bagger", "osiris", "scene_queen", "siren", "graverobber", "grim_reaper", "trapdoor"}),
+    "loc_ferme_fortifiee": frozenset({"osiris", "scene_queen", "siren", "graverobber", "grim_reaper"}),
+}
+
+HUNT_IMPOSSIBLE_POINTS = frozenset({"loc_caern_lisiere_saint_germain"})
+
+# Le Caern est un cas spécial canonique imbriqué dans la lisière. Il est montré
+# dans l'outil uniquement pour rappeler l'interdit, jamais comme domaine.
+HUNT_SPECIAL_POINTS: dict[str, dict[str, str | None]] = {
+    "loc_caern_lisiere_saint_germain": {
+        "id": "loc_caern_lisiere_saint_germain",
+        "label": "Caern de la lisière de Saint-Germain — chasse interdite",
+        "zone_id": "secteur_faubourgs_saint_germain",
+        "zone_label": "Lisière et bois de Saint-Germain",
+        "controller_ref": None,
+    }
+}
+
+HuntPointStyleStatus = Literal["normal", "inadapte", "impossible"]
+
 
 def predator_label(style_id: str) -> str:
     return PREDATOR_TYPES.get(style_id, {"label": style_id})["label"]
+
+
+def hunt_point_style_status(point_id: str, style_id: str) -> HuntPointStyleStatus:
+    if point_id in HUNT_IMPOSSIBLE_POINTS:
+        return "impossible"
+    if style_id in HUNT_POINT_INADAPTED_STYLES.get(point_id, frozenset()):
+        return "inadapte"
+    return "normal"
