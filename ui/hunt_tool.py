@@ -315,6 +315,6 @@ def render_hunt_generator_tool() -> None:
     current = st.session_state.get("hunt_result")
     if current and current.get("table_id") == table_id and current.get("entry"):
         note_lines.append(f"Rencontre préparée : {current['entry'].get('rencontre', '—')}")
-    st.code("\n".join(note_lines), language=None)
+    st.code("\n".join(note_lines), language="text")
     st.caption("Cette note est un aide-mémoire. Elle n'écrit rien dans 04A et ne prouve pas que la chasse a été jouée.")
     card_close()
