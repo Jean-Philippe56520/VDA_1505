@@ -5,6 +5,7 @@ import random
 
 import streamlit as st
 
+from data.hunt_enrichment import find_hunt_enrichment
 from data.hunt_runtime import (
     HUNT_BASE_DIFFICULTY,
     HUNT_DIFFICULTY_OPTIONS,
@@ -111,6 +112,50 @@ def _territory_memo(territory_id: str, point: dict, style_id: str) -> tuple[str,
     return " · ".join(parts), False
 
 
+def _optional_line(label: str, value: str | None, margin: int = 4) -> str:
+    if not value:
+        return ""
+    return f"<div style='margin-top:{margin}px'><b>{_escaped(label)}</b> : {_escaped(value)}</div>"
+
+
+def _enrichment_html(table_id: str, entry: dict) -> str:
+    enrichment = find_hunt_enrichment(table_id, entry.get("rencontre"))
+    if enrichment is None:
+        return ""
+
+    importance = enrichment["importance"]
+    major_warning = ""
+    if importance == "majeure":
+        major_warning = (
+            "<div style='margin-top:8px'><b>Crochet d’arc</b> : "
+            "ce jet détermine l’accès, l’indice ou la complication initiale ; "
+            "il ne résout jamais l’arc.</div>"
+        )
+
+    supplements = "".join(
+        [
+            _optional_line("Réussite normale — complément", enrichment["supplement_reussite"]),
+            _optional_line("Échec normal — complément", enrichment["supplement_echec"]),
+            _optional_line("Victoire critique — complément", enrichment["supplement_critique"]),
+            _optional_line("Victoire à la Pyrrhus — complément", enrichment["supplement_pyrrhus"]),
+            _optional_line("Réussite bestiale — complément", enrichment["supplement_reussite_bestiale"]),
+            _optional_line("Échec bestial — complément", enrichment["supplement_echec_bestial"]),
+        ]
+    )
+
+    return f"""
+    <div style='margin-top:12px'><b>Enrichissement MJ — {_escaped(importance)}</b></div>
+    {_optional_line('Identité / nom exploitable', enrichment['identite'])}
+    {_optional_line('Description minimale', enrichment['description'])}
+    {_optional_line('Ouverture d’action / dialogue', enrichment['ouverture'])}
+    {_optional_line('Conséquence contextuelle potentielle', enrichment['consequence_contextuelle'])}
+    {_optional_line('Piste / question ouverte', enrichment['crochet'])}
+    {major_warning}
+    <div style='margin-top:8px'><b>Compléments contextuels par issue</b></div>
+    {supplements}
+    """
+
+
 def _render_result_bubble(table_id: str, result: dict, point: dict, territory_id: str, style_id: str) -> None:
     entry = result.get("entry")
     if entry is None:
@@ -120,6 +165,7 @@ def _render_result_bubble(table_id: str, result: dict, point: dict, territory_id
     index = result.get("index")
     total = len(HUNT_TABLES[table_id]["entries"])
     memo, impossible = _territory_memo(territory_id, point, style_id)
+    enrichment_html = _enrichment_html(table_id, entry)
 
     content_html = f"""
     <div><b>{_escaped(HUNT_TABLES[table_id]['label'])}</b></div>
@@ -127,9 +173,10 @@ def _render_result_bubble(table_id: str, result: dict, point: dict, territory_id
     <div style='margin-top:4px'><b>Mémo</b> : {_escaped(memo)}</div>
     <div style='margin-top:6px'><b>Tirage</b> : {_escaped(f'{index + 1}/{total}' if index is not None else '—')}</div>
     <div style='margin-top:8px'><b>Rencontre</b> : {_escaped(entry.get('rencontre'))}</div>
-    <div style='margin-top:8px'><b>Résonance / Tempérament — seulement si la chasse réussit</b> : {_escaped(entry.get('res_temp'))}</div>
-    <div style='margin-top:6px'><b>Effet spécial — seulement si la chasse réussit</b> : {_escaped(entry.get('effet'))}</div>
-    <div style='margin-top:10px'><b>Issues préparées</b></div>
+    <div style='margin-top:8px'><b>Résonance / Tempérament — seulement si nourrissage applicable et chasse réussie</b> : {_escaped(entry.get('res_temp'))}</div>
+    <div style='margin-top:6px'><b>Effet sanguin / de nourrissage — seulement si applicable et chasse réussie</b> : {_escaped(entry.get('effet'))}</div>
+    {enrichment_html}
+    <div style='margin-top:10px'><b>Issues préparées de la table</b></div>
     <div style='margin-top:4px'><b>Victoire critique</b> : {_escaped(entry.get('victoire_critique'))}</div>
     <div style='margin-top:4px'><b>Victoire à la Pyrrhus</b> : {_escaped(entry.get('victoire_pyrrhus'))}</div>
     <div style='margin-top:4px'><b>Réussite bestiale</b> : {_escaped(entry.get('reussite_bestiale'))}</div>
@@ -249,7 +296,8 @@ def render_hunt_generator_tool() -> None:
 
     st.caption(
         "Jet physique : le critique prime. Succès = difficulté → Pyrrhus ; succès > difficulté → réussite. "
-        "Résonance et effet spécial ne sont acquis que si la chasse réussit."
+        "Résonance et bénéfices sanguins ne sont acquis que si le nourrissage est applicable et la chasse réussie. "
+        "Une conséquence contextuelle peut exister sans nourrissage ; « Aucune » résonance n'accorde jamais un bonus automatique."
     )
     card_close()
 
@@ -263,6 +311,11 @@ def render_hunt_generator_tool() -> None:
             "est celui du territoire choisi ; il n'est pas automatiquement accordé à un chasseur étranger."
         )
         st.markdown(
+            "**Récompenses contextuelles :** +1 dé vise normalement un prochain jet étroitement lié ; "
+            "une opportunité RP peut donner **-1 difficulté** au prochain projet pertinent d'Historique, usage unique. "
+            "Volonté, Souillure/Humanité et autres monnaies sensibles restent des effets rares explicitement préparés."
+        )
+        st.markdown(
             "Un style déclaré inadapté au point ajoute automatiquement **+2 difficulté**. Le Caern est un interdit absolu."
         )
 
@@ -273,7 +326,9 @@ def render_hunt_generator_tool() -> None:
 
     card_open(fade=False)
     section_label("Rencontres générées")
-    st.caption("Chaque bulle reste indépendante. Relancer une chasse ne modifie pas les autres.")
+    st.caption(
+        "Chaque bulle reste indépendante. Les enrichissements sont des aides MJ : ils ne deviennent joués, acquis ou connus qu'après la scène physique."
+    )
     card_close()
 
     for table_id in visible_results:
