@@ -5,7 +5,7 @@ from typing import Dict, Tuple
 
 import streamlit as st
 
-from domain.engine import validate_scene, SceneValidationError, RunState
+from domain.engine import validate_scene, SceneValidationError, RunState, can_undo_choice
 from ui.components import (
     header,
     section,
@@ -16,7 +16,7 @@ from ui.components import (
     secondary_button,
     seal_choice,
 )
-from ui.actions import start_scene, pick, go_home
+from ui.actions import start_scene, restart_scene, resume_scene, undo_choice, pick, go_home
 from ui.state import get_state
 
 
@@ -92,11 +92,6 @@ def _render_hunt_generator_tool() -> None:
             st.session_state["hunt_results"][sid] = pick_entry(sid)
             changed = True
 
-    # Bouton unique : retour accueil (relance = décocher/recocher)
-    if secondary_button("Retour accueil", key="hunt_back_home"):
-        go_home()
-        st.rerun()
-
     card_close()
 
     # Si l'état a changé, on relance le rendu pour afficher immédiatement.
@@ -107,7 +102,6 @@ def _render_hunt_generator_tool() -> None:
         section("Résultats", "Aucun style sélectionné.", fade=True)
         return
 
-    
     # Build result matrix (rows=info, cols=styles)
     data: dict[str, list[str]] = {}
     for sid in selected:
@@ -217,6 +211,21 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
     if state.last_error:
         section("Erreur", state.last_error, fade=True)
 
+    # Une scene quittee via "Accueil MJ" reste disponible ici.
+    if state.active_scene_id and state.run_state is not None:
+        suspended_entry = scenes.get(state.active_scene_id)
+        suspended_scene = suspended_entry[1] if suspended_entry else None
+        suspended_title = getattr(suspended_scene, "title", state.active_scene_id)
+
+        card_open(fade=True)
+        section_label("Scène suspendue")
+        st.markdown(f"### {suspended_title}")
+        st.caption("La conversation et les choix sont conservés.")
+        if primary_button(f"Reprendre : {suspended_title}", key="resume_active_scene"):
+            resume_scene()
+            st.rerun()
+        card_close()
+
     items = []
     for scene_id, (module_name, scene) in scenes.items():
         title = getattr(scene, "title", scene_id)
@@ -239,7 +248,15 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
             card_close()
             continue
 
-        if primary_button(f"Lancer : {title}", key=f"start_{scene_id}"):
+        if state.active_scene_id and state.run_state is not None:
+            if scene_id == state.active_scene_id:
+                launch_label = f"Recommencer : {title}"
+            else:
+                launch_label = f"Lancer : {title} (remplace la scène suspendue)"
+        else:
+            launch_label = f"Lancer : {title}"
+
+        if primary_button(launch_label, key=f"start_{scene_id}"):
             start_scene(scene_id, scene)
             st.rerun()
 
@@ -291,6 +308,41 @@ def _resolve_scene_music_path(scene_id: str) -> Path | None:
     return None
 
 
+def _render_scene_navigation(scene_id: str, scene: object, rs: RunState) -> None:
+    """Navigation MJ persistante, sans transformer un clic en événement canonique."""
+    card_open(fade=False)
+    section_label("Navigation MJ")
+    col_home, col_back, col_restart = st.columns(3)
+
+    with col_home:
+        if secondary_button("← Accueil MJ", key="nav_home"):
+            go_home()
+            st.rerun()
+
+    with col_back:
+        if can_undo_choice(rs):
+            if secondary_button("← Choix précédent", key="nav_undo"):
+                undo_choice()
+                st.rerun()
+        else:
+            st.button("← Choix précédent", disabled=True, use_container_width=True, key="nav_undo_disabled")
+
+    with col_restart:
+        if secondary_button("Recommencer", key="nav_restart"):
+            if scene_id == HUNT_TOOL_SCENE_ID:
+                st.session_state.pop("hunt_selected", None)
+                st.session_state.pop("hunt_results", None)
+                # Les checkbox Streamlit ont leurs propres clés.
+                for key in list(st.session_state.keys()):
+                    if str(key).startswith("hunt_style_"):
+                        del st.session_state[key]
+            restart_scene(scene_id, scene)
+            st.rerun()
+
+    st.caption("Accueil conserve la scène. Recommencer la remet explicitement à zéro.")
+    card_close()
+
+
 def page_scene(scene: object) -> None:
     state = get_state()
     rs: RunState | None = state.run_state
@@ -299,17 +351,20 @@ def page_scene(scene: object) -> None:
     title = getattr(scene, "title", "Scène")
     header(title, "Lis et réponds. Le fil reste visible comme une conversation.")
 
-    # Musique auto par scène (sans config dans les fichiers de scène)
-    music_path = _resolve_scene_music_path(str(scene_id))
-    if music_path:
-        st.audio(music_path.read_bytes(), format="audio/mpeg", loop=True)
-
     if rs is None:
         section("Erreur", "RunState manquant. Retour à l'accueil.", fade=True)
         if primary_button("Retour accueil", key="back_home"):
             go_home()
             st.rerun()
         return
+
+    # Navigation toujours visible avant le contenu joueur.
+    _render_scene_navigation(str(scene_id), scene, rs)
+
+    # Musique auto par scène (sans config dans les fichiers de scène)
+    music_path = _resolve_scene_music_path(str(scene_id))
+    if music_path:
+        st.audio(music_path.read_bytes(), format="audio/mpeg", loop=True)
 
     _render_transcript(rs)
 
@@ -322,7 +377,8 @@ def page_scene(scene: object) -> None:
         card_open(fade=True)
         section_label("Fin de scène")
         st.markdown("La scène est terminée.")
-        if primary_button("Fin de scène", key="end_scene"):
+        st.caption("Tu peux revenir au choix précédent avec la barre MJ ci-dessus, ou retourner à l'accueil sans perdre cette scène.")
+        if primary_button("Retour Accueil MJ", key="end_scene"):
             go_home()
             st.rerun()
         card_close()
