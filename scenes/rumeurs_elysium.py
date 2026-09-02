@@ -161,7 +161,7 @@ Et personne ne jure qu’elle circule seule.
   <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;">✦ Registre : identité consignée ✦</div>
   <div style="margin-top:0.6rem; line-height:1.45;">
     <b>Clan</b> : Tremere &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 11e<br/>
-    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation de la Pierre Noire<br/>
+    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation<br/>
     <b>Sire</b> : Magister Leopold von Hartheim (actif à Vienne)
   </div>
 </div>
@@ -193,7 +193,7 @@ On doute de la destination.
   <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;">✦ Registre : identité consignée ✦</div>
   <div style="margin-top:0.6rem; line-height:1.45;">
     <b>Clan</b> : Malkavien &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 9e<br/>
-    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation de la Pierre Noire<br/>
+    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation<br/>
     <b>Sire</b> : Agnès des Murmures
   </div>
 </div>
@@ -408,7 +408,7 @@ Un sourire contrôlé.
   <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;">✦ Registre : identité consignée ✦</div>
   <div style="margin-top:0.6rem; line-height:1.45;">
     <b>Clan</b> : Trémère &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 8e<br/>
-    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation de la Pierre Noire<br/>
+    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation<br/>
     <b>Sire</b> : Simon
   </div>
 </div>
