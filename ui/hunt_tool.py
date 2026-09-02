@@ -6,6 +6,7 @@ import random
 import streamlit as st
 
 from data.hunt_enrichment import find_hunt_enrichment
+from data.hunt_names import find_hunt_prepared_name
 from data.hunt_runtime import (
     HUNT_BASE_DIFFICULTY,
     HUNT_DIFFICULTY_OPTIONS,
@@ -119,10 +120,12 @@ def _optional_line(label: str, value: str | None, margin: int = 4) -> str:
 
 
 def _enrichment_html(table_id: str, entry: dict) -> str:
-    enrichment = find_hunt_enrichment(table_id, entry.get("rencontre"))
+    rencontre = entry.get("rencontre")
+    enrichment = find_hunt_enrichment(table_id, rencontre)
     if enrichment is None:
         return ""
 
+    prepared_name = find_hunt_prepared_name(table_id, rencontre)
     importance = enrichment["importance"]
     major_warning = ""
     if importance == "majeure":
@@ -145,7 +148,8 @@ def _enrichment_html(table_id: str, entry: dict) -> str:
 
     return f"""
     <div style='margin-top:12px'><b>Enrichissement MJ — {_escaped(importance)}</b></div>
-    {_optional_line('Identité / nom exploitable', enrichment['identite'])}
+    {_optional_line('Nom de circonstance — préparation non canonique', prepared_name)}
+    {_optional_line('Identité / rôle exploitable', enrichment['identite'])}
     {_optional_line('Description minimale', enrichment['description'])}
     {_optional_line('Ouverture d’action / dialogue', enrichment['ouverture'])}
     {_optional_line('Conséquence contextuelle potentielle', enrichment['consequence_contextuelle'])}
