@@ -1,18 +1,13 @@
-"""Scène-outil : générateur de rencontres de chasse (MJ).
+"""Scène-outil : assistant de chasse pour le MJ.
 
-⚠️ Cette scène est un *outil* : le résultat final est un tableau.
-Le moteur de scène "choix -> transcript" n'est pas utilisé ici.
-
-Pour rester compatible avec la validation (une scène doit avoir au moins 1 choix),
-on fournit un choix "Retour accueil" qui termine immédiatement la scène.
-L'UI détecte l'ID de scène et affiche l'outil dédié.
-
-Tables (placeholders ou contenu réel) : data/hunt_tables.py
+Le moteur narratif standard n'est pas utilisé pour résoudre la chasse : l'UI
+reconnaît cet ID et affiche l'outil dédié. Le choix minimal existe uniquement
+pour satisfaire la validation générale des scènes.
 """
 
 from __future__ import annotations
 
-from domain.schema import Scene, Choice
+from domain.schema import Choice, Scene
 
 
 SCENE_ID = "generateur_de_chasse"
@@ -21,14 +16,17 @@ SCENE_ID = "generateur_de_chasse"
 def get_scene() -> Scene:
     return Scene(
         id=SCENE_ID,
-        title="Générateur de chasse (MJ)",
+        title="Assistant de chasse — Rennes 1505 (MJ)",
         intro_md=(
-            "Outil MJ : génère des rencontres de chasse aléatoires.\n\n"
-            "**ID : generateur_de_chasse**\n\n"
-            "Sélectionne un ou plusieurs styles de prédation, puis génère un tableau.\n"
-            "Les textes sont pré-écrits dans les tables (placeholders tant que tu ne les as pas remplis)."
+            "Outil MJ dérivé du canon actif du Drive.\n\n"
+            "Il croise la **coterie**, le **Predator Type habituel**, le **style utilisé cette nuit**, "
+            "la **zone** et le **point d'intérêt canonique**. Il affiche ensuite les modificateurs de "
+            "Viandis et la difficulté de chasse à appliquer au **jet physique**.\n\n"
+            "Les 18 Predator Types V5 servent de référentiel. Les grandes tables déjà écrites dans le dépôt "
+            "restent disponibles comme **tables narratives locales optionnelles**.\n\n"
+            "Un tirage ou un clic dans cet outil reste une préparation : il ne constitue ni une scène jouée, "
+            "ni un événement canonique, ni une connaissance acquise par un PJ."
         ),
-        # Choix minimal uniquement pour satisfaire la validation/compatibilité du moteur.
         choices=[
             Choice(
                 id="retour_accueil",
