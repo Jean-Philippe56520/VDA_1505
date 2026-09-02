@@ -38,6 +38,17 @@ def validate_scene(scene: Scene) -> List[str]:
 
 
 @dataclass
+class RunSnapshot:
+    """Etat minimal permettant d'annuler proprement un choix joueur."""
+
+    active_choices: List[Choice]
+    transcript: List[Tuple[Role, str]]
+    last_answer_md: str
+    history_labels: List[str]
+    ended: bool
+
+
+@dataclass
 class RunState:
     scene_id: str
     active_choices: List[Choice]
@@ -49,6 +60,10 @@ class RunState:
     last_answer_md: str = ""
     history_labels: List[str] = field(default_factory=list)
     ended: bool = False
+
+    # Une copie de l'etat est empilee avant chaque choix.
+    # Cela permet un vrai "Choix precedent" sans reconstruire la scene.
+    undo_stack: List[RunSnapshot] = field(default_factory=list)
 
 
 def push_bot(state: RunState, md: str) -> None:
@@ -63,7 +78,38 @@ def push_pj(state: RunState, md: str) -> None:
         state.transcript.append(("PJ", md))
 
 
+def _snapshot(state: RunState) -> RunSnapshot:
+    return RunSnapshot(
+        active_choices=list(state.active_choices),
+        transcript=list(state.transcript),
+        last_answer_md=state.last_answer_md,
+        history_labels=list(state.history_labels),
+        ended=state.ended,
+    )
+
+
+def can_undo_choice(state: RunState) -> bool:
+    return bool(state.undo_stack)
+
+
+def undo_last_choice(state: RunState) -> bool:
+    """Restaure l'etat juste avant le dernier choix. Retourne False si rien a annuler."""
+    if not state.undo_stack:
+        return False
+
+    previous = state.undo_stack.pop()
+    state.active_choices = list(previous.active_choices)
+    state.transcript = list(previous.transcript)
+    state.last_answer_md = previous.last_answer_md
+    state.history_labels = list(previous.history_labels)
+    state.ended = previous.ended
+    return True
+
+
 def pick_choice(state: RunState, choice: Choice) -> None:
+    # Sauvegarde l'etat avant toute mutation pour permettre un retour fiable.
+    state.undo_stack.append(_snapshot(state))
+
     # Record player choice
     state.history_labels.append(choice.label)
     push_pj(state, choice.label)
