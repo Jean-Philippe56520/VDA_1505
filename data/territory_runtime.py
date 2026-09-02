@@ -61,10 +61,10 @@ COTERIE_DOMAINS: dict[str, dict] = {
             ("Tribut reçu des Héritiers d'Alexandrie", "+1 Viandis"),
             ("Tribut versé à la Main du Prince", "-1 Rempart"),
         ],
-        "summary": "Contrôle religieux très défensif. Les Archives du Chapitre ne leur appartiennent pas : elles restent à la Fondation de la Pierre Noire, donc aucun bonus de contrôle complet de la Ceinture Sacrée n'est appliqué.",
+        "summary": "Contrôle religieux très défensif. Les Archives du Chapitre ne leur appartiennent pas : elles restent à la Fondation, donc aucun bonus de contrôle complet de la Ceinture Sacrée n'est appliqué.",
     },
     "cot_fondation_pierre_noire": {
-        "label": "Fondation de la Pierre Noire",
+        "label": "La Fondation",
         "faction": "Camarilla",
         "type": "Fondation précaire",
         "domain": "Archives du Chapitre",
