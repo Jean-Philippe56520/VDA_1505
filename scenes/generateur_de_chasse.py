@@ -23,6 +23,8 @@ def get_scene() -> Scene:
             "le **territoire / la coterie sur lequel la chasse a lieu** et le **point d'intérêt canonique**. "
             "L'outil affiche seulement un mémo compact : contrôle, Viandis du territoire, surveillance éventuelle, "
             "style inadapté (+2 difficulté) ou interdiction.\n\n"
+            "La qualification automatique **style × point d'intérêt** utilise actuellement une matrice préparatoire "
+            "dérivée des descriptions de lieux de 05 : elle sert d'aide MJ et reste à valider comme canon exact.\n\n"
             "Les rencontres sélectionnées peuvent être générées ensemble et restent visibles dans des "
             "**bulles indépendantes**, chacune relançable séparément. Les dés et la décision du résultat restent physiques.\n\n"
             "Rappel : succès = difficulté donne une **Victoire à la Pyrrhus** ; une **Victoire critique prime**. "
