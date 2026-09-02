@@ -223,20 +223,34 @@ Mais personne ne le pousse à répéter.
   </div>
 </div>
 
-La confidence est douce, presque polie.
+Le nom tombe plus bas que les autres.
 
-> « Guillaume parle encore d’honneur.  
-> Simplement… il a appris à le faire à voix basse. »
+> « Il y a des morts qui terminent une guerre.  
+> Et d’autres qui commencent une pourriture. »
 
-Un sourire bref.
+On raconte qu’à Saint-Germain, pendant que les portes cédaient et que les paysans de la Madeleine envahissaient les rues, deux vampires restèrent seuls au sommet de la tour.
 
-> « Depuis peu, certains regardent les héritiers de Gwilherm autrement.  
-> Pas avec respect. Pas seulement.  
-> Avec cette prudence que l’on réserve aux vieilles lames  
-> qu’on croyait rangées. »
+Mikolai von Hohenberg — le Toreador brillant, prestigieux, trop éclatant pour qu’on imagine sa lumière s’éteindre ainsi.  
+Et Guillaume.
 
-Ici, l’honneur est utile tant qu’il ne dérange personne.  
-Et Guillaume sait très bien quand il faut cesser d’être utile.
+> « Ceux qui disent se souvenir jurent qu’il n’y eut ni meute, ni embuscade.  
+> Un combat singulier.  
+> Du sang sur les pierres.  
+> Puis Guillaume debout… et la tête de Mikolai qui ne l’était plus. »
+
+Un silence suit toujours cette partie.
+
+> « Certains Anciens pourraient encore confirmer chaque pierre, chaque cri, peut-être même la façon dont Mikolai est tombé.  
+> Curieusement, ils aiment peu qu’on leur pose la question. »
+
+Puis vient le murmure que les Toreador détestent davantage :
+
+> « Peut-être que leur clan n’a pas commencé à mourir sous les flammes de l’Inquisition.  
+> Peut-être que cela avait commencé là-haut.  
+> Quand Guillaume a séparé Mikolai de sa tête… et Rennes de l’idée que les Roses étaient intouchables. »
+
+Personne ne peut prouver que cette nuit fut le commencement de leur chute.  
+Mais à Rennes, certaines rumeurs survivent précisément parce qu’elles ressemblent trop à des souvenirs.
 """,
                 followups=[],
                 ends_scene=True,
