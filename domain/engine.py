@@ -88,16 +88,26 @@ def _snapshot(state: RunState) -> RunSnapshot:
     )
 
 
+def _undo_stack(state: RunState) -> List[RunSnapshot]:
+    """Compatibilite avec les RunState deja presents dans une session Streamlit ouverte."""
+    stack = getattr(state, "undo_stack", None)
+    if stack is None:
+        stack = []
+        setattr(state, "undo_stack", stack)
+    return stack
+
+
 def can_undo_choice(state: RunState) -> bool:
-    return bool(state.undo_stack)
+    return bool(_undo_stack(state))
 
 
 def undo_last_choice(state: RunState) -> bool:
     """Restaure l'etat juste avant le dernier choix. Retourne False si rien a annuler."""
-    if not state.undo_stack:
+    stack = _undo_stack(state)
+    if not stack:
         return False
 
-    previous = state.undo_stack.pop()
+    previous = stack.pop()
     state.active_choices = list(previous.active_choices)
     state.transcript = list(previous.transcript)
     state.last_answer_md = previous.last_answer_md
@@ -108,7 +118,7 @@ def undo_last_choice(state: RunState) -> bool:
 
 def pick_choice(state: RunState, choice: Choice) -> None:
     # Sauvegarde l'etat avant toute mutation pour permettre un retour fiable.
-    state.undo_stack.append(_snapshot(state))
+    _undo_stack(state).append(_snapshot(state))
 
     # Record player choice
     state.history_labels.append(choice.label)
