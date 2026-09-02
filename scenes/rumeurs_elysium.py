@@ -31,7 +31,7 @@ Qui souhaites-tu écouter ?
   <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;">✦ Registre : identité consignée ✦</div>
   <div style="margin-top:0.6rem; line-height:1.45;">
     <b>Clan</b> : Ventrue &nbsp;•&nbsp; <b>Âge</b> : Ancilla &nbsp;•&nbsp; <b>Génération</b> : 10e<br/>
-    <b>Rôle</b> : Harpie &nbsp;•&nbsp; <b>Coterie</b> : Coterie des Défenseurs du Sacré<br/>
+    <b>Rôle</b> : Harpie &nbsp;•&nbsp; <b>Coterie</b> : Les Gardiens du Sacré<br/>
     <b>Sire</b> : Odon
   </div>
 </div>
@@ -358,7 +358,7 @@ Et les cadeaux, parfois, portent une chaîne invisible.
   <div style="font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;">✦ Registre : identité consignée ✦</div>
   <div style="margin-top:0.6rem; line-height:1.45;">
     <b>Clan</b> : Ventrue &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 10e<br/>
-    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Défenseurs du Sacré<br/>
+    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Gardiens du Sacré<br/>
     <b>Sire</b> : Odon
   </div>
 </div>
