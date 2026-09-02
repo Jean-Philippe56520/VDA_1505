@@ -17,7 +17,7 @@ from ui.components import (
     section,
     section_label,
 )
-from ui.hunt_tool import render_hunt_generator_tool
+from ui.hunt_tool_v2 import render_hunt_generator_tool
 from ui.state import get_state
 
 
