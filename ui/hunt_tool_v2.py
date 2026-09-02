@@ -172,6 +172,7 @@ def _render_result(table_id: str, result: dict, point: dict) -> None:
         return
     memo, impossible = _memo(result["territory_id"], point, result["style_id"])
     enrichment = _embedded_enrichment(entry) or legacy._enrichment_html(table_id, entry)
+    enrichment = "".join(line.strip() for line in enrichment.splitlines())
     idx = result.get("index")
     total = result.get("eligible_total") or len(HUNT_TABLES[table_id]["entries"])
     content = f"""
