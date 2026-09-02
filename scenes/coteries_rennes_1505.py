@@ -126,7 +126,7 @@ Son Rempart reste faible, preuve que son autorité repose davantage sur la peur,
             ),
             Choice(
                 id="coterie_ventrue",
-                label="Ventrue — Défenseurs du Sacré",
+                label="Ventrue — Gardiens du Sacré",
                 answer_md=_fiche_coterie(
                     registre="Registre stratégique : aristocratie sacrée",
                     nom="Ventrue",
