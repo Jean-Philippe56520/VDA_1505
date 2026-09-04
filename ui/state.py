@@ -11,6 +11,7 @@ from domain.engine import RunState
 
 class Screen(str, Enum):
     HOME = "HOME"
+    PRIVATE_SCENES = "PRIVATE_SCENES"
     SCENE = "SCENE"
 
 
