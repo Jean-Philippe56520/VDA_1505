@@ -6,7 +6,15 @@ from typing import Dict, Tuple
 import streamlit as st
 
 from domain.engine import SceneValidationError, RunState, can_undo_choice, validate_scene
-from ui.actions import go_home, pick, restart_scene, resume_scene, start_scene, undo_choice
+from ui.actions import (
+    go_home,
+    go_private_scenes,
+    pick,
+    restart_scene,
+    resume_scene,
+    start_scene,
+    undo_choice,
+)
 from ui.components import (
     card_close,
     card_open,
@@ -24,11 +32,73 @@ from ui.state import get_state
 HUNT_TOOL_SCENE_ID = "generateur_de_chasse"
 
 
+def _is_private_scene(module_name: str) -> bool:
+    """Les scènes privées sont chargées localement par domain.loader."""
+    return str(module_name).startswith("private:")
+
+
 def _clear_hunt_runtime_state() -> None:
     """Efface uniquement l'état Streamlit du générateur de chasse."""
     for key in list(st.session_state.keys()):
         if str(key).startswith("hunt_"):
             del st.session_state[key]
+
+
+def _scene_items(
+    scenes: Dict[str, Tuple[str, object]],
+    *,
+    private: bool,
+) -> list[tuple[str, str, str, object]]:
+    items: list[tuple[str, str, str, object]] = []
+    for scene_id, (module_name, scene) in scenes.items():
+        if _is_private_scene(module_name) != private:
+            continue
+        title = getattr(scene, "title", scene_id)
+        items.append((title, scene_id, module_name, scene))
+    items.sort(key=lambda x: x[0].lower())
+    return items
+
+
+def _render_scene_launch_card(
+    title: str,
+    scene_id: str,
+    module_name: str,
+    scene: object,
+    *,
+    key_prefix: str = "start",
+) -> None:
+    state = get_state()
+
+    try:
+        validate_scene(scene)
+        invalid_error = None
+    except SceneValidationError as exc:
+        invalid_error = str(exc)
+
+    card_open()
+    st.markdown(f"### {title}")
+    st.caption(f"ID: {scene_id}")
+
+    if invalid_error:
+        st.error(f"Scène invalide ({module_name}) : {invalid_error}")
+        card_close()
+        return
+
+    if state.active_scene_id and state.run_state is not None:
+        if scene_id == state.active_scene_id:
+            launch_label = f"Recommencer : {title}"
+        else:
+            launch_label = f"Lancer : {title} (remplace la scène suspendue)"
+    else:
+        launch_label = f"Lancer : {title}"
+
+    if primary_button(launch_label, key=f"{key_prefix}_{scene_id}"):
+        if scene_id == HUNT_TOOL_SCENE_ID:
+            _clear_hunt_runtime_state()
+        start_scene(scene_id, scene)
+        st.rerun()
+
+    card_close()
 
 
 def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
@@ -52,43 +122,72 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
             st.rerun()
         card_close()
 
-    items = []
-    for scene_id, (module_name, scene) in scenes.items():
-        title = getattr(scene, "title", scene_id)
-        items.append((title, scene_id, module_name, scene))
-    items.sort(key=lambda x: x[0].lower())
+    private_items = _scene_items(scenes, private=True)
+    card_open()
+    st.markdown("### Scènes privées")
+    if private_items:
+        count = len(private_items)
+        st.caption(f"{count} scène(s) privée(s) locale(s) chargée(s).")
+    else:
+        st.caption("Espace réservé aux scènes MJ privées chargées localement.")
+    if primary_button("Ouvrir les scènes privées", key="open_private_scenes"):
+        go_private_scenes()
+        st.rerun()
+    card_close()
 
-    for title, scene_id, module_name, scene in items:
-        try:
-            validate_scene(scene)
-            invalid_error = None
-        except SceneValidationError as exc:
-            invalid_error = str(exc)
+    for title, scene_id, module_name, scene in _scene_items(scenes, private=False):
+        _render_scene_launch_card(title, scene_id, module_name, scene)
 
-        card_open()
-        st.markdown(f"### {title}")
-        st.caption(f"ID: {scene_id}")
 
-        if invalid_error:
-            st.error(f"Scène invalide ({module_name}) : {invalid_error}")
-            card_close()
-            continue
+def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
+    header("Scènes privées", "Choisis une scène privée chargée localement.")
+    state = get_state()
 
-        if state.active_scene_id and state.run_state is not None:
-            if scene_id == state.active_scene_id:
-                launch_label = f"Recommencer : {title}"
-            else:
-                launch_label = f"Lancer : {title} (remplace la scène suspendue)"
-        else:
-            launch_label = f"Lancer : {title}"
+    if state.last_error:
+        section("Erreur", state.last_error, fade=True)
 
-        if primary_button(launch_label, key=f"start_{scene_id}"):
-            if scene_id == HUNT_TOOL_SCENE_ID:
-                _clear_hunt_runtime_state()
-            start_scene(scene_id, scene)
-            st.rerun()
+    if secondary_button("← Accueil MJ", key="private_scenes_back_home"):
+        go_home()
+        st.rerun()
 
+    private_items = _scene_items(scenes, private=True)
+    if not private_items:
+        card_open(fade=True)
+        section_label("Aucune scène privée chargée")
+        st.markdown(
+            "Le sous-menu est prêt, mais aucun module local n'est actuellement détecté dans `scenes_private/`."
+        )
+        st.caption(
+            "Les fichiers de ce dossier restent hors du dépôt public et sont chargés uniquement sur la machine de table."
+        )
         card_close()
+        return
+
+    if state.active_scene_id and state.run_state is not None:
+        suspended_entry = scenes.get(state.active_scene_id)
+        if suspended_entry and _is_private_scene(suspended_entry[0]):
+            suspended_scene = suspended_entry[1]
+            suspended_title = getattr(suspended_scene, "title", state.active_scene_id)
+            card_open(fade=True)
+            section_label("Scène privée suspendue")
+            st.markdown(f"### {suspended_title}")
+            st.caption("La conversation et les choix sont conservés.")
+            if primary_button(
+                f"Reprendre : {suspended_title}",
+                key="resume_private_scene",
+            ):
+                resume_scene()
+                st.rerun()
+            card_close()
+
+    for title, scene_id, module_name, scene in private_items:
+        _render_scene_launch_card(
+            title,
+            scene_id,
+            module_name,
+            scene,
+            key_prefix="start_private",
+        )
 
 
 def _render_transcript(rs: RunState) -> None:
