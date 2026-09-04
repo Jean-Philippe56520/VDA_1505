@@ -22,10 +22,11 @@ def discover_scene_modules() -> List[str]:
 
 
 def discover_private_scene_files() -> List[Path]:
-    """Return local GM-only scene modules when scenes_private/ exists.
+    """Retourne les modules du sous-menu scenes_private/.
 
-    The directory is intentionally ignored by Git so sensitive material can be
-    available at the table without being published in the public repository.
+    Ce dossier fait partie du déploiement normal de l'application. Le terme
+    « privé » décrit ici leur présentation séparée dans l'interface MJ, pas
+    une protection technique du contenu du dépôt.
     """
     if not PRIVATE_SCENES_DIR.is_dir():
         return []
