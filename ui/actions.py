@@ -12,6 +12,14 @@ def go_home() -> None:
     set_state(state)
 
 
+def go_private_scenes() -> None:
+    """Ouvre le sous-menu des scenes privees sans modifier une scene suspendue."""
+    state = get_state()
+    state.screen = Screen.PRIVATE_SCENES
+    state.last_error = None
+    set_state(state)
+
+
 def clear_scene() -> None:
     """Oublie explicitement la scene courante et revient a l'accueil."""
     state = get_state()
@@ -43,7 +51,6 @@ def start_scene(scene_id: str, scene: object) -> None:
     choices = getattr(scene, "choices", []) or []
 
     rs = RunState(scene_id=scene_id, active_choices=choices)
-    # Start conversation with intro (one place only)
     push_bot(rs, intro)
 
     state.scene_intro_md = intro
