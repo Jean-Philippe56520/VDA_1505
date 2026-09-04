@@ -33,7 +33,7 @@ HUNT_TOOL_SCENE_ID = "generateur_de_chasse"
 
 
 def _is_private_scene(module_name: str) -> bool:
-    """Les scènes privées sont chargées localement par domain.loader."""
+    """Identifie les scènes regroupées dans le sous-menu MJ dédié."""
     return str(module_name).startswith("private:")
 
 
@@ -127,9 +127,9 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
     st.markdown("### Scènes privées")
     if private_items:
         count = len(private_items)
-        st.caption(f"{count} scène(s) privée(s) locale(s) chargée(s).")
+        st.caption(f"{count} scène(s) disponible(s).")
     else:
-        st.caption("Espace réservé aux scènes MJ privées chargées localement.")
+        st.caption("Aucune scène n'est actuellement disponible dans cette section.")
     if primary_button("Ouvrir les scènes privées", key="open_private_scenes"):
         go_private_scenes()
         st.rerun()
@@ -140,7 +140,7 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
 
 
 def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
-    header("Scènes privées", "Choisis une scène privée chargée localement.")
+    header("Scènes privées", "Choisis la scène à lancer.")
     state = get_state()
 
     if state.last_error:
@@ -153,13 +153,11 @@ def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
     private_items = _scene_items(scenes, private=True)
     if not private_items:
         card_open(fade=True)
-        section_label("Aucune scène privée chargée")
+        section_label("Aucune scène privée disponible")
         st.markdown(
-            "Le sous-menu est prêt, mais aucun module local n'est actuellement détecté dans `scenes_private/`."
+            "Aucun module de scène n'est actuellement détecté dans `scenes_private/`."
         )
-        st.caption(
-            "Les fichiers de ce dossier restent hors du dépôt public et sont chargés uniquement sur la machine de table."
-        )
+        st.caption("Vérifie que le déploiement utilise bien la dernière révision du dépôt.")
         card_close()
         return
 
