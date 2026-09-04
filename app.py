@@ -5,7 +5,7 @@ import streamlit as st
 from ui.components import apply_theme
 from ui.data import get_scenes_cached, get_scene_by_id
 from ui.state import get_state, Screen
-from ui.pages import page_home, page_scene
+from ui.pages import page_home, page_private_scenes, page_scene
 from ui.actions import go_home
 
 APP_TITLE = "Vampire: Dark Ages — Secret Kiosk"
@@ -18,13 +18,20 @@ def main() -> None:
 
     scenes = get_scenes_cached()
     if not scenes:
-        st.error("Aucune scène trouvée dans /scenes (fichiers .py avec get_scene()).")
+        st.error(
+            "Aucune scène trouvée dans /scenes ou /scenes_private "
+            "(fichiers .py avec get_scene())."
+        )
         return
 
     state = get_state()
 
     if state.screen == Screen.HOME:
         page_home(scenes)
+        return
+
+    if state.screen == Screen.PRIVATE_SCENES:
+        page_private_scenes(scenes)
         return
 
     # Screen.SCENE
