@@ -1,2 +1,1 @@
-# Scènes MJ privées : jamais publier leur contenu dans le dépôt public.
-/scenes_private/
+# Les scènes de l'outil sont versionnées dans Git, y compris /scenes_private/.
