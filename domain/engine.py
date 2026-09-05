@@ -61,8 +61,12 @@ class RunState:
     history_labels: List[str] = field(default_factory=list)
     ended: bool = False
 
-    # Une copie de l'etat est empilee avant chaque choix.
-    # Cela permet un vrai "Choix precedent" sans reconstruire la scene.
+    # Contrôles de navigation copiés depuis la scène au démarrage.
+    allow_undo: bool = True
+    allow_restart_after_choice: bool = True
+
+    # Une copie de l'etat est empilee avant chaque choix lorsque l'annulation
+    # est autorisée. Cela permet un vrai "Choix precedent" sans reconstruire.
     undo_stack: List[RunSnapshot] = field(default_factory=list)
 
 
@@ -98,11 +102,13 @@ def _undo_stack(state: RunState) -> List[RunSnapshot]:
 
 
 def can_undo_choice(state: RunState) -> bool:
-    return bool(_undo_stack(state))
+    return bool(getattr(state, "allow_undo", True) and _undo_stack(state))
 
 
 def undo_last_choice(state: RunState) -> bool:
-    """Restaure l'etat juste avant le dernier choix. Retourne False si rien a annuler."""
+    if not getattr(state, "allow_undo", True):
+        return False
+
     stack = _undo_stack(state)
     if not stack:
         return False
@@ -117,8 +123,10 @@ def undo_last_choice(state: RunState) -> bool:
 
 
 def pick_choice(state: RunState, choice: Choice) -> None:
-    # Sauvegarde l'etat avant toute mutation pour permettre un retour fiable.
-    _undo_stack(state).append(_snapshot(state))
+    # Les scènes réversibles conservent l'état avant mutation. Une scène
+    # irréversible ne crée volontairement aucun snapshot exploitable.
+    if getattr(state, "allow_undo", True):
+        _undo_stack(state).append(_snapshot(state))
 
     # Record player choice
     state.history_labels.append(choice.label)
