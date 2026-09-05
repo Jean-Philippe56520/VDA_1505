@@ -228,7 +228,7 @@ Le nom tombe plus bas que les autres.
 > « Il y a des morts qui terminent une guerre.  
 > Et d’autres qui commencent une pourriture. »
 
-On raconte qu’au sommet de la Porte Saint-Germain, dans Rennes même, pendant que les portes cédaient et que les paysans de la Madeleine envahissaient les rues, deux vampires restèrent seuls au-dessus du tumulte.
+On raconte qu’à la Porte de la Madeleine, dans Rennes même, pendant que les portes cédaient et que les paysans de la Madeleine envahissaient les rues, deux vampires s’affrontèrent à l’écart du tumulte.
 
 Mikolai von Hohenberg — le Toreador brillant, prestigieux, trop éclatant pour qu’on imagine sa lumière s’éteindre ainsi.  
 Et Guillaume.
@@ -246,7 +246,7 @@ Un silence suit toujours cette partie.
 Puis vient le murmure que les Toreador détestent davantage :
 
 > « Peut-être que leur clan n’a pas commencé à mourir sous les flammes de l’Inquisition.  
-> Peut-être que cela avait commencé là-haut.  
+> Peut-être que cela avait commencé là.  
 > Quand Guillaume a séparé Mikolai de sa tête… et Rennes de l’idée que les Roses étaient intouchables. »
 
 Personne ne peut prouver que cette nuit fut le commencement de leur chute.  
