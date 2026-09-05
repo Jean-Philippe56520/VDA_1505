@@ -9,7 +9,9 @@ from typing import Dict, List, Tuple
 from domain.schema import Scene
 
 SCENES_PKG = "scenes"
-PRIVATE_SCENES_DIR = Path(__file__).resolve().parents[1] / "scenes_private"
+ROOT_DIR = Path(__file__).resolve().parents[1]
+PRIVATE_SCENES_DIR = ROOT_DIR / "scenes_private"
+LOCAL_PRIVATE_SCENES_DIR = ROOT_DIR / "runtime_local_private"
 
 
 def discover_scene_modules() -> List[str]:
@@ -21,24 +23,31 @@ def discover_scene_modules() -> List[str]:
     return sorted(out)
 
 
-def discover_private_scene_files() -> List[Path]:
-    """Retourne les modules du sous-menu scenes_private/.
-
-    Ce dossier fait partie du déploiement normal de l'application. Le terme
-    « privé » décrit ici leur présentation séparée dans l'interface MJ, pas
-    une protection technique du contenu du dépôt.
-    """
-    if not PRIVATE_SCENES_DIR.is_dir():
+def _discover_python_files(directory: Path) -> List[Path]:
+    if not directory.is_dir():
         return []
     return sorted(
         path
-        for path in PRIVATE_SCENES_DIR.glob("*.py")
+        for path in directory.glob("*.py")
         if path.is_file() and not path.name.startswith("_")
     )
 
 
-def _load_private_scene(path: Path) -> Tuple[str, Scene] | None:
-    module_name = f"vda_private_scene_{path.stem}"
+def discover_private_scene_files() -> List[Tuple[str, Path]]:
+    """Retourne les scènes du sous-menu privé.
+
+    `scenes_private/` reste un dossier versionnable : son contenu doit donc être
+    considéré comme potentiellement public. `runtime_local_private/` est au
+    contraire ignoré par Git et sert aux scènes MJ réellement sensibles.
+    """
+    out: List[Tuple[str, Path]] = []
+    out.extend(("public", path) for path in _discover_python_files(PRIVATE_SCENES_DIR))
+    out.extend(("local", path) for path in _discover_python_files(LOCAL_PRIVATE_SCENES_DIR))
+    return sorted(out, key=lambda item: (item[0], item[1].name))
+
+
+def _load_private_scene(source: str, path: Path) -> Tuple[str, Scene] | None:
+    module_name = f"vda_private_scene_{source}_{path.stem}"
     spec = importlib.util.spec_from_file_location(module_name, path)
     if spec is None or spec.loader is None:
         raise ImportError(f"Cannot load private scene module: {path}")
@@ -51,7 +60,9 @@ def _load_private_scene(path: Path) -> Tuple[str, Scene] | None:
     scene = mod.get_scene()
     if not isinstance(scene, Scene):
         raise TypeError(f"{path}.get_scene() must return a domain.schema.Scene")
-    return f"private:{path.name}", scene
+    # Le préfixe `private:` suffit à conserver le regroupement UI existant ;
+    # le sous-type précise seulement la provenance technique.
+    return f"private:{source}:{path.name}", scene
 
 
 def load_scenes() -> Dict[str, Tuple[str, Scene]]:
@@ -68,8 +79,8 @@ def load_scenes() -> Dict[str, Tuple[str, Scene]]:
             raise ValueError(f"Duplicate scene id: {scene.id}")
         scenes[scene.id] = (module_name, scene)
 
-    for path in discover_private_scene_files():
-        loaded = _load_private_scene(path)
+    for source, path in discover_private_scene_files():
+        loaded = _load_private_scene(source, path)
         if loaded is None:
             continue
         module_name, scene = loaded
