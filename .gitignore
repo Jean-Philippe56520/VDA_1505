@@ -1,3 +1,1 @@
-# Les scènes de scenes_private/ peuvent être versionnées uniquement si leur contenu est publiable.
-# Les scènes MJ réellement sensibles restent locales et ne doivent jamais entrer dans Git.
-/runtime_local_private/
+# Les scènes de l'outil sont versionnées dans Git, y compris /scenes_private/.
