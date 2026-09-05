@@ -27,6 +27,28 @@ La cicatrice située sur ton cœur s'ouvre brutalement et le sang traverse tes v
 """.strip()
 
 
+def _succes_brutal_text() -> str:
+    return f"""
+Tu comprends successivement :
+
+**Ce n'est pas féerique.**
+
+**C'est profondément corrompu.**
+
+Puis tu perçois que cette corruption ne demeure pas simplement dans Gurvan : elle cherche à passer, s'étendre, contaminer et transformer.
+
+**Elle est infectieuse.**
+
+Au même instant, la cicatrice située sur ton cœur s'ouvre et saigne abondamment. Avec la douleur remonte la noirceur de ton âme maudite — celle de la Bête, celle du rituel de Bruges, ou les deux mêlées.
+
+**Conséquences si cette branche est jouée :**
+- **+1 Soif**
+- **+1 Flétrissure**
+
+{_inspiration_rituelle()}
+""".strip()
+
+
 def get_scene() -> Scene:
     return Scene(
         schema_version=1,
@@ -103,8 +125,23 @@ La confusion disparaît. Tu ne sais pas ce qui travaille Gurvan, mais quelque ch
 **Ce phénomène n'est pas féerique.**
 
 Tu ignores comment ton Sang peut en être aussi certain.
+
+Tu peux accepter ce succès ou dépenser volontairement **1 Volonté** pour forcer la branche de **succès brutal**.
 """.strip(),
-                        ends_scene=True,
+                        followups=[
+                            Choice(
+                                id="benoit_accepter_succes",
+                                label="Accepter le succès",
+                                answer_md="Tu t'arrêtes sur cette certitude. **Le phénomène n'est pas féerique.**",
+                                ends_scene=True,
+                            ),
+                            Choice(
+                                id="benoit_forcer_succes_brutal",
+                                label="Dépenser 1 Volonté et forcer",
+                                answer_md=_succes_brutal_text(),
+                                ends_scene=True,
+                            ),
+                        ],
                     ),
                     Choice(
                         id="benoit_resultat_critique",
@@ -125,25 +162,7 @@ Tu n'en comprends ni l'origine ni le mécanisme.
                     Choice(
                         id="benoit_resultat_bestial",
                         label="Succès bestial (critique)",
-                        answer_md=f"""
-Tu comprends successivement :
-
-**Ce n'est pas féerique.**
-
-**C'est profondément corrompu.**
-
-Puis tu perçois que cette corruption ne demeure pas simplement dans Gurvan : elle cherche à passer, s'étendre, contaminer et transformer.
-
-**Elle est infectieuse.**
-
-Au même instant, la cicatrice située sur ton cœur s'ouvre et saigne abondamment. Avec la douleur remonte la noirceur de ton âme maudite — celle de la Bête, celle du rituel de Bruges, ou les deux mêlées.
-
-**Conséquences si cette branche est jouée :**
-- **+1 Soif**
-- **+1 Flétrissure**
-
-{_inspiration_rituelle()}
-""".strip(),
+                        answer_md=_succes_brutal_text(),
                         ends_scene=True,
                     ),
                 ],
