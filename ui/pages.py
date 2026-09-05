@@ -84,6 +84,20 @@ def _render_scene_launch_card(
         card_close()
         return
 
+    if scene_id in getattr(state, "sealed_scene_ids", set()):
+        st.button(
+            "Scène scellée — choix irréversible déjà effectué",
+            disabled=True,
+            use_container_width=True,
+            key=f"{key_prefix}_sealed_{scene_id}",
+        )
+        if state.active_scene_id == scene_id and state.run_state is not None:
+            st.caption("La scène reste consultable via « Reprendre » ; elle ne peut plus être recommencée.")
+        else:
+            st.caption("Cette scène ne peut plus être relancée pendant la session courante.")
+        card_close()
+        return
+
     if state.active_scene_id and state.run_state is not None:
         if scene_id == state.active_scene_id:
             launch_label = f"Recommencer : {title}"
@@ -155,9 +169,10 @@ def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
         card_open(fade=True)
         section_label("Aucune scène privée disponible")
         st.markdown(
-            "Aucun module de scène n'est actuellement détecté dans `scenes_private/`."
+            "Aucun module de scène n'est actuellement détecté dans `scenes_private/` "
+            "ou `runtime_local_private/`."
         )
-        st.caption("Vérifie que le déploiement utilise bien la dernière révision du dépôt.")
+        st.caption("Le dossier local sensible est facultatif et peut rester absent du dépôt Git.")
         card_close()
         return
 
@@ -248,14 +263,28 @@ def _render_scene_navigation(scene_id: str, scene: object, rs: RunState) -> None
                 key="nav_undo_disabled",
             )
 
+    restart_allowed = bool(
+        getattr(scene, "allow_restart_after_choice", True) or not rs.history_labels
+    )
     with col_restart:
-        if secondary_button("Recommencer", key="nav_restart"):
-            if scene_id == HUNT_TOOL_SCENE_ID:
-                _clear_hunt_runtime_state()
-            restart_scene(scene_id, scene)
-            st.rerun()
+        if restart_allowed:
+            if secondary_button("Recommencer", key="nav_restart"):
+                if scene_id == HUNT_TOOL_SCENE_ID:
+                    _clear_hunt_runtime_state()
+                restart_scene(scene_id, scene)
+                st.rerun()
+        else:
+            st.button(
+                "Recommencer",
+                disabled=True,
+                use_container_width=True,
+                key="nav_restart_disabled",
+            )
 
-    st.caption("Accueil conserve la scène. Recommencer la remet explicitement à zéro.")
+    if not getattr(scene, "allow_undo", True) and rs.history_labels:
+        st.caption("Choix scellé : aucun retour arrière ni redémarrage n'est autorisé pour cette scène.")
+    else:
+        st.caption("Accueil conserve la scène. Recommencer la remet explicitement à zéro.")
     card_close()
 
 
@@ -266,6 +295,9 @@ def page_scene(scene: object) -> None:
     scene_id = getattr(scene, "id", None) or state.active_scene_id or "scene"
     title = getattr(scene, "title", "Scène")
     header(title, "Lis et réponds. Le fil reste visible comme une conversation.")
+
+    if state.last_error:
+        section("Erreur", state.last_error, fade=True)
 
     if rs is None:
         section("Erreur", "RunState manquant. Retour à l'accueil.", fade=True)
@@ -290,9 +322,12 @@ def page_scene(scene: object) -> None:
         card_open(fade=True)
         section_label("Fin de scène")
         st.markdown("La scène est terminée.")
-        st.caption(
-            "Tu peux revenir au choix précédent avec la barre MJ ci-dessus, ou retourner à l'accueil sans perdre cette scène."
-        )
+        if getattr(scene, "allow_undo", True):
+            st.caption(
+                "Tu peux revenir au choix précédent avec la barre MJ ci-dessus, ou retourner à l'accueil sans perdre cette scène."
+            )
+        else:
+            st.caption("Le choix est scellé. La scène reste consultable mais ne peut plus être rejouée pendant cette session.")
         if primary_button("Retour Accueil MJ", key="end_scene"):
             go_home()
             st.rerun()
