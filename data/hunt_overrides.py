@@ -103,6 +103,10 @@ OPERATIONAL_LABELS = {
 }
 
 DANGER = {
+    "loc_porte_saint_michel": (
+        "Réservé",
+        "Droit ordinaire de chasse réservé à Ysabeau des Voûtes ; tout autre chasseur doit disposer d'une permission explicite ou assume une chasse non autorisée.",
+    ),
     "loc_porte_madeleine": ("Surveillé", "Seuil tenu et fortement observé."),
     "loc_porte_saint_germain": ("Tendu", "Passage vers un front où les incidents sont fréquents."),
     "loc_faubourg_saint_germain": ("Hostile", "Habitants vigilants et crise occulte active."),
