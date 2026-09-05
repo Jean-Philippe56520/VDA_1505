@@ -156,6 +156,9 @@ Puis ta perception va plus profond. Tu reconnais une corruption qui paraît plus
 - profondément corrompu.
 
 Tu n'en comprends ni l'origine ni le mécanisme.
+
+**Récompense exceptionnelle si cette branche est effectivement jouée :**
+- **+1 XP en Auspex**
 """.strip(),
                         ends_scene=True,
                     ),
