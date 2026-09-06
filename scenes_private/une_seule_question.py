@@ -924,6 +924,16 @@ REPONSES = {
 
 *Un silence.*
 
+« Certaines de ses leçons ne sont pas restées seulement dans ma mémoire. »
+
+*Elle laisse passer un instant, puis son expression se referme.*
+
+« Certaines œuvres ne se voient pas lorsqu’on regarde leur propriétaire. »
+
+« Tu n’as pas besoin d’en savoir davantage ce soir. »
+
+*Un silence.*
+
 « Je pourrais aujourd’hui prétendre qu’un Tzimisce ancien m’a corrompue. »
 
 « Ce serait très commode. »
@@ -980,9 +990,9 @@ REPONSES = {
 
 « Des choses anciennes. »
 
-« Rien qui te concerne. »
+« Rien que je sois prête à t’expliquer ce soir. »
 
-*La réponse est trop rapide. Puis elle reprend son contrôle.*
+*Elle reprend son contrôle.*
 
 « Si un jour un serviteur de son ancien monde t’approche… »
 
@@ -1395,6 +1405,10 @@ REPONSES = {
 « Suffisamment profondes pour qu’un Prince Ventrue ne puisse pas décider, au détour d’une nuit, que la cité se porterait aussi bien sans nous. »
 
 « Je veux des œuvres. Des familles. Des alliances. Des dettes. Des infants. »
+
+*Un bref silence.*
+
+« Et peut-être d’autres formes de continuité auxquelles je ne te demande pas encore de donner un nom. »
 
 « Des choses qui continueront à exister lorsque je ne serai plus là pour les regarder. »
 
