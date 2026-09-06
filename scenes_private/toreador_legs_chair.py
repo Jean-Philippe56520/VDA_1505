@@ -50,7 +50,7 @@ Et lorsque tes mains ne trembleront plus, reprends possession de ta propre chair
 REVERSE = """
 Le revers n'est plus une œuvre : ce sont des études techniques.
 
-Les pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. La méthode semble destinée à quelqu'un qui ne sait pas encore ordonner directement à la chair de changer.
+Les pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.
 
 Des silhouettes humaines anonymes servent de matière d'entraînement.
 
