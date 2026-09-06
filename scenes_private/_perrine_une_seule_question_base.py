@@ -1430,7 +1430,7 @@ REPONSES = {
 def get_scene() -> Scene:
     return Scene(
         schema_version=1,
-        id="scene_privee_toreador_une_seule_question",
+        id="scene_privee_perrine_une_seule_question",
         title="Une seule question",
         intro_md=INTRO,
         choices=[
