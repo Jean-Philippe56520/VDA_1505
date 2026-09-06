@@ -59,12 +59,12 @@ POURQUOI_MOI = """
 """.strip()
 
 
-_BASE_PATH = Path(__file__).with_name("_une_seule_question_base.py")
+_BASE_PATH = Path(__file__).with_name("_perrine_une_seule_question_base.py")
 
 
 def _get_base_scene() -> Scene:
     spec = importlib.util.spec_from_file_location(
-        "vda_private_scene_une_seule_question_base",
+        "vda_private_scene_perrine_une_seule_question_base",
         _BASE_PATH,
     )
     if spec is None or spec.loader is None:
@@ -75,6 +75,7 @@ def _get_base_scene() -> Scene:
     scene = mod.get_scene()
     if not isinstance(scene, Scene):
         raise TypeError(f"{_BASE_PATH}.get_scene() must return a domain.schema.Scene")
+    scene.id = "scene_privee_perrine_une_seule_question"
     return scene
 
 

@@ -164,7 +164,7 @@ Il s'éloigne. Cette rencontre ne t'apporte aucune **preuve nouvelle** sur l'ide
 def get_scene() -> Scene:
     return Scene(
         schema_version=1,
-        id="scene_privee_toreador_legs_chair",
+        id="scene_privee_perrine_legs_chair",
         title="Le legs de chair",
         intro_md="""
 Saint-Germain commence à rester derrière vous et le chemin ramène vers Rennes.
