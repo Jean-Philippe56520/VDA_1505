@@ -21,37 +21,99 @@ POURQUOI_MOI = """
 
 « Je te connaissais bien avant que tu ne me connaisses. »
 
-« J’ai veillé sur toi de plus loin que tu ne l’imagines. Et lorsque je suis finalement venue à toi, je savais déjà beaucoup plus de choses sur toi que tu n’en savais sur moi. »
+« Et lorsque j’ai commencé à veiller sur toi, je ne pensais pas encore à t’Étreindre. »
 
-*Aliénor détourne brièvement les yeux.*
+*Aliénor observe attentivement la réaction de Perrine.*
 
-« Alors non. Je ne t’ai pas rencontrée un soir dans un couvent en me demandant si tu méritais mon Sang. »
+« Tu n’étais pas un projet d’infante. »
 
-« Lorsque vint le moment de choisir, une partie de ce choix avait été faite depuis longtemps. »
+« Tu n’étais pas une candidate que j’évaluais depuis l’ombre. »
 
-*Elle revient à Perrine.*
-
-« Tu veux savoir pourquoi toi ? »
+« Je savais seulement que je ne parvenais déjà plus à te regarder comme une étrangère. »
 
 *Un silence.*
 
-« Parce que je t’avais déjà vue survivre à quelque chose qui aurait dû t’emporter. »
+« Alors oui, j’ai veillé sur toi de beaucoup plus loin que tu ne l’imagines. »
 
-« Parce que je savais que ta vie n’avait jamais été aussi simple qu’elle en avait l’air. »
+« J’ai su des choses sur ta vie que tu ne pensais pas me concerner. »
+
+« Et bien avant Saint-Georges, j’avais déjà dû prendre une décision à ton sujet. »
 
 *Sa voix devient plus basse.*
 
-« Et parce qu’au moment où il fallut décider si je pouvais accepter de te perdre… »
+« Te laisser vivre sans moi. »
 
-« J’avais déjà pris cette décision une première fois. »
+*Elle ne précise pas ce que cette phrase signifie exactement.*
 
-*Aliénor la regarde sans ciller.*
+« Je l’ai fait. »
 
-« Je ne t’ai pas choisie par hasard, Perrine. »
+« J’ai cru que je pouvais accepter cela. »
 
-« C’est tout ce que je te dirai. »
+*Un sourire très bref, sans joie.*
 
-*Puis, avant qu’elle puisse reprendre :*
+« J’ai même réussi pendant longtemps à appeler cela de la sagesse. »
+
+*Aliénor détourne un instant les yeux.*
+
+« Tu veux savoir pourquoi toi ? »
+
+« Parce que je t’avais déjà vue survivre à quelque chose qui aurait dû t’emporter. »
+
+« Parce que je savais que ta vie avait commencé par une fragilité que les gens autour de toi avaient appris à expliquer autrement. »
+
+« Parce que j’avais déjà eu peur de te perdre avant même que tu sois capable de connaître mon nom. »
+
+*Elle revient à Perrine.*
+
+« Et parce qu’après t’avoir laissée suivre une vie qui n’était pas la mienne, je t’ai retrouvée des années plus tard à Saint-Georges. »
+
+« Pas comme la personne que j’aurais fabriquée. »
+
+« Comme celle que tu étais devenue sans moi. »
+
+*Un silence plus long.*
+
+« Ton refus de la vie que l’on voulait choisir pour toi. »
+
+« Tes livres. »
+
+« Ta curiosité. »
+
+« Cette manière de chercher des monstres dans les histoires sans imaginer encore que certains te regardaient déjà depuis l’autre côté de la page. »
+
+*Un vrai sourire apparaît, puis disparaît.*
+
+« Je ne t’ai pas Étreinte parce que j’avais attendu quarante ans pour fabriquer une Toreador convenable. »
+
+« Je t’ai Étreinte parce qu’au moment où je risquais de te perdre une seconde fois, j’ai découvert que la première séparation ne m’avait jamais appris à le supporter. »
+
+*Aliénor laisse cette phrase reposer entre elles.*
+
+« Tu es mon infante. »
+
+*Elle reprend exactement le mot de l’ouverture.*
+
+« C’est vrai. »
+
+« Mais ce n’est pas là que mon attachement à toi a commencé. »
+
+*Son regard se fait plus dur, comme si elle venait d’atteindre la limite exacte qu’elle s’était imposée.*
+
+« Je ne te dirai pas ce qui a failli t’emporter. »
+
+« Je ne te dirai pas comment je te connaissais alors. »
+
+« Je ne te dirai pas non plus qui m’a aidée. »
+
+*Un très léger silence après cette dernière phrase.*
+
+« Pas ce soir. »
+
+« Mais si tu veux réellement comprendre pourquoi je t’ai choisie… »
+
+« Commence peut-être par te demander pourquoi une vampire que tu croyais avoir rencontrée en 1492 parle de la peur de te perdre avant même que tu puisses connaître son nom. »
+
+*Aliénor ne baisse pas les yeux.*
 
 « Tu avais droit à une question. »
 
