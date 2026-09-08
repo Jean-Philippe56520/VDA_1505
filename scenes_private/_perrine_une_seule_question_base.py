@@ -10,15 +10,19 @@ INTRO = """
 
 *Elle effleure sa joue.*
 
-« Depuis, tu poses des questions. Sur moi. Sur notre sang. Sur nos morts. Sur tout ce que je préférerais parfois laisser **enterré**. »
+« Depuis, tu poses des questions. Sur moi. Sur notre Sang. Sur nos morts. Sur tout ce que je préférerais parfois laisser **enterré**. »
 
 *Un faible sourire.*
 
-« Tu es mon infante. Ce qui m’a façonnée finira toujours par t’atteindre. »
+« Tu es mon infante. C’est ainsi que notre monde te nomme. »
 
 *Sa main demeure un instant contre son visage.*
 
-« Alors, ce soir, je t’accorde **une question**. Une seule. Sur moi, notre lignée, ceux qui nous ont précédées… ou ce que j’entends encore faire de nous. »
+« Ce n’est pas faux. C’est seulement incomplet. »
+
+*Elle laisse cette phrase vivre sans l’expliquer.*
+
+« Ce qui m’a façonnée finira toujours par t’atteindre. Alors, ce soir, je t’accorde **une question**. Une seule. Sur moi, notre lignée, ceux qui nous ont précédées… ou ce que j’entends encore faire de nous. »
 
 *Elle marque une pause.*
 
@@ -54,493 +58,125 @@ REPONSES = {
     "ceux_qui_nous_ont_precedees": """
 *Aliénor prend quelques instants avant de répondre.*
 
-« Que notre lignée a déjà été détruite deux fois. »
+« Que notre lignée ne se résume pas aux morts dont on connaît encore le nom. »
 
 *Un léger silence.*
 
-« Et qu’elle existe encore. »
+« Et que nous avons déjà survécu deux fois à ce qui aurait dû nous faire disparaître. »
 
-« Lorsque Isabelle m’Étreignit, vers 1312, le clan Toreador de Rennes n’était pas ce qu’il est aujourd’hui. »
+« Isabelle de Penthièvre était ma sire. Elle était aussi Princesse de Rennes. Lorsqu’elle m’Étreignit, vers 1312, le clan Toreador n’était pas toléré dans la ville : il était l’un des centres autour desquels la ville nocturne s’organisait. »
 
-« Nous n’étions pas quelques survivants tolérés dans une ville gouvernée par d’autres. »
-
-« Nous étions au centre de l’ancien ordre. »
-
-« Isabelle de Penthièvre était ma sire. »
-
-« Elle était aussi Princesse de Rennes. »
-
-« Autour d’elle, le clan Toreador avait accumulé des terres, des fidélités, des familles, des artistes, des débiteurs. Certaines maisons mortelles servaient les Penthièvre depuis si longtemps que leurs descendants ne savaient probablement plus quand cette fidélité avait commencé. »
-
-« J’ai été Étreinte dans un monde de richesse presque indécente. »
-
-« Des manuscrits que l’on faisait venir de loin. Des musiciens entretenus pendant des années. Des peintres, des sculpteurs, des poètes pour lesquels Isabelle dépensait parfois davantage qu’un seigneur mortel pour ses hommes d’armes. »
-
-*Une pause.*
-
-« Et les supplices. »
-
-« Les prisonniers. »
-
-« Les corps laissés en évidence afin qu’un message soit compris. »
-
-« Des châtiments auxquels on accordait parfois autant de soin qu’à une cérémonie. »
-
-« Pour Isabelle, ces choses n’étaient pas nécessairement contradictoires. »
+« Isabelle avait des terres, des familles, des artistes, des débiteurs, des alliés. Elle pouvait entretenir un poète pendant des années pour une seule œuvre et faire supplicier un ennemi avec le même souci de la forme. »
 
 *Quelque chose de très ancien traverse son visage.*
 
-« Elle pouvait être atroce. »
+« Elle pouvait être atroce. Et magnifique. À cette époque, je n’étais pas certaine que ces deux mots dussent s’interdire l’un à l’autre. »
 
-« Et magnifique. »
+« Nous étions quatre infants d’Isabelle encore en vie lorsque l’ancien ordre commença à céder. Mikolai et moi étions deux d’entre eux. »
 
-« Je sais ce que ces deux mots devraient s’interdire l’un à l’autre. »
-
-« À cette époque, je ne suis pas certaine qu’ils le faisaient. »
-
-*Elle reprend.*
-
-« Nous étions quatre infants d’Isabelle encore en vie lorsque notre monde commença réellement à céder. »
-
-« Mikolai et moi étions deux d’entre eux. »
-
-« Les deux autres sont morts avec la cause qu’Isabelle avait bâtie. »
-
-« À ma connaissance, il n’y en eut pas d’autres. »
-
-« Isabelle Étreignait rarement. »
-
-« Mais lorsqu’elle donnait son Sang, elle ne laissait pas partir. »
+« Isabelle Étreignait rarement. Mais lorsqu’elle donnait son Sang, elle ne laissait pas partir. »
 
 *Un sourire presque sans joie.*
 
-« Aucun de nous ne quittait réellement son orbite. »
+« Tu me trouves possessive. Je le suis. Ma sire l’était davantage. »
 
-« Nous pouvions disposer d’une demeure. D’une charge. D’un cercle d’artistes. D’une influence propre. »
+« Une demeure propre, une charge, des serviteurs, des artistes : tout cela était permis. Une fidélité intime qui ne passait plus par elle l’était beaucoup moins. Une ambition qui nous éloignait d’elle devenait une offense. »
 
-« Mais tout ce qui risquait de soustraire une part véritable de nous à sa volonté devenait une offense. »
-
-« Une fidélité trop forte. »
-
-« Une ambition qui ne venait pas d’elle. »
-
-« Une intimité qu’elle ne contrôlait pas. »
-
-« Isabelle n’avait aucune difficulté à aimer ce qui lui appartenait. »
-
-« Elle avait davantage de difficulté à concevoir que ce qu’elle aimait puisse ne pas lui appartenir. »
+« Isabelle n’avait aucune difficulté à aimer ce qui lui appartenait. Elle avait davantage de difficulté à concevoir que ce qu’elle aimait puisse ne pas lui appartenir. »
 
 *Aliénor incline légèrement la tête.*
 
-« Tu me trouves possessive. »
+« Je ne te raconte pas cela pour l’accuser. »
 
-« Je le suis. »
+« Je te le raconte parce que certaines éducations survivent très longtemps à ceux qui les ont données. »
 
-« Ma sire l’était davantage. »
+*Elle reprend.*
 
-« Mikolai le supportait beaucoup moins bien que moi. »
+« En 1362, l’ancien équilibre de Rennes s’effondra. Un de mes frères de Sang mourut cette année-là. Isabelle fut prise, suppliciée puis exposée jusqu’au lever du jour. Je la regardai mourir. »
 
-« Il la haïssait pour certaines choses que j’avais appris à considérer comme naturelles. »
+« Un autre de mes frères refusa de croire que tout était terminé. Il mourut en 1364, alors que la guerre de Succession de Bretagne n’avait pas encore livré son dernier verdict. »
 
-« Peut-être est-ce pour cela qu’il comprit plus tard quelque chose que ni Isabelle ni moi n’avons jamais très bien su faire. »
-
-« Laisser partir. »
-
-*Elle change légèrement de posture.*
-
-« Mais le pouvoir d’Isabelle ne reposait pas seulement sur le clan Toreador. »
-
-« L’ancien équilibre de Rennes associait plusieurs clans. »
-
-« Le clan Gangrel était notre allié. L’ancien Primogène Gangrel soutenait notre ordre, et Kerzu, alors jeune Ancilla, était déjà son bras droit. »
-
-« Des guerriers du clan Gangrel venus des landes de Cornouaille combattaient également pour cette alliance. »
-
-« Le clan Tzimisce appartenait lui aussi à cet équilibre. »
-
-« Ses membres n’étaient pas des monstres lointains dont on racontait l’existence aux nouveaux-nés. »
-
-« Ils venaient à la cour d’Isabelle. Ils négociaient avec nous. Ils participaient à certains conseils et à certaines cérémonies. »
-
-« Et parmi eux se trouvait déjà Zvonimir. »
-
-*Un très léger changement dans sa voix.*
-
-« Il était déjà un Ancien du clan Tzimisce lorsque je n’étais encore qu’une jeune vampire. »
-
-« Il avait derrière lui des siècles que je ne possédais pas encore. »
-
-« Sa présence à la cour n’avait rien d’exceptionnel. »
-
-« Seulement certaines raisons que j’avais de remarquer cette présence davantage que les autres. »
-
-*Elle n’en dit pas plus.*
-
-« En face de nous, aucun clan ne possédait encore seul la puissance nécessaire pour renverser cet ordre. »
-
-« Le clan Ventrue, notamment, avait longtemps été divisé contre lui-même. »
-
-« Amaury de Montfort et Odon de Liffré appartenaient tous deux au clan Ventrue. »
-
-« Deux lignées. »
-
-« Deux conceptions du pouvoir. »
-
-« Deux hommes suffisamment anciens et suffisamment orgueilleux pour employer une part considérable de leur énergie à empêcher l’autre de prendre l’ascendant. »
-
-*Un sourire froid.*
-
-« Pendant longtemps, cela nous arrangea. »
-
-« Tant qu’Amaury et Odon se surveillaient davantage qu’ils ne regardaient Isabelle, le clan Ventrue ne pouvait concentrer toutes ses forces contre nous. »
-
-« Aucun des deux ne pouvait véritablement imposer au clan l’ensemble de sa volonté. »
-
-« Puis la maison mortelle des Montfort commença à grandir. »
-
-« Et avec elle, Amaury. »
-
-« Ce qui n’était jusque-là qu’une rivalité entre deux puissances du même clan cessa peu à peu d’être équilibré. »
-
-« La maison dont Amaury était issu étendait son importance parmi les mortels. »
-
-« Ses alliances dynastiques lui donnaient des relais qui ne dépendaient plus seulement de Rennes. »
-
-« Chaque progrès des Montfort renforçait un peu davantage le Ventrue qui portait leur nom. »
-
-*Elle marque une pause.*
-
-« Odon résista longtemps. »
-
-« Puis il plia. »
-
-« Il ne devint pas l’infant d’Amaury. Il ne cessa pas d’avoir ses propres ambitions, ni son propre lignage. »
-
-« Mais il accepta que le clan Ventrue cesse de se déchirer pour s’opposer à lui-même. »
-
-« Et à partir de cet instant, Isabelle n’eut plus devant elle deux puissances Ventrue concurrentes. »
-
-« Elle eut devant elle un clan Ventrue capable d’agir comme un seul corps. »
-
-« Amaury en fut le principal bénéficiaire. »
-
-« Les réseaux d’Odon ne disparurent pas. »
-
-« Ils s’ajoutèrent aux siens. »
-
-« Les influences ecclésiastiques, nobiliaires, financières et dynastiques cessèrent de s’annuler. »
-
-« Elles commencèrent à se renforcer. »
-
-*Aliénor observe son infante.*
-
-« Ce changement fut beaucoup plus dangereux pour nous qu’un simple nouvel ennemi à Rennes. »
-
-« Pour la première fois, le clan Ventrue pouvait développer ici une influence dont l’échelle ne s’arrêtait plus nécessairement aux frontières de la Bretagne. »
-
-« Willem le comprit. »
-
-« Il dirigeait alors le clan Lasombra de Rennes. »
-
-« Et Willem avait suffisamment d’intelligence pour reconnaître le moment où un équilibre ancien cessait d’en être un. »
-
-« Il vit un clan Ventrue désormais uni. »
-
-« Il vit Amaury soutenu par une maison mortelle en pleine ascension. »
-
-« Il vit ce que cette puissance pourrait devenir si elle cessait de regarder uniquement Rennes. »
-
-« Alors le clan Lasombra choisit son camp. »
-
-« Willem choisit Amaury contre l’ancien ordre d’Isabelle. »
-
-*Un silence.*
-
-« Ce fut l’un des véritables basculements. »
-
-« Le clan Toreador conservait encore sa cour. »
-
-« Le clan Gangrel combattait encore à nos côtés. »
-
-« Le clan Tzimisce de Zvonimir demeurait notre allié. »
-
-« Mais en face se formait désormais quelque chose que nous n’avions jamais eu à affronter sous cette forme : un clan Ventrue réuni derrière Amaury, renforcé par l’essor des Montfort, auquel le clan Lasombra de Willem venait joindre son poids. »
-
-« Et les Brujah avaient leurs propres raisons de nous haïr. »
-
-*Elle ne détourne pas le regard.*
-
-« Certaines étaient méritées. »
-
-« Mikolai et moi avions personnellement participé à des violences qui laissèrent au clan Brujah une mémoire suffisamment longue pour survivre à ceux que nous avions frappés. »
-
-« Ensemble, mon frère et moi étions remarquablement efficaces. »
-
-« Ce n’était pas toujours une qualité. »
-
-*Son expression se durcit.*
-
-« En 1362, notre ordre céda. »
-
-« Kerzu et les guerriers du clan Gangrel venus de Cornouaille avaient été vaincus. »
-
-« L’un de mes deux autres frères de Sang mourut cette année-là. »
-
-« Puis Isabelle fut prise. »
-
-*Aliénor devient parfaitement immobile.*
-
-« Willem, chef du clan Lasombra, la tortura. »
-
-« Amaury de Montfort, désormais puissance dominante du clan Ventrue, voulait qu’elle parle. »
-
-« Puis ils l’empalèrent sur le clocher de Saint-Pierre. »
-
-« Ils la laissèrent exposée toute la nuit. »
-
-« Pas seulement afin qu’elle meure. »
-
-« Afin que sa défaite soit visible. »
-
-« Son corps était un message destiné à Saint-Germain. »
-
-« À Zvonimir. »
-
-« L’Ancien Tzimisce le vit. »
-
-« Il comprit que notre coalition avait perdu et vint négocier la fin des hostilités avec Amaury. »
-
-*Un long silence.*
-
-« J’étais là lorsque le soleil se leva. »
-
-« J’avais cinquante ans dans le Sang. »
-
-« Et je regardai mourir celle autour de laquelle mon existence entière avait été construite. »
-
-*Elle détourne les yeux.*
-
-« Pourtant, même cela ne termina pas immédiatement l’histoire. »
-
-« La guerre de Succession de Bretagne continuait chez les mortels. »
-
-« La cause des Penthièvre existait encore. »
-
-« Et trois des quatre infants d’Isabelle étaient toujours debout. »
-
-« L’un de nous crut que quelque chose pouvait encore être sauvé. »
-
-« Deux années durant, il refusa de considérer la mort d’Isabelle comme la fin de tout. »
-
-« Il croyait encore que la cause Penthièvre pouvait reprendre l’avantage. »
-
-« Que l’ancien ordre pouvait peut-être retrouver une place si nous tenions assez longtemps. »
-
-« Que les événements de 1362 n’étaient qu’une défaite. »
-
-*Elle baisse légèrement la voix.*
-
-« Il mourut en 1364 en croyant encore qu’il restait quelque chose à tenter. »
-
-« Puis vint Auray. »
-
-« La cause militaire des Penthièvre fut vaincue. »
-
-« Leur maison survécut ailleurs. »
-
-« Leur puissance, elle, ne revint pas à Rennes. »
-
-« Il ne restait plus que Mikolai et moi parmi les infants d’Isabelle. »
+« Après Auray, il ne resta plus que Mikolai et moi parmi les quatre infants d’Isabelle. »
 
 *Un silence.*
 
 « Alors nous avons recommencé. »
 
-« Pas le règne d’Isabelle. »
-
-« Le clan Toreador. »
+« Pas son règne. Le clan. »
 
 « Une maison. Un artiste. Une famille. Une dette. Un refuge. Puis un autre. »
 
-« Cela prit des décennies. »
+« Et c’est là que Mikolai et moi avons vraiment cessé de nous ressembler. »
 
-« Puis plus d’un siècle. »
+« Pour lui, transmettre comptait presque davantage que conserver. Il Étreignit plusieurs infants. Certains partirent jusqu’à Paris. Il acceptait qu’ils bâtissent quelque chose qu’il ne verrait peut-être jamais, dans une ville où son autorité ne pourrait pas les suivre. »
 
-« Et c’est pendant cette reconstruction que Mikolai et moi sommes réellement devenus différents. »
+*Un vrai sourire apparaît un instant.*
 
-« Nous aimions tous deux l’art. »
+« Je trouvais cela imprudent. »
 
-« Nous n’en attendions pas la même chose. »
+« Il appelait cela avoir confiance dans ce que l’on avait transmis. »
 
-« Pour Mikolai, la transmission comptait presque davantage que l’œuvre elle-même. »
+« J’ai compris trop tard qu’il avait peut-être raison. »
 
-« Inspirer. Former. Faire naître quelque chose chez les autres. »
-
-« Une idée capable de survivre à celui qui l’avait conçue valait parfois davantage, pour lui, qu’une création parfaite enfermée dans une seule demeure. »
-
-« Il voulait que l’art gouverne les hommes en les élevant. »
-
-*Une légère moue.*
-
-« Je le trouvais parfois trop prudent. »
-
-« Il me trouvait certainement excessive. »
-
-« Je voulais aller plus loin. »
-
-« Jusqu’au terme d’une sensation, d’une forme, d’une idée. »
-
-« Je refusais plus volontiers que lui la limite à partir de laquelle les autres commencent à dire : cela suffit. »
-
-« Nos courants n’étaient pas incompatibles. »
-
-« Nous pouvions défendre le même peintre et nous quereller ensuite pendant vingt ans sur ce qu’il aurait dû peindre. »
-
-« Nous pouvions admirer la même œuvre pour des raisons presque opposées. »
-
-*Un véritable sourire apparaît un instant.*
-
-« Ces disputes me manquent. »
-
-« Toute cette époque me manque parfois. »
-
-« Pas parce que je la crois meilleure. »
-
-« Je sais ce qu’elle était. »
-
-« Je sais ce que nous étions. »
-
-« Mais Mikolai était vivant. »
-
-« Ma sire était vivante. »
-
-« Mes frères étaient vivants. »
-
-« Des maisons aujourd’hui disparues remplissaient encore leurs salles de voix que personne ne pourrait reconnaître maintenant. »
-
-« La nostalgie n’est pas un jugement. »
-
-« C’est simplement la preuve qu’une part de vous habite encore parmi les morts. »
-
-*Elle poursuit.*
-
-« Mikolai devint Primogène du clan Toreador. »
-
-« Son influence dépassa peu à peu Rennes. »
-
-« Il Étreignit à son tour. »
-
-« Et surtout, il accepta que certains de ses infants partent. »
-
-« Jusqu’à Paris. »
-
-« Il avait compris qu’une lignée enfermée dans une seule cité peut mourir avec elle. »
-
-« Il formait quelqu’un, lui donnait son Sang, lui transmettait ce qu’il pouvait… puis acceptait que cette personne construise ailleurs quelque chose qui ne lui appartiendrait plus entièrement. »
-
-« Il savait qu’un infant qui vous quitte n’est pas nécessairement perdu. »
-
-*Le visage d’Aliénor change.*
+*Le sourire disparaît.*
 
 « Moi aussi, j’ai eu un infant avant toi. »
 
-*Un temps.*
+*Aliénor ne détourne pas les yeux.*
 
 « Il est mort en 1493. »
 
-« Comme presque tous les Toreador qui étaient encore ici. »
+« Je ne te donnerai pas son nom ce soir. Pas parce qu’il serait honteux. Parce que je refuse encore de réduire ce qu’il fut à une pièce que l’on pose sur une table pour expliquer ce que je suis devenue. »
 
-« Je pourrais prétendre que la différence entre Mikolai et moi n’y changea rien. »
+« Mais je peux te dire ce que j’ai fait. »
 
-« Je n’en suis pas certaine. »
+« Je l’ai gardé près de moi. »
 
-« Je n’ai jamais su faire ce qu’il faisait. »
-
-« Je gardais mon infant près de moi. »
-
-« Je voulais le protéger. Le guider. Le voir devenir ce que je savais qu’il pouvait être. »
+« Je voulais le protéger. Le former. Corriger ce qui pouvait le mettre en danger. Être là lorsqu’il aurait besoin de moi. »
 
 *Un sourire amer.*
 
 « Nous autres, êtres possessifs, trouvons toujours des mots très nobles pour expliquer pourquoi quelqu’un doit rester auprès de nous. »
 
-« Mikolai dispersait son héritage. »
+« Mikolai dispersait son héritage. Moi, je conservais le mien à portée de main. »
 
-« Moi, je conservais le mien à portée de main. »
+« Lorsque Rennes s’embrasa en 1493, certains de ceux qui étaient partis loin de Mikolai pouvaient encore exister quelque part. »
 
-« Alors lorsque Rennes brûla… »
-
-*Elle ne termine pas immédiatement.*
-
-« …ce qui était loin de Mikolai pouvait encore survivre. »
-
-« Ce qui était près de moi mourut avec notre monde. »
-
-« Il avait compris quelque chose que je lui accordais rarement de son vivant. »
-
-« Une œuvre que l’on refuse de laisser partir finit parfois par mourir avec son créateur. »
-
-*Silence.*
-
-« Puis, en 1493, Guillaume — infant de Gwilherm le Rouge et vampire du clan Brujah — affronta Mikolai à la Porte de la Madeleine. »
-
-« Il le vainquit. »
-
-« Il le décapita. »
-
-« Cette partie, tu la connais. »
-
-« Ensuite vinrent les purges. Les arrestations. L’Inquisition. »
-
-« Ce que le clan Toreador avait mis plus d’un siècle à reconstruire fut presque entièrement dispersé. »
-
-« Des Toreador moururent. »
-
-« D’autres disparurent. »
-
-« Certaines branches cessèrent simplement de répondre. »
-
-« Et moi, une nouvelle fois, je restai. »
-
-*Elle regarde son infante.*
-
-« Voilà ceux qui nous ont précédées. »
-
-« Isabelle. »
-
-« Ses quatre infants. »
-
-« Deux morts avec l’ancien ordre. »
-
-« Mikolai. »
-
-« Moi. »
-
-« Les infants de Mikolai. »
-
-« Celui que je n’ai pas su laisser partir. »
-
-« Et maintenant toi. »
+« Ce qui était resté près de moi mourut ici. »
 
 *Elle laisse passer quelques secondes.*
 
-« Ne suppose donc jamais qu’une branche est morte simplement parce que le clan Toreador de Rennes ignore où elle pousse. »
+« Je ne sais pas si mon infant serait encore vivant si je l’avais laissé partir. Je ne transformerai pas un regret en certitude simplement parce qu’elle me ferait souffrir davantage. »
 
-« Il peut encore exister à Paris des descendants du Sang de Mikolai. »
+« Mais je sais qu’il n’a jamais eu cette chance. »
 
-« Des œuvres peuvent avoir survécu sous d’autres noms. »
+*Son regard s’arrête sur Perrine.*
 
-« Des familles peuvent respecter une dette dont elles ont oublié l’origine. »
+« Et maintenant il y a toi. »
 
-« D’anciens alliés de notre clan peuvent encore se souvenir de nous. »
+« Tu peux entendre cette histoire comme une promesse : je ne répéterai pas les fautes d’Isabelle. »
 
-« D’anciens ennemis également. »
+*Elle secoue très légèrement la tête.*
+
+« Ce serait une promesse trop confortable. »
+
+« Entends-la plutôt comme un avertissement : je connais ma nature. Je sais les mots que j’emploie lorsque j’ai peur de perdre quelqu’un. Protection. Prudence. Patience. Encore un peu de temps. »
+
+« Si un jour je t’empêche de partir en prétendant que c’est pour ton bien, demande-toi d’abord si je protège réellement ta vie… ou la place que ta présence occupe dans la mienne. »
+
+*Silence.*
+
+« Quant à ceux qui nous ont précédées, ne les crois pas tous disparus. »
+
+« Mikolai a envoyé des infants hors de Rennes. Certains jusqu’à Paris. Je ne connais ni leur nombre actuel, ni leurs descendants, ni même lesquels ont survécu. »
+
+« D’anciennes familles peuvent encore honorer des dettes dont elles ont oublié l’origine. Des œuvres peuvent avoir survécu sous d’autres noms. Des ennemis également. »
 
 *Un sourire froid.*
 
 « Ceux-là ont souvent une excellente mémoire. »
 
-« Si quelqu’un vient un soir te dire qu’il connut notre ancienne lignée, qu’il descend de Mikolai, qu’un de ses ancêtres servit Isabelle ou qu’il possède quelque chose qui nous appartenait… »
+« Si quelqu’un vient un soir te dire qu’il descend de Mikolai, qu’un de ses ancêtres servit Isabelle, ou qu’il possède quelque chose qui appartenait à notre ancienne maison… »
 
 « Ne le crois pas immédiatement. »
 
@@ -548,190 +184,128 @@ REPONSES = {
 
 « Nous avons perdu trop de notre histoire pour brûler chaque fantôme avant de lui avoir demandé son nom. »
 
-*Aliénor se tait.*
+*Aliénor se tait, et le nom qu’elle a refusé de prononcer reste précisément celui que Perrine connaît le moins.*
 """.strip(),
     "chute_des_toreador": """
 *Aliénor devient immobile.*
 
-« Parce que nous avions survécu si longtemps que nous avions commencé à confondre puissance et invulnérabilité. »
+« Parce que nous avions survécu assez longtemps pour confondre puissance et invulnérabilité. »
 
 *Un silence.*
 
-« Tu connais Mikolai. »
+« Tu connais la mort de Mikolai. Guillaume. La Porte de la Madeleine. Le duel. La décapitation. Cette histoire est vraie. »
 
-« Guillaume, du clan Brujah. »
+« Elle est seulement trop simple. »
 
-« La Madeleine. Le duel. Sa tête séparée de son corps. »
+« Deux vampires. Un combat. Un vainqueur. Un mort. Cela permet de croire qu’un clan peut mourir comme un homme. »
 
-« Cette histoire est vraie. »
+« Le clan Toreador n’est pas tombé ainsi. »
 
-« Mais elle est trop belle. »
+*Elle croise les mains.*
 
-*Sa bouche se courbe légèrement.*
+« En 1493, Rennes ne connut pas une guerre. Elle en connut plusieurs à la fois. »
 
-« Deux vampires. Un combat. Un vainqueur. Un mort. »
+« Les Brujah combattaient la coalition du Prince et des Toreador. La Main du Prince menait un autre front contre les Lasombra. Des forces du Prince et des Gangrel combattaient parallèlement les Tzimisce. »
 
-« Voilà une forme que l’esprit accepte facilement. »
+« Chaque clan avait sa guerre, ses raisons, ses morts, ses haines. »
 
-« Elle permet de croire qu’un clan peut mourir comme un homme. »
-
-« Ce n’est presque jamais le cas. »
-
-« Rennes ne connut pas une seule guerre en 1493. »
-
-« Elle en connut plusieurs. »
-
-« Le clan Brujah, avec les Anarchs, avait adopté une ligne de rupture : l’ordre existant devait être brisé. »
-
-« Gwilherm le Rouge était Primogène Brujah. Guillaume était son infant. »
-
-« Leur clan affrontait la coalition formée par le Prince Ventrue et le clan Toreador. »
-
-« Pendant ce temps, la Main du Prince menait un autre front contre le clan Lasombra. »
-
-« Et les forces du Prince, avec des Gangrel, combattaient parallèlement les forces du clan Tzimisce. »
-
-« Chaque clan pensait mener sa guerre. »
-
-« Chaque faction avait ses raisons, ses alliances, ses haines, ses morts à venger. »
-
-« Les mortels, eux, ne voyaient aucune de ces distinctions. »
+« Les mortels, eux, ne voyaient pas nos distinctions. »
 
 *Elle compte presque les mots.*
 
-« Ils voyaient les cadavres. »
+« Ils voyaient les cadavres. Les disparitions. Les maisons vides. Les blessés incapables d’expliquer ce qui les avait frappés. Les rues où l’on cessait de sortir après la tombée du jour. »
 
-« Les disparitions. »
+« Ils voyaient trop. Depuis trop longtemps. »
 
-« Les maisons abandonnées. »
+« L’Inquisition n’eut pas besoin qu’Amaury, Kermorvan ou moi la créions. Nous l’avions attirée collectivement. »
 
-« Les blessés incapables d’expliquer ce qui les avait attaqués. »
-
-« Les rues dans lesquelles des hommes disparaissaient après la tombée du jour. »
-
-« Ils voyaient trop. »
-
-« Depuis trop longtemps. »
-
-« Et finalement certains commencèrent à regarder réellement. »
+« Toreador. Brujah. Ventrue. Lasombra. Tzimisce. Tous ceux qui avaient commencé à croire que les mortels resteraient éternellement aveugles parce que cela nous arrangeait. »
 
 *Son expression se durcit.*
 
-« L’Inquisition n’eut pas besoin que quelqu’un la fasse naître. »
+« Et nous, Toreador, étions particulièrement exposés. »
 
-« Nous l’avions attirée nous-mêmes. »
+« Nous avions passé plus d’un siècle à nous réenraciner. Artistes. Familles. Demeures. Bourgeois. Nobles. Ateliers. Relations. »
 
-« Le clan Toreador. »
-
-« Le clan Brujah. »
-
-« Le clan Ventrue. »
-
-« Le clan Lasombra. »
-
-« Le clan Tzimisce. »
-
-« Tous ceux qui avaient oublié que les mortels finissent parfois par comprendre ce que les monstres préféreraient laisser dans l’ombre. »
-
-*Un temps.*
-
-« Le clan Toreador était particulièrement vulnérable. »
-
-« Nous avions passé plus d’un siècle à nous réenraciner dans la cité. »
-
-« Des artistes. Des familles. Des demeures. Des bourgeois. Des nobles. Des lieux où nous étions connus, même lorsque notre nature ne l’était pas. »
-
-« Notre puissance nous rendait visibles. »
-
-« Et la visibilité devient une faiblesse lorsque des hommes commencent à chercher des monstres. »
+« Notre puissance avait une forme visible. Lorsque des hommes commencent à chercher les monstres, ce qui vous rend puissant peut devenir exactement ce qui leur permet de vous trouver. »
 
 « Puis Mikolai mourut. »
 
-« Le Primogène Toreador disparut au moment exact où notre clan avait le plus besoin d’un centre. »
+« Sa mort ne créa pas la catastrophe. Mais elle arracha au clan son centre au moment où il en avait le plus besoin. »
 
-« Ce n’est pas nécessairement sa mort qui provoqua tout le reste. »
+*Aliénor détourne brièvement les yeux.*
 
-« Mais elle arracha celui autour duquel une grande partie de notre pouvoir s’était organisée. »
+« C’est alors que certains d’entre nous crurent encore pouvoir administrer le désastre. »
 
-*Aliénor détourne les yeux.*
-
-« Après cela, certains crurent encore que le désastre pouvait être administré. »
-
-« Que l’on pouvait choisir ce qui serait sacrifié. »
-
-« Donner quelques noms. »
-
-« Abandonner quelques maisons. »
-
-« Sauver les familles les plus nécessaires. »
-
-« Préserver le reste. »
+« Choisir ce qui serait exposé. Ce qui serait protégé. Quelles familles étaient nécessaires. Quelles maisons pouvaient être abandonnées. Quels noms pouvaient apparaître dans un dossier sans que tout le reste s’effondre. »
 
 *Un silence plus lourd.*
 
-« Des renseignements circulèrent. »
+« Tu détestes Kermorvan. »
 
-« Des dossiers furent constitués. »
+*Elle ne lui laisse pas le temps de répondre.*
 
-« Arnaut de Kermorvan se retrouva devant des hommes et des femmes qu’il ne pouvait pas tous protéger. »
+« Je ne vais pas te demander de cesser. Je vais seulement t’interdire une facilité. »
 
-« Il dut choisir. »
+« Arnaut de Kermorvan n’a pas inventé seul les dossiers qui se sont retrouvés entre ses mains. Il fut placé devant des personnes qu’il ne pouvait pas toutes défendre avec le mandat dont il disposait. »
 
-« Une partie de la haute bourgeoisie fut abandonnée. »
+« Il a fait ses choix. Il répond de ses choix. »
 
-« Certains membres de la petite noblesse également. »
+*Le regard d’Aliénor devient très calme.*
 
-« Ceux qui lui avaient donné les informations avaient déjà choisi avant lui. »
+« Mais une partie des renseignements qui rendaient ces choix possibles venait de moi. »
 
-*Son regard revient lentement vers son infante.*
+*Elle laisse enfin le silence tomber.*
 
-« Voilà comment le clan Toreador est tombé. »
+« Je savais qu’ils seraient utilisés. »
 
-« Pas parce qu’un Brujah trancha une tête. »
+« Je ne les avais pas donnés pour détruire le clan Toreador. Je les avais donnés pour atteindre une cible précise, en exigeant que le reste du clan soit épargné. »
 
-« Parce que toutes les guerres des clans de Rennes finirent par produire assez de sang pour que les mortels comprennent qu’ils partageaient leur ville avec quelque chose. »
+« Je ne te donnerai pas le nom de cette cible dans cette réponse. »
 
-« Parce que nous étions devenus trop visibles. »
+« Tu m’as demandé pourquoi notre clan était tombé. Voilà une partie de la réponse que je t’avais toujours cachée. »
 
-« Parce que nos ennemis étaient nombreux. »
+*Sa voix devient plus basse.*
 
-« Parce que nous étions divisés. »
+« J’ai cru qu’une menace assez vaste pour nous tuer pouvait être dirigée avec suffisamment de précision pour ne frapper que là où je l’avais décidé. »
 
-« Parce que nous avons essayé de sauver notre pouvoir en décidant quelles parties de ce pouvoir pouvaient mourir. »
+« J’ai cru que je pourrais participer au choix de ce qui serait sacrifié sans devenir moi-même une partie du mécanisme de la purge. »
 
-« Et parce qu’une fois que l’on commence à choisir ce que l’on sacrifiera… »
+« J’avais tort. »
 
-*Un sourire très mince.*
+« Les renseignements devinrent des dossiers. Les dossiers devinrent des décisions. Les décisions prirent une vie que je ne contrôlais plus. »
 
-« …il devient étonnamment difficile de savoir à quel moment on a commencé à se sacrifier soi-même. »
+« Lorsque j’ai compris que des artistes, des bourgeois et d’autres personnes liées à notre monde étaient déjà emportés, la distinction entre orienter une menace et nourrir cette menace avait cessé de m’être utile. »
 
-*Elle marque un temps.*
+*Aliénor regarde Perrine droit dans les yeux.*
 
-« Mais ne fais pas de mon récit le dernier mot sur cette guerre. »
+« Alors si tu veux comprendre 1493, ne cherche pas un seul coupable. »
 
-« J’y étais. »
+« Guillaume a tué Mikolai. »
 
-« C’est précisément pour cela que ma mémoire est suspecte. »
+« L’Inquisition a tué et détruit. »
 
-« Guillaume possède sa vérité de Brujah. »
+« Kermorvan a choisi qui il pouvait encore défendre. »
 
-« Gwilherm, son sire et Primogène du clan Brujah, possède la sienne. »
+« Amaury a utilisé le pouvoir dont il disposait. »
 
-« Les vampires du clan Ventrue qui entouraient le Prince ont la leur. »
+« Les clans avaient déjà transformé Rennes en terrain de guerre. »
 
-« Kermorvan pourrait en avoir une autre encore. »
+« Et moi… j’avais déjà accepté l’idée que certaines personnes puissent devenir des pièces sur un échiquier, à condition de croire que je choisissais encore lesquelles. »
 
-« Écoute ceux qui nous ont combattus. »
+*Un temps.*
 
-« Écoute ceux qui croient avoir vaincu le clan Toreador. »
+« Ne te sers donc pas de Kermorvan pour laver mes mains. »
 
-« Écoute ceux qui ont survécu à nos décisions. »
+« Et ne te sers pas de moi pour laver les siennes. »
 
-*Elle fixe son infante.*
+« Le clan Toreador est tombé parce que trop de gens, moi comprise, pensaient encore pouvoir contrôler la forme exacte du désastre après l’avoir laissé entrer dans la ville. »
 
-« Et si l’un d’eux te raconte un jour quelque chose sur moi que tu préférerais ne pas croire… »
+*Un sourire sans joie.*
 
-« Commence par te demander pourquoi tu préfères ne pas le croire. »
+« La question qui devrait maintenant t’intéresser n’est peut-être plus seulement : qui nous a détruits ? »
+
+« Mais : qu’avais-je voulu détruire, moi, avant que tout le reste ne brûle ? »
 
 *Aliénor se tait.*
 """.strip(),
@@ -740,137 +314,41 @@ REPONSES = {
 
 *Aliénor ne cherche pas ses souvenirs. Elle choisit lesquels elle accepte de laisser sortir.*
 
-« Lorsque j’étais jeune, le clan Tzimisce n’était pas une présence lointaine cachée sous Saint-Germain. »
+« Zvonimir fut mon amant. »
 
-« Il appartenait à l’alliance de l’ancien ordre. »
+*Elle dit la phrase sans détour.*
 
-« Et Zvonimir était déjà un Ancien de son clan. »
+« Très longtemps avant que tu naisses. Très longtemps avant que Rennes ne décide que les Tzimisce devaient être regardés comme des ennemis que l’on tolère seulement lorsqu’on ne peut pas les atteindre. »
 
-« Bien plus vieux que moi. »
-
-« Bien plus ancien que la relation que tu connais aujourd’hui entre Rennes et les Tzimisce. »
-
-« Il venait à la cour d’Isabelle. »
-
-« Il pouvait s’asseoir à sa table. Négocier avec la Princesse Toreador. Lui parler devant ses conseillers. »
-
-« Je pouvais le regarder devant tous les autres sans que personne n’y trouve rien d’étrange. »
+« Lorsque j’étais jeune dans le Sang, son clan appartenait à l’alliance de l’ancien ordre. Zvonimir venait à la cour d’Isabelle. Il pouvait s’asseoir à sa table, négocier avec elle, parler devant ses conseillers. »
 
 *Un léger sourire apparaît.*
 
-« Il fallait seulement que personne ne remarque la façon dont je le regardais. »
+« Je pouvais donc le regarder devant tout le monde. »
+
+« Il fallait seulement que personne ne remarque comment. »
 
 *Elle laisse les mots s’installer.*
 
-« Ce qui existait entre nous commença lorsque j’étais encore très jeune dans le Sang. »
+« Ce qui existait entre nous commença lorsque j’avais à peu près ton âge dans le Sang. »
 
-« À peu près l’âge que tu as maintenant. »
+« Nous avons gardé cela secret, non parce qu’il était Tzimisce, mais parce que j’étais l’infante d’Isabelle. »
 
-« Je serais incapable de te dire quelle fut la première nuit. »
+« Ma sire aurait supporté que je possède une charge, des serviteurs, des artistes, une influence. Elle aurait beaucoup moins supporté que je donne librement une part intime de moi-même à quelqu’un qui ne dépendait pas d’elle. »
 
-« Il n’y eut pas de déclaration. »
+« Et Zvonimir dépendait de très peu de monde. »
 
-« Pas de moment propre que l’on puisse enfermer dans un souvenir. »
+*Son expression se referme un instant.*
 
-« Seulement un instant où je compris que quelque chose en moi s’était déjà tourné vers lui avant que ma volonté ait décidé si elle le désirait. »
+« Nous nous voyions rarement. Des mois pouvaient passer. Puis une nuit. Parfois une seule. »
 
-*Elle réfléchit.*
+« Il n’y eut jamais de promesse mortelle entre nous. Pas de foyer. Pas de fidélité simple. Rien qui puisse être raconté proprement. »
 
-« La Bête ne sait pas aimer. »
+« Il y avait du désir. De la confiance. De la peur. Une curiosité réciproque qui aurait dû être plus prudente. »
 
-« Elle reconnaît la faim. La menace. Le rival. La proie. »
+*Aliénor baisse brièvement les yeux.*
 
-« Avec Zvonimir, je n’ai jamais su très clairement lequel de ces mots elle avait choisi. »
-
-*Un faible sourire.*
-
-« Peut-être tous. »
-
-« Nous avons gardé cela absolument secret. »
-
-« Pas parce que Zvonimir appartenait au clan Tzimisce. »
-
-« Isabelle traitait avec son clan. »
-
-« Parce que j’étais son infante. »
-
-*Son expression devient plus dure.*
-
-« Ma sire aurait considéré ce lien comme une offense personnelle. »
-
-« Elle supportait qu’un de ses infants possède une charge, des serviteurs, des artistes, des responsabilités. »
-
-« Elle supportait beaucoup moins bien qu’une fidélité intime puisse lui retirer une part de ce qu’elle considérait comme sien. »
-
-« Et me savoir liée à Zvonimir de cette manière aurait été pire encore. »
-
-« Un Ancien du clan Tzimisce. »
-
-« Son allié. »
-
-« Un homme suffisamment puissant pour ne pas dépendre d’elle. »
-
-« Quelqu’un à qui son infante choisissait de donner ce qu’Isabelle croyait lui appartenir. »
-
-*Un temps.*
-
-« Elle ne l’aurait pas pardonné. »
-
-« Alors nous ne lui avons jamais donné la certitude. »
-
-« À la cour, Zvonimir et moi pouvions passer une nuit entière dans la même salle sans échanger autre chose qu’une formule nécessaire. »
-
-« Nous nous retrouvions ailleurs. »
-
-« Rarement. »
-
-« Les vampires ne vivent pas comme une cour de mortels où chacun retrouve chaque soir les mêmes visages. »
-
-« Nous avons nos refuges. Nos domaines. Nos serviteurs. Nos chasses. Nos guerres. »
-
-« Plusieurs mois pouvaient passer. »
-
-« Puis une nuit. »
-
-« Parfois seulement une. »
-
-« Cela suffisait. »
-
-*Elle baisse brièvement les yeux.*
-
-« Je me suis souvent demandé si le danger faisait partie de ce qu’il recherchait. »
-
-« Être un Ancien du clan Tzimisce allié à Isabelle tout en entretenant secrètement quelque chose avec son infante… »
-
-*Un sourire sombre.*
-
-« J’ai parfois pensé que la transgression elle-même lui plaisait. »
-
-« Je ne sais toujours pas s’il souhaitait seulement que notre secret demeure parfait… »
-
-« …ou si une part de lui aurait goûté l’instant où Isabelle aurait compris. »
-
-*Son expression se ferme.*
-
-« Elle mourut en 1362. »
-
-« Deux ans plus tard, la cause Penthièvre fut vaincue à Auray et sa puissance ne revint pas à Rennes. »
-
-« À partir de là, notre relation n’avait plus besoin du même degré de clandestinité. »
-
-« Nous ne nous affichions pas. »
-
-« Nous n’en avions aucune raison. »
-
-« Elle devint seulement quelque chose que certains vampires suffisamment anciens et suffisamment observateurs pouvaient soupçonner. »
-
-« Une rumeur. »
-
-« Pour nous, c’était déjà une liberté considérable. »
-
-*Aliénor se rapproche légèrement.*
-
-« Et Zvonimir m’apprit quelque chose qu’Isabelle n’avait jamais pu m’enseigner. »
+« Et il m’apprit quelque chose qu’Isabelle n’avait jamais pu m’enseigner. »
 
 « Elle m’avait appris à posséder. »
 
@@ -880,93 +358,71 @@ REPONSES = {
 
 « Pas à perdre. »
 
-« Pas à être forcée. »
+« À choisir de remettre quelque chose entre les mains d’un autre alors même que l’on sait qu’il pourrait le briser. »
 
-« À choisir de renoncer. »
+« Tu trouveras peut-être cela malsain. Peut-être auras-tu raison. »
 
-« À mettre sa volonté entre les mains d’un autre tout en sachant parfaitement qu’il pourrait la briser. »
-
-« À regarder un être capable de vous détruire… et décider néanmoins d’avancer vers lui. »
+« Moi, j’y trouvais une liberté que je n’avais jamais connue. »
 
 *Elle observe son infante.*
 
-« Tu trouveras peut-être cela malsain. »
+« Et puisque tu m’as demandé ce qu’il a réellement été pour moi, je vais te donner une vérité que je n’avais pas l’intention de te donner si tôt. »
 
-« Peut-être auras-tu raison. »
+*Aliénor demeure parfaitement immobile.*
 
-« Moi, j’y trouvais quelque chose que je n’avais jamais connu auparavant. »
+« Zvonimir a travaillé sur mon corps. »
 
-« Cet Ancien du clan Tzimisce regardait également la chair d’une manière qui m’était étrangère. »
+« Avec mon consentement. »
 
-« Pour lui, un corps n’était pas une vérité. »
+« Pas seulement pour changer une apparence. Pas seulement pour produire une beauté passagère. »
 
-« C’était une matière. »
+« Certaines transformations étaient faites pour être vues. »
 
-« Une forme n’était pas juste parce que la naissance l’avait choisie. »
+« D’autres ne l’ont jamais été. »
 
-« Un visage n’était pas sacré parce qu’il était le premier. »
+*Un temps.*
 
-« Tout pouvait être repris. »
+« Certaines existent encore. »
 
-« Transformé. »
+*Elle laisse Perrine regarder son visage, ses mains, sa silhouette — précisément parce que rien n’y apporte de réponse.*
 
-« Poussé jusqu’à révéler quelque chose que sa forme précédente cachait. »
+« Pour Zvonimir, un corps n’était pas une vérité. C’était une matière capable de porter plusieurs vérités successives. »
+
+« Il m’a appris qu’une forme n’était pas sacrée simplement parce qu’elle avait été la première. »
+
+« Il m’a appris qu’une œuvre pouvait être cachée dans la chair elle-même. »
 
 *Ses yeux deviennent lointains.*
 
-« Il ne m’a pas appris que la souffrance était belle. »
+« Certaines de ses leçons ne sont donc pas restées seulement dans ma mémoire. »
 
-« Il m’a appris qu’elle n’interdisait pas la beauté. »
+« Et certaines œuvres ne se voient pas lorsqu’on regarde leur propriétaire. »
 
-« La nuance est importante. »
+*Elle ne développe pas.*
 
-« Et dangereuse. »
+« Ne confonds pas cela avec une corruption dont j’aurais été victime. »
 
-*Un silence.*
-
-« Certaines de ses leçons ne sont pas restées seulement dans ma mémoire. »
-
-*Elle laisse passer un instant, puis son expression se referme.*
-
-« Certaines œuvres ne se voient pas lorsqu’on regarde leur propriétaire. »
-
-« Tu n’as pas besoin d’en savoir davantage ce soir. »
-
-*Un silence.*
-
-« Je pourrais aujourd’hui prétendre qu’un Tzimisce ancien m’a corrompue. »
-
-« Ce serait très commode. »
-
-« Zvonimir n’a pas créé tout ce qu’il trouva en moi. »
+« Il n’a pas fait de moi quelque chose que je refusais d’être. Ce serait trop commode de lui donner cette responsabilité. »
 
 « Il fut simplement assez attentif pour reconnaître certaines de mes faims avant que je sois prête à les nommer. »
 
-« Voilà ce qui le rendait plus dangereux que beaucoup d’autres. »
+*Un silence.*
 
-« Les prédateurs ordinaires prennent ce que vous refusez de donner. »
+« En 1493, lorsque les Tzimisce furent frappés à Saint-Germain et que notre monde changea encore une fois, Zvonimir disparut de mes nuits. »
 
-« Lui savait parfois attendre que vous le lui tendiez vous-même. »
+« Douze ans. »
 
-*Puis elle cesse de bouger.*
+« Aucun message dont je puisse être certaine. Aucun intermédiaire. Rien. »
 
-« En 1493, lorsque le nouvel ordre chassa le clan Tzimisce de l’hospitalité de Rennes et que ses forces furent frappées à Saint-Germain, Zvonimir disparut de mes nuits. »
+*Elle regarde Perrine.*
 
-« Plus rien. »
+« Puis vous l’avez rencontré. »
 
-« Pendant douze ans. »
+« Il aurait pu vous tuer. »
 
-« Aucun message. »
+« Il vous a laissées repartir. »
 
-« Aucun signe dont je puisse être certaine. »
-
-« Aucun intermédiaire. »
-
-*Elle regarde son infante.*
-
-« Puis tu l’as rencontré. »
-
-« Et tu es revenue avec quelques mots. »
+« Et il a choisi ta bouche pour me rendre quelques mots. »
 
 *Sa voix baisse.*
 
@@ -974,33 +430,21 @@ REPONSES = {
 
 *Elle répète la phrase sans hésitation, comme si elle l’avait récitée seule bien des fois.*
 
-« Il aurait pu ne rien te dire. »
+« Tu comprends maintenant pourquoi je ne l’ai pas entendue comme une simple élégance. »
 
-« Il aurait pu choisir quelqu’un d’autre. »
-
-« Il aurait pu vous tuer. »
-
-« Il a choisi ta bouche pour que cette phrase me revienne. »
-
-*Son regard glisse brièvement vers un coffret fermé. Une seconde. Pas davantage.*
+*Son regard glisse vers un coffret fermé. Une seconde. Pas davantage.*
 
 « J’ai encore certaines choses. »
 
-*Elle s’arrête.*
-
 « Des choses anciennes. »
 
-« Rien que je sois prête à t’expliquer ce soir. »
+« Rien que je sois prête à ouvrir pour toi ce soir. »
 
 *Elle reprend son contrôle.*
 
-« Si un jour un serviteur de son ancien monde t’approche… »
+« Si un jour un serviteur de son ancien monde t’approche, ou quelqu’un qui prétend pouvoir porter une parole jusqu’à lui, ne promets rien en mon nom. »
 
-« Ou quelqu’un qui prétend pouvoir porter une parole jusqu’à lui… »
-
-« Ne lui promets rien en mon nom. »
-
-« Ne lui donne rien en mon nom. »
+« Ne donne rien en mon nom. »
 
 « Et ne suppose jamais qu’un Ancien Tzimisce t’épargnera demain parce qu’il t’a laissée repartir hier. »
 
@@ -1010,17 +454,13 @@ REPONSES = {
 
 *Un long silence.*
 
-« Et si tu le revois… »
+« Si tu le revois, écoute très précisément les mots qu’il emploiera lorsqu’il parlera d’une œuvre. »
 
-*Elle s’interrompt. Ses lèvres se ferment.*
+« Ne suppose pas qu’il parle d’un objet. »
 
-« Non. »
+*Elle s’interrompt, comme si elle venait déjà d’en dire davantage qu’elle ne l’avait prévu.*
 
-« Rien. »
-
-*Sa main se retire du coffret sans l’avoir ouvert.*
-
-« Ne le hais pas pour moi. »
+« Et ne le hais pas pour moi. »
 
 « Ce serait encore lui donner quelque chose qui m’appartient. »
 
@@ -1029,167 +469,151 @@ REPONSES = {
     "mes_fautes": """
 *Aliénor ne répond pas immédiatement.*
 
-« Je pourrais t’en choisir une qui me rende intéressante. »
-
-« Une cruauté ancienne. »
-
-« Un mort dont personne ne se souvient. »
-
-« Une décision que deux siècles permettraient d’expliquer. »
+« Je pourrais t’en choisir une qui me rende intéressante. Une cruauté ancienne. Un mort dont personne ne se souvient. Une décision que deux siècles permettraient d’expliquer. »
 
 *Elle secoue légèrement la tête.*
 
-« Ce serait trop facile. »
+« Ce serait une façon très Toreador de mentir sans prononcer une seule phrase fausse. »
 
 « Ma pire faute est plus récente. »
 
-« Et beaucoup moins élégante. »
+« En 1493, je voulais la place de Mikolai. »
 
 *Un silence.*
 
-« En 1493, je voulais la place de Mikolai. »
+« Et je voulais sa mort. »
 
-« Il était Primogène du clan Toreador. »
-
-« Pas seulement parce que je pensais pouvoir mieux servir notre clan. »
-
-« Je la voulais. »
-
-« J’étais fatiguée qu’il soit celui que l’on écoutait d’abord. Celui autour duquel les Toreador se rassemblaient. Celui dont les choix finissaient souvent par devenir ceux du clan. »
-
-*Elle regarde son infante.*
+*Aliénor ne détourne pas le regard.*
 
 « J’aimais mon frère. »
 
-« Et j’étais jalouse de lui. »
+« J’étais jalouse de lui. »
 
-« Ces choses peuvent vivre parfaitement bien dans le même cœur. »
+« Il était Primogène du clan Toreador. Celui que l’on écoutait d’abord. Celui autour duquel le clan se rassemblait. »
 
-« Lorsque Rennes commença à s’effondrer sous les guerres du clan Brujah, du clan Lasombra, du clan Tzimisce et des forces du Prince Ventrue, j’ai laissé cette ambition peser sur certaines de mes décisions. »
+« Je pensais pouvoir mieux faire certaines choses. J’en étais convaincue. »
 
-« J’ai cru que je pouvais utiliser le désordre. »
+« Mais ne me laisse pas embellir le reste avec cette conviction. »
 
-« Orienter certaines menaces. »
-
-« Protéger ce qui devait l’être. »
-
-« Sacrifier ce qui pouvait l’être. »
-
-« Et surtout… rester celle qui déciderait où s’arrêtait le sacrifice. »
-
-*Elle sourit sans joie.*
-
-« Voilà l’orgueil véritable. »
-
-« Pas croire que l’on ne commettra jamais de monstruosité. »
-
-« Croire que l’on saura exactement jusqu’où la commettre. »
-
-« J’ai pris part à des décisions dont les conséquences dépassèrent ce que j’avais accepté. »
-
-« Lorsque j’ai voulu revenir en arrière, il était déjà beaucoup plus difficile de distinguer ce que j’avais provoqué de ce que les autres avaient décidé d’en faire. »
-
-*Elle ne précise pas.*
-
-« Des gens sont morts. »
-
-« Des maisons liées au clan Toreador ont disparu. »
-
-« Des personnes que je pensais pouvoir protéger n’ont pas été protégées. »
-
-« Et Mikolai était déjà mort lorsque certaines de mes ambitions cessèrent même d’avoir un objet. »
-
-*Un silence plus lourd.*
-
-« Il existe des détails que je pourrais te donner. »
-
-« Ils rendraient l’histoire plus précise. »
-
-« Je ne te les donnerai pas ce soir. »
-
-*Elle soutient son regard.*
-
-« Je t’ai promis une réponse véritable. »
-
-« Pas le droit d’ouvrir chacun de mes tombeaux. »
-
-« La vérité dont tu as besoin est celle-ci : j’ai été assez arrogante pour croire que mes intentions me sépareraient des conséquences. »
-
-*Elle baisse brièvement les yeux.*
-
-« Depuis, je me méfie moins de la cruauté que des bonnes raisons. »
-
-« La cruauté se reconnaît souvent. »
-
-« Les bonnes raisons peuvent vous accompagner très loin. »
-
-« Préserver le clan. »
-
-« Protéger une œuvre. »
-
-« Empêcher un mal plus grand. »
-
-« Sauver dix personnes en en abandonnant une. »
-
-« Toutes ces phrases peuvent être vraies. »
-
-« C’est ce qui les rend dangereuses. »
-
-*Elle relève les yeux.*
-
-« Et je possède un autre défaut. »
-
-« Je sais donner une belle forme aux choses. »
-
-« Je peux rendre une décision atroce cohérente. »
-
-« Je peux t’expliquer pourquoi elle est nécessaire. »
-
-« Je peux probablement me l’expliquer à moi-même encore mieux. »
+« Je voulais aussi sa place parce qu’elle était la sienne. »
 
 *Sa voix devient plus basse.*
 
-« Certaines choses qui m’auraient autrefois répugnée ne me répugnent plus autant. »
+« Je suis allée trouver Amaury. »
 
-« Certaines me troublent. »
+« L’Inquisition commençait déjà à regarder Rennes. Nous ne l’avions pas créée. Les guerres de nos clans lui donnaient suffisamment de raisons de venir sans notre aide. »
 
-« Certaines m’attirent. »
+« J’ai proposé que cette menace soit orientée. »
 
-« Certaines me paraissent belles. »
+« Je voulais que Mikolai devienne une cible. »
 
-« Je ne sais pas toujours si mon regard s’est affiné… »
+« Je donnai des éléments et des renseignements qui pouvaient permettre de construire cette cible. »
 
-« …ou si j’ai simplement appris à contempler plus longtemps ce qui aurait dû me faire détourner les yeux. »
+« L’accord était simple dans mon esprit : Mikolai, et personne d’autre parmi les Toreador. Aucun dommage collatéral au clan. »
 
-*Elle observe son infante.*
+*Un sourire sans joie.*
 
-« Alors si un jour je viens à toi au nom du clan Toreador avec une nécessité… »
+« Tu peux déjà entendre l’orgueil dans cette phrase. »
 
-« Un sacrifice. »
+« J’avais décidé qu’un homme pouvait mourir et que j’aurais encore le droit de déterminer la propreté du reste de l’opération. »
 
-« Une personne qu’il faudrait abandonner. »
+« Puis Guillaume tua Mikolai avant que le dispositif que j’avais contribué à préparer ne l’atteigne. »
 
-« Une chose terrible que je te présenterai avec d’excellentes raisons… »
+« Il le vainquit à la Porte de la Madeleine. Il le décapita. »
+
+« Et tout à coup mon complot n’avait plus de cible. »
+
+*Un silence.*
+
+« J’aurais dû croire que cela suffisait à le faire disparaître. »
+
+« Les choses que l’on met en mouvement ne disparaissent pas toujours lorsque leur raison initiale meurt. »
+
+« Quelques nuits plus tard, j’ai compris que des arrestations frappaient déjà des artistes et des bourgeois liés à notre monde. »
+
+« Je suis retournée voir Amaury. »
+
+« Je lui ai demandé d’arrêter. »
+
+« J’ai insisté pour que la Maison des Lumières soit épargnée. Les Toreador devaient s’y réunir pour élire leur nouveau Primogène. »
+
+« Je savais ce que signifiait leur rassemblement. »
+
+« Je savais aussi que, Mikolai mort, j’étais celle qui aurait dû lui succéder. »
+
+*Elle ferme les yeux une seconde.*
+
+« Voilà peut-être la partie la plus grotesque de mon ambition. »
+
+« Je n’avais pas besoin de provoquer sa mort pour obtenir ce que je voulais. »
+
+« Sa mort m’aurait probablement donné la place de toute manière. »
+
+« J’ai risqué l’existence de mon clan pour forcer une succession qui aurait pu venir à moi sans cela. »
+
+*Elle rouvre les yeux.*
+
+« Amaury n’arrêta pas l’opération. »
+
+« La nuit où les Toreador devaient se réunir, des mortels m’attaquèrent dans la rue. Des hommes du Prince intervinrent ensuite et me sauvèrent. »
+
+*Un temps.*
+
+« Ce ne fut pas un sauvetage. »
+
+« L’attaque et l’intervention appartenaient à la même mise en scène. Amaury m’empêcha d’atteindre la Maison des Lumières et me donna en même temps une raison crédible d’avoir été absente lorsque les autres furent frappés. »
+
+« Je suis restée en vie. »
+
+« Beaucoup d’autres non. »
+
+*Le silence devient presque physique.*
+
+« Je ne sais pas quand exactement Amaury décida d’aller au-delà de ce que nous avions convenu. »
+
+« Je ne vais pas inventer cette réponse pour rendre ma culpabilité plus simple. »
+
+« Peut-être avait-il déjà d’autres intentions. Peut-être a-t-il vu une occasion après la mort de Mikolai. Peut-être plusieurs décisions se sont-elles simplement agrégées jusqu’à devenir un massacre. »
+
+« Ce que je sais est suffisant. »
+
+« Je suis allée le trouver. »
+
+« Je lui ai donné une porte. »
+
+« Je l’ai fait parce que je voulais la mort de mon frère et sa place. »
+
+*Elle soutient le regard de Perrine.*
+
+« Il existe encore des noms, des renseignements précis, des personnes que mes informations ont exposées. Je ne te les donnerai pas ce soir. »
+
+« Pas parce que je nie ce que j’ai fait. »
+
+« Parce qu’une confession n’est pas un droit illimité sur tous ceux que ma faute a touchés. »
+
+*Sa voix s’adoucit à peine.*
+
+« Ma pire faute n’est donc pas d’avoir été trompée par Amaury. »
+
+« Ce serait encore une manière de me rendre victime de ma propre histoire. »
+
+« Ma faute est d’avoir décidé que l’amour que j’avais pour Mikolai pouvait cohabiter avec la décision de le faire mourir. »
+
+« Et d’avoir cru que mes intentions envers les autres me sépareraient des conséquences. »
+
+*Elle regarde son infante.*
+
+« Alors si un jour je viens à toi avec une nécessité, un sacrifice, une personne qu’il faudrait abandonner pour sauver le clan… »
 
 « Écoute-moi. »
 
 « Mais ne me laisse pas être la seule à décider si mes raisons suffisent. »
 
+« Je sais donner une belle forme aux choses. »
+
+« Je peux rendre une décision atroce cohérente. »
+
 *Un temps.*
-
-« Je serai convaincante. »
-
-« J’ai presque deux siècles de pratique. »
-
-« Et si tu crois que j’ai tort… »
-
-« Dis-le. »
-
-« Même si je n’aime pas l’entendre. »
-
-« Surtout si je n’aime pas l’entendre. »
-
-*Sa voix s’adoucit.*
 
 « Ne m’absous pas simplement parce que tu m’aimes. »
 
@@ -1204,223 +628,113 @@ REPONSES = {
     "notre_avenir": """
 *Aliénor reste silencieuse un moment.*
 
-« Je veux que le clan Toreador cesse de devoir son existence à Rennes à la tolérance des autres clans. »
+« Je veux que le clan Toreador cesse de devoir sa présence à Rennes à la tolérance des autres clans. »
 
 *Elle se lève.*
 
-« Le titre importe moins que cela. »
+« Prince. Primogène. Gardienne. Les titres comptent, mais un titre n’est jamais qu’une promesse que les autres acceptent encore de respecter. »
 
-« Prince. Primogène. Gardienne. »
+« Je veux quelque chose de plus difficile à retirer. »
 
-« Un titre est utile tant que ceux qui l’entourent continuent de croire qu’il signifie quelque chose. »
+« Je veux des racines. »
 
-« Je veux davantage. »
+« Des familles qui ont leurs propres raisons de vouloir que nous existions demain. Des alliances qui ne dépendent pas d’une seule personne. Des dettes, des serments, des œuvres, des habitudes assez anciennes pour que nous retirer de Rennes coûte davantage que nous y supporter. »
 
-« Je veux devenir nécessaire à Rennes. »
-
-« Pas indispensable parce que j’occupe une chaise. »
-
-« Indispensable parce que retirer ce que j’ai construit coûterait davantage que de me supporter. »
+« Isabelle savait bâtir ainsi. Mikolai aussi, à sa manière. »
 
 *Elle marche lentement.*
 
-« Une véritable puissance de clan ne repose pas uniquement sur des territoires. »
+« Les Penthièvre ne règnent plus ici. Leur nom et leur histoire n’ont pourtant pas disparu avec leur défaite. »
 
-« Elle repose sur des dépendances. »
-
-« Des familles. »
-
-« Des dettes. »
-
-« Des serments. »
-
-« Des gens qui ont leurs propres raisons de vouloir que vous existiez encore demain. »
-
-« Isabelle savait cela. »
-
-« Mikolai aussi. »
-
-« Le clan Toreador l’a oublié lorsqu’il a commencé à confondre prestige et solidité. »
-
-*Elle s’arrête.*
-
-« Les Penthièvre ne règnent plus sur Rennes depuis longtemps. »
-
-« Cela ne signifie pas que leur maison ait disparu. »
-
-« On peut chasser une maison d’une ville. »
-
-« On peut lui enlever ses terres. »
-
-« Briser ses alliances. »
-
-« Marier ses héritiers ailleurs. »
-
-« On ne fait pas disparaître plusieurs siècles de sang et de fidélités avec un décret. »
-
-« Les Penthièvre existent encore. »
-
-« Plus loin. Amoindris. Dispersés. »
-
-« Et certaines maisons qui leur furent fidèles ont laissé des traces elles aussi. »
+« Et certaines anciennes fidélités ont laissé des traces. »
 
 *Son regard se refroidit.*
 
-« Ici, presque toutes disparurent. »
+« Trévalec en est une. »
 
-« Certaines avec la destruction de l’ancien ordre Toreador. »
+« Cette maison servit autrefois les Penthièvre. Puis elle prêta serment à Montfort et survécut là où presque toutes les dernières maisons liées à notre ancien monde furent emportées. »
 
-« D’autres beaucoup plus tard. »
+« Aujourd’hui, elle demeure une maison mortelle ancienne, enracinée, et officiellement sous le contrôle des Exécuteurs. »
 
-« Presque toutes les dernières maisons locales furent emportées lors des purges de Saint-Germain en 1493. »
-
-« Presque toutes. »
-
-*Un temps.*
-
-« Trévalec. »
-
-*Le nom a manifestement un goût particulier.*
-
-« Cette maison avait servi les Penthièvre pendant des générations. »
-
-« Puis, peu avant l’effondrement final, elle prêta serment à Montfort. »
-
-« Il n’existait déjà plus de véritable puissance Penthièvre à Rennes depuis plus d’un siècle. »
-
-« On peut donc appeler cela prudence. »
-
-« Réalisme. »
-
-« Nécessité. »
+« Je ne peux pas tendre la main vers elle sans que les Gangrel qui la surveillent, Amaury et probablement une bonne partie de la Cour se demandent pourquoi. »
 
 *Un sourire froid.*
 
-« Les survivants possèdent toujours beaucoup de mots pour désigner la fidélité qu’ils ont abandonnée. »
+« Et je ne sais pas encore si je veux la reprendre, lui pardonner, l’utiliser… ou lui faire payer une fidélité abandonnée par des morts à des morts. »
 
-« Trévalec survécut. »
+« La dernière option serait injuste. »
 
-« Les autres non. »
+« Les rancunes qui durent plus longtemps que les hommes finissent toujours par manquer de coupables. »
 
-« Et aujourd’hui encore, la maison existe. »
+*Aliénor revient à Perrine.*
 
-« Elle possède ce que le clan Toreador ne peut recréer en une nuit : un nom mortel ancien, des attaches, une continuité, une mémoire familiale, des rapports que plusieurs générations ont eu le temps de rendre naturels. »
+« Toi, en revanche, tu possèdes encore quelque chose que le temps m’a retiré. »
 
-« Elle est également sous le contrôle des Exécuteurs. »
+« Beaucoup peuvent te regarder et ne voir qu’une jeune Toreador. »
 
-« Ce qui signifie que je ne peux pas simplement tendre la main et la prendre sans que le Prince Ventrue, les Gangrel des Exécuteurs et probablement la moitié de la Cour comprennent immédiatement ce que je fais. »
+« Laisse-les commettre cette erreur aussi longtemps qu’elle t’est utile. »
 
-*Elle retourne son attention sur son infante.*
+« Si une porte vers Trévalec s’ouvre un jour devant toi, ne la franchis ni avec ma vengeance ni avec mon ambition dans la tête. Regarde d’abord. Écoute. Comprends ce qu’ils sont devenus. »
 
-« Je ne sais pas encore ce que je souhaite faire de cette maison. »
+« Je veux que tu puisses avoir des relations qui ne soient pas seulement des prolongements des miennes. »
 
-« Une partie de moi voudrait lui donner l’occasion de revenir. »
+*Elle s’interrompt.*
 
-« De reconnaître ce qu’elle fut. »
+« C’est une leçon que Mikolai avait comprise avant moi. »
 
-« De retrouver une place auprès de ceux qu’elle servait autrefois. »
+« Une lignée qui ne sait pas laisser ses descendants devenir autre chose qu’elle-même finit par ne produire que des copies… ou des prisonniers. »
 
-*Quelque chose de beaucoup plus sombre apparaît.*
+*Un silence.*
 
-« Une autre partie aimerait reprendre Trévalec précisément afin de le détruire. »
+« J’essaie encore d’apprendre cela avec toi. »
 
-« Lentement. »
+*La phrase semble lui coûter davantage que toute la stratégie qui la précédait.*
 
-« De l’intérieur. »
+« Mais ce n’est pas toute ma réponse. »
 
-« Lui rendre assez de confiance pour qu’il cesse de se protéger… puis lui faire payer ce que ses ancêtres ont choisi. »
+*Aliénor retourne s’asseoir. Lorsqu’elle reprend, sa voix est plus calme.*
 
-*Elle reste silencieuse.*
+« Tout ce que je viens de te décrire est politique. »
 
-« Ce serait injuste. »
+« Ce n’est pas tout ce que je veux. »
 
-« Les morts qui prêtèrent ce serment ne sont pas ceux qui vivent aujourd’hui. »
+« Je veux des œuvres. »
 
-« Voilà l’ennui avec les rancunes qui durent plus longtemps que les hommes. »
+« Des familles. »
 
-« Elles finissent par manquer de coupables. »
+« Des alliances. »
 
-*Son expression se détend à peine.*
+« Des dettes. »
 
-« Peut-être n’ai-je besoin de faire ni l’un ni l’autre. »
+*Son regard revient sur Perrine.*
 
-« Peut-être dois-je simplement savoir ce qu’ils sont devenus. »
+« D’autres enfants. »
 
-« Ce qu’ils veulent. »
+*Elle laisse les deux mots entre elles.*
 
-« Ce qu’ils servent réellement aujourd’hui. »
-
-« Et si quelque chose de l’ancienne fidélité aux Penthièvre survit derrière leurs nouveaux serments. »
-
-*Elle se rapproche.*
-
-« Mon nom rendrait une telle approche grossière. »
-
-« Deux siècles d’histoire entreraient dans la pièce avant moi. »
-
-« Les Exécuteurs regarderaient chacun de mes gestes. »
-
-« Amaury également. »
-
-« Toi, tu as encore un avantage que le temps m’a retiré. »
-
-« Beaucoup de gens peuvent encore te regarder et ne voir qu’une jeune vampire du clan Toreador. »
-
-*Un sourire.*
-
-« Laisse-les commettre cette erreur aussi longtemps qu’ils le souhaitent. »
-
-« Un jour, tu auras tes propres alliances. »
-
-« Des gens qui te parleront parce qu’ils te font confiance à toi et non parce que tu portes mon Sang. »
-
-« Des portes qui s’ouvriront pour toi et se fermeraient devant moi. »
-
-« C’est ainsi qu’une lignée devient plus solide à chaque génération. »
-
-*Elle marque une pause.*
-
-« Si jamais une porte vers Trévalec s’ouvre devant toi… »
-
-« Ne la franchis pas avec ma vengeance dans la tête. »
-
-« Ni avec mon ambition. »
-
-« Regarde d’abord. »
-
-« Écoute. »
-
-« Comprends ce qu’ils sont. »
-
-« Et seulement ensuite viens me dire si le clan Toreador a retrouvé une ancienne racine… »
-
-*Son sourire devient sans chaleur.*
-
-« …ou une branche qu’il aurait fallu couper depuis longtemps. »
-
-*Aliénor retourne s’asseoir.*
-
-« Je veux que le clan Toreador ait de nouveau des racines à Rennes. »
-
-« Suffisamment profondes pour qu’un Prince Ventrue ne puisse pas décider, au détour d’une nuit, que la cité se porterait aussi bien sans nous. »
-
-« Je veux des œuvres. Des familles. Des alliances. Des dettes. Des infants. »
-
-*Un bref silence.*
-
-« Et peut-être d’autres formes de continuité auxquelles je ne te demande pas encore de donner un nom. »
+*Elle ne les corrige pas. Elle ne les explique pas non plus.*
 
 « Des choses qui continueront à exister lorsque je ne serai plus là pour les regarder. »
 
-*Elle fixe son infante.*
+*Aliénor voit nécessairement la question naître sur le visage de Perrine. Elle ne lui donne rien pour l’éteindre.*
 
-« Et si j’ai réussi… »
+« Tu m’as demandé ce que je voulais accomplir. »
 
-« Le jour où quelqu’un voudra enfin arracher le clan Toreador de Rennes, il découvrira qu’il est déjà trop tard. »
+« Je viens de te répondre. »
 
-*Un dernier silence.*
+*Un très léger sourire.*
+
+« Je n’ai pas promis que chacune de mes réponses te laisserait moins de questions qu’avant. »
+
+*Elle se penche légèrement vers elle.*
+
+« Si j’ai réussi, le jour où quelqu’un voudra arracher le clan Toreador de Rennes, il découvrira qu’il est déjà trop tard. »
 
 « Parce qu’il ne saura plus très bien quelle part de la ville il devrait arracher avec nous. »
+
+*Puis, après un dernier silence :*
+
+« Et peut-être que, cette fois, ce que j’aurai laissé derrière moi ne dépendra pas seulement du Sang que j’aurai donné. »
 
 *Aliénor se tait.*
 """.strip(),
