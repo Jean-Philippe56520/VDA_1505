@@ -481,15 +481,11 @@ REPONSES = {
 
 *Un silence.*
 
-« Et je voulais sa mort. »
+« Et j’ai voulu sa mort. »
 
 *Aliénor ne détourne pas le regard.*
 
-« J’aimais mon frère. »
-
-« J’étais jalouse de lui. »
-
-« Il était Primogène du clan Toreador. Celui que l’on écoutait d’abord. Celui autour duquel le clan se rassemblait. »
+« J’aimais mon frère. J’étais jalouse de lui. Il était Primogène du clan Toreador, celui que l’on écoutait d’abord, celui autour duquel les autres se rassemblaient. »
 
 « Je pensais pouvoir mieux faire certaines choses. J’en étais convaincue. »
 
@@ -499,83 +495,57 @@ REPONSES = {
 
 *Sa voix devient plus basse.*
 
-« Je suis allée trouver Amaury. »
+« Lorsque l’Inquisition commença à regarder Rennes, je suis allée trouver Amaury. »
 
-« L’Inquisition commençait déjà à regarder Rennes. Nous ne l’avions pas créée. Les guerres de nos clans lui donnaient suffisamment de raisons de venir sans notre aide. »
+« Nous ne l’avions pas créée. Les guerres de nos clans lui donnaient déjà assez de raisons de venir. »
 
-« J’ai proposé que cette menace soit orientée. »
+« Mais j’ai cru qu’une menace existante pouvait être dirigée. »
 
-« Je voulais que Mikolai devienne une cible. »
+« J’ai donné à Amaury des renseignements destinés à rendre Mikolai vulnérable à ceux qui nous cherchaient. »
 
-« Je donnai des éléments et des renseignements qui pouvaient permettre de construire cette cible. »
+« Je voulais qu’ils atteignent **lui**. »
 
-« L’accord était simple dans mon esprit : Mikolai, et personne d’autre parmi les Toreador. Aucun dommage collatéral au clan. »
+« Et je voulais croire que je pouvais poser une limite : Mikolai, mais pas le reste du clan Toreador. »
 
 *Un sourire sans joie.*
 
-« Tu peux déjà entendre l’orgueil dans cette phrase. »
+« Voilà l’orgueil véritable. »
 
-« J’avais décidé qu’un homme pouvait mourir et que j’aurais encore le droit de déterminer la propreté du reste de l’opération. »
+« Décider qu’un homme peut mourir, puis se croire encore moralement maître de la propreté du mécanisme qui doit le tuer. »
 
-« Puis Guillaume tua Mikolai avant que le dispositif que j’avais contribué à préparer ne l’atteigne. »
+« Guillaume tua Mikolai avant que ce que j’avais contribué à mettre en mouvement ne l’atteigne. »
 
-« Il le vainquit à la Porte de la Madeleine. Il le décapita. »
-
-« Et tout à coup mon complot n’avait plus de cible. »
+« À cet instant, mon complot n’avait plus de cible. »
 
 *Un silence.*
 
-« J’aurais dû croire que cela suffisait à le faire disparaître. »
+« Les mécanismes, eux, ne disparurent pas. »
 
-« Les choses que l’on met en mouvement ne disparaissent pas toujours lorsque leur raison initiale meurt. »
+« Lorsque je compris que d’autres personnes liées au clan étaient déjà menacées, je suis retournée voir Amaury. »
 
-« Quelques nuits plus tard, j’ai compris que des arrestations frappaient déjà des artistes et des bourgeois liés à notre monde. »
+« Je lui ai demandé d’arrêter ce que nous avions mis en place autour de cette menace. »
 
-« Je suis retournée voir Amaury. »
+« Il ne l’a pas arrêté. »
 
-« Je lui ai demandé d’arrêter. »
+*Aliénor serre légèrement les doigts.*
 
-« J’ai insisté pour que la Maison des Lumières soit épargnée. Les Toreador devaient s’y réunir pour élire leur nouveau Primogène. »
+« À partir de là, il existe des détails que je ne te donnerai pas ce soir. »
 
-« Je savais ce que signifiait leur rassemblement. »
+« Des noms. »
 
-« Je savais aussi que, Mikolai mort, j’étais celle qui aurait dû lui succéder. »
+« Des dossiers. »
 
-*Elle ferme les yeux une seconde.*
+« Des personnes que mes renseignements ont exposées. »
 
-« Voilà peut-être la partie la plus grotesque de mon ambition. »
+« Et la manière dont, au milieu de cette catastrophe, je suis restée en vie alors que beaucoup des miens ne le sont pas restés. »
 
-« Je n’avais pas besoin de provoquer sa mort pour obtenir ce que je voulais. »
+*Elle soutient le regard de Perrine.*
 
-« Sa mort m’aurait probablement donné la place de toute manière. »
-
-« J’ai risqué l’existence de mon clan pour forcer une succession qui aurait pu venir à moi sans cela. »
-
-*Elle rouvre les yeux.*
-
-« Amaury n’arrêta pas l’opération. »
-
-« La nuit où les Toreador devaient se réunir, des mortels m’attaquèrent dans la rue. Des hommes du Prince intervinrent ensuite et me sauvèrent. »
-
-*Un temps.*
-
-« Ce ne fut pas un sauvetage. »
-
-« L’attaque et l’intervention appartenaient à la même mise en scène. Amaury m’empêcha d’atteindre la Maison des Lumières et me donna en même temps une raison crédible d’avoir été absente lorsque les autres furent frappés. »
-
-« Je suis restée en vie. »
-
-« Beaucoup d’autres non. »
-
-*Le silence devient presque physique.*
-
-« Je ne sais pas quand exactement Amaury décida d’aller au-delà de ce que nous avions convenu. »
+« Je ne sais pas à quel moment exact Amaury décida d’aller au-delà de ce que j’avais accepté. »
 
 « Je ne vais pas inventer cette réponse pour rendre ma culpabilité plus simple. »
 
-« Peut-être avait-il déjà d’autres intentions. Peut-être a-t-il vu une occasion après la mort de Mikolai. Peut-être plusieurs décisions se sont-elles simplement agrégées jusqu’à devenir un massacre. »
-
-« Ce que je sais est suffisant. »
+« Ce que je sais suffit. »
 
 « Je suis allée le trouver. »
 
@@ -583,23 +553,13 @@ REPONSES = {
 
 « Je l’ai fait parce que je voulais la mort de mon frère et sa place. »
 
-*Elle soutient le regard de Perrine.*
-
-« Il existe encore des noms, des renseignements précis, des personnes que mes informations ont exposées. Je ne te les donnerai pas ce soir. »
-
-« Pas parce que je nie ce que j’ai fait. »
-
-« Parce qu’une confession n’est pas un droit illimité sur tous ceux que ma faute a touchés. »
-
-*Sa voix s’adoucit à peine.*
+*Le silence devient presque physique.*
 
 « Ma pire faute n’est donc pas d’avoir été trompée par Amaury. »
 
 « Ce serait encore une manière de me rendre victime de ma propre histoire. »
 
-« Ma faute est d’avoir décidé que l’amour que j’avais pour Mikolai pouvait cohabiter avec la décision de le faire mourir. »
-
-« Et d’avoir cru que mes intentions envers les autres me sépareraient des conséquences. »
+« Ma faute est d’avoir cru que l’amour que j’avais pour Mikolai pouvait cohabiter avec la décision de le faire mourir… et que mes bonnes intentions envers tous les autres me sépareraient des conséquences. »
 
 *Elle regarde son infante.*
 
@@ -609,9 +569,7 @@ REPONSES = {
 
 « Mais ne me laisse pas être la seule à décider si mes raisons suffisent. »
 
-« Je sais donner une belle forme aux choses. »
-
-« Je peux rendre une décision atroce cohérente. »
+« Je sais donner une belle forme aux choses. Je peux rendre une décision atroce cohérente. »
 
 *Un temps.*
 
@@ -623,7 +581,7 @@ REPONSES = {
 
 « Et assez libre pour refuser de l’appeler beau simplement parce que je le fais. »
 
-*Aliénor se tait.*
+*Aliénor se tait sans avoir expliqué ce qu’Amaury fit réellement après que la cible prévue fut déjà morte.*
 """.strip(),
     "notre_avenir": """
 *Aliénor reste silencieuse un moment.*
@@ -732,11 +690,7 @@ REPONSES = {
 
 « Parce qu’il ne saura plus très bien quelle part de la ville il devrait arracher avec nous. »
 
-*Puis, après un dernier silence :*
-
-« Et peut-être que, cette fois, ce que j’aurai laissé derrière moi ne dépendra pas seulement du Sang que j’aurai donné. »
-
-*Aliénor se tait.*
+*Aliénor se tait. Le mot qu’elle a choisi — enfants — reste là, et le pluriel n’en est peut-être même pas la partie la plus étrange.*
 """.strip(),
 }
 
