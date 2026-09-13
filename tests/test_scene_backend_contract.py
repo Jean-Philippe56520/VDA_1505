@@ -15,6 +15,10 @@ class SceneBackendContractTests(unittest.TestCase):
             os.environ.pop("VDA_SCENE_BACKEND", None)
             self.assertEqual(scenes.scene_backend(), "local")
 
+    def test_backend_can_come_from_shared_server_setting(self) -> None:
+        with patch.object(scenes, "get_setting", return_value="hybrid"):
+            self.assertEqual(scenes.scene_backend(), "hybrid")
+
     def test_hybrid_keeps_local_catalog_when_remote_is_empty(self) -> None:
         sentinel = {"s": ("scenes.test", object())}
         with patch.dict(os.environ, {"VDA_SCENE_BACKEND": "hybrid"}), patch.object(

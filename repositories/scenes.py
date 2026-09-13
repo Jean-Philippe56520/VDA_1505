@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 import json
-import os
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Tuple
 
 from domain.loader import load_scenes as load_local_scenes
 from domain.schema import Scene
-from infrastructure.supabase_client import get_supabase_client
+from infrastructure.supabase_client import get_setting, get_supabase_client
 from repositories.runtime import RUNTIME_DIR
 
 
@@ -16,12 +15,12 @@ DEFAULT_SNAPSHOT_PATH = RUNTIME_DIR / "runtime_snapshot.json"
 
 
 def scene_backend() -> str:
-    backend = os.environ.get("VDA_SCENE_BACKEND", "local").strip().lower()
+    backend = (get_setting("VDA_SCENE_BACKEND") or "local").strip().lower()
     return backend if backend in {"local", "supabase", "hybrid", "snapshot"} else "local"
 
 
 def _snapshot_path() -> Path:
-    configured = os.environ.get("VDA_RUNTIME_SNAPSHOT")
+    configured = get_setting("VDA_RUNTIME_SNAPSHOT")
     return Path(configured) if configured else DEFAULT_SNAPSHOT_PATH
 
 

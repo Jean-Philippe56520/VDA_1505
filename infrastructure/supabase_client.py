@@ -11,7 +11,8 @@ def _truthy(value: str | None, default: bool = False) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "on"}
 
 
-def _secret(name: str) -> str | None:
+def get_setting(name: str) -> str | None:
+    """Read server configuration from environment, then Streamlit secrets."""
     value = os.environ.get(name)
     if value:
         return value.strip()
@@ -30,10 +31,10 @@ def _secret(name: str) -> str | None:
 
 
 def supabase_enabled() -> bool:
-    explicit = os.environ.get("VDA_SUPABASE_ENABLED")
+    explicit = get_setting("VDA_SUPABASE_ENABLED")
     if explicit is not None:
         return _truthy(explicit)
-    return bool(_secret("SUPABASE_URL") and _secret("SUPABASE_SECRET_KEY"))
+    return bool(get_setting("SUPABASE_URL") and get_setting("SUPABASE_SECRET_KEY"))
 
 
 @lru_cache(maxsize=1)
@@ -47,8 +48,8 @@ def get_supabase_client() -> Any | None:
     if not supabase_enabled():
         return None
 
-    url = _secret("SUPABASE_URL")
-    key = _secret("SUPABASE_SECRET_KEY")
+    url = get_setting("SUPABASE_URL")
+    key = get_setting("SUPABASE_SECRET_KEY")
     if not url or not key:
         return None
 

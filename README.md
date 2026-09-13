@@ -24,13 +24,23 @@ La migration `supabase/migrations/0001_runtime_v1.sql` crée :
 - `canon_entities` (projection Drive uniquement)
 - `canon_sync_registry`
 
+La migration `0002_bootstrap_published_scenes.sql` importe le catalogue initial de scènes depuis un snapshot Git immuable produit par le CI. Elle vérifie le SHA, le nombre de scènes, les IDs et les modes de diffusion avant l'upsert. Cette publication reste une projection runtime Git, jamais une canonisation.
+
 Les tables publiques ont RLS activé. V1 n'accorde aucun accès Data API à `anon` ou `authenticated`; seul le backend serveur utilisant la clé secrète peut lire/écrire.
 
 ## Configuration
 
-Copier `.env.example` vers un mécanisme de secrets local/de déploiement. Ne jamais committer la clé secrète Supabase.
+Les réglages serveur sont lus d'abord depuis les variables d'environnement, puis depuis `st.secrets`.
 
-Variables :
+Sous Streamlit/Windows, la voie recommandée est :
+
+1. copier `.streamlit/secrets.toml.example` vers `.streamlit/secrets.toml` ;
+2. y renseigner `SUPABASE_SECRET_KEY` localement ;
+3. ne jamais committer `.streamlit/secrets.toml` ;
+4. commencer avec `VDA_SCENE_BACKEND = "local"` ;
+5. après le test du journal runtime, passer explicitement à `VDA_SCENE_BACKEND = "hybrid"`.
+
+Variables/réglages supportés :
 
 - `SUPABASE_URL`
 - `SUPABASE_SECRET_KEY` — serveur uniquement
@@ -60,17 +70,20 @@ Sous Windows, `run.bat` crée le venv s'il manque puis resynchronise les dépend
 
 ## Mise en service Supabase
 
-1. Appliquer `supabase/migrations/0001_runtime_v1.sql` au projet VDA dédié.
-2. Configurer `SUPABASE_URL` et `SUPABASE_SECRET_KEY` dans les secrets du serveur.
+1. Appliquer les migrations versionnées au projet VDA dédié.
+2. Configurer `SUPABASE_URL` et `SUPABASE_SECRET_KEY` uniquement dans les secrets du serveur/poste MJ.
 3. Activer `VDA_SUPABASE_ENABLED=true` tout en gardant `VDA_SCENE_BACKEND=local`.
-4. Publier les scènes et produire un snapshot hors ligne :
+4. Vérifier qu'une séance runtime et ses événements remontent correctement.
+5. Tester `VDA_SCENE_BACKEND=hybrid` avant toute éventuelle bascule vers `supabase`.
+
+Le CI génère également un `runtime_snapshot.json` validé et l'exporte sur la branche technique `runtime-snapshot-export`. Cette branche est une sortie de build, pas une source canonique.
+
+Pour republier volontairement les scènes depuis le poste serveur :
 
 ```bash
 python -m scripts.publish_scenes --git-sha <SHA_DEPLOYE>
 python -m scripts.build_runtime_snapshot --git-sha <SHA_DEPLOYE>
 ```
-
-5. Tester `VDA_SCENE_BACKEND=hybrid` avant toute bascule vers `supabase`.
 
 ## Séances et pré-delta 04A
 
