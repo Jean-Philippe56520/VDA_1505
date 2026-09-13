@@ -71,9 +71,11 @@ def _record_rendered_scene_content() -> None:
 
     transcript = list(getattr(rs, "transcript", []) or [])
     start = min(max(int(getattr(state, "runtime_logged_transcript_count", 0)), 0), len(transcript))
+    logged_through = start
     for index in range(start, len(transcript)):
         role, md = transcript[index]
         if role == "PJ" or not str(md or "").strip():
+            logged_through = index + 1
             continue
         try:
             runtime_service.scene_content_shown(
@@ -83,10 +85,11 @@ def _record_rendered_scene_content() -> None:
                 content_md=str(md),
             )
         except Exception:
-            # Telemetry must never interrupt a physical table session.
-            pass
+            # Keep the failed index pending so a later rerun can retry it.
+            break
+        logged_through = index + 1
 
-    state.runtime_logged_transcript_count = len(transcript)
+    state.runtime_logged_transcript_count = logged_through
     set_state(state)
 
 
