@@ -7,7 +7,7 @@ on:
       - supabase-v1-runtime
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   test:
@@ -40,3 +40,17 @@ jobs:
           path: runtime_snapshot.json
           if-no-files-found: error
           retention-days: 7
+      - name: Export validated runtime snapshot branch
+        if: github.event_name == 'push'
+        env:
+          SOURCE_GIT_SHA: ${{ github.sha }}
+        run: |
+          cp runtime_snapshot.json /tmp/runtime_snapshot.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan runtime-snapshot-export-tmp
+          git rm -rf .
+          cp /tmp/runtime_snapshot.json runtime_snapshot.json
+          git add runtime_snapshot.json
+          git commit -m "snapshot: ${SOURCE_GIT_SHA}"
+          git push --force origin HEAD:runtime-snapshot-export
