@@ -1,0 +1,1 @@
+Canonical projection documentation lives in `docs/CANON_PROJECTION_V2.md`. The Saint-Germain pilot validation is recorded in `docs/SAINT_GERMAIN_PROJECTION_PILOT.md`, and the current live Supabase V2 migration/security state is recorded in `docs/SUPABASE_V2_LIVE_STATE.md`.

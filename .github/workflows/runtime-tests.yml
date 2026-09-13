@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - supabase-v1-runtime
+      - supabase-v2-canon-projection
 
 permissions:
   contents: write
@@ -41,7 +42,7 @@ jobs:
           if-no-files-found: error
           retention-days: 7
       - name: Export validated runtime snapshot branch
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && github.ref_name == 'supabase-v1-runtime'
         env:
           SOURCE_GIT_SHA: ${{ github.sha }}
         run: |
