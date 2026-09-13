@@ -10,7 +10,7 @@ Application Streamlit de table pour la chronique **Vampire V5 Dark Ages — Renn
 
 Une scène ouverte, un clic, une réponse affichée ou une chasse marquée « Jouée » dans l'application n'est **jamais** transformée automatiquement en événement canonique. Les faits joués doivent être revus par le MJ avant inscription dans `04A_DELTA_SESSION` puis consolidation dans leurs propriétaires.
 
-`scenes_private/` signifie **scènes individuelles / solo** dans l'interface. Ce nom n'implique aucune confidentialité technique.
+`scenes_private/` signifie **scènes individuelles / solo** dans l'interface. Ce nom historique n'implique aucune confidentialité technique.
 
 ## Supabase runtime V1
 
@@ -46,10 +46,17 @@ L'état d'une scène ouverte est journalisé localement (`scene_runs.json`) avec
 
 ## Installation
 
+Python 3.11 est la version de référence du CI. Pour une installation reproductible de table :
+
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.lock.txt
+pip check
 streamlit run app.py
 ```
+
+`requirements.txt` décrit les dépendances directes épinglées. `requirements.lock.txt` fige aussi leurs dépendances transitives à partir de l'environnement validé par CI. Après une mise à niveau volontaire, le lock doit être régénéré et revalidé avant une partie.
+
+Sous Windows, `run.bat` crée le venv s'il manque puis resynchronise les dépendances à chaque lancement ; un venv déjà présent reçoit donc aussi les nouvelles dépendances.
 
 ## Mise en service Supabase
 
