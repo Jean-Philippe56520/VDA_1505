@@ -1,0 +1,662 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-13T12:43:52+00:00",
+  "git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+  "scenes": [
+    {
+      "scene_id": "coteries_rennes_1505",
+      "title": "Registre stratégique — Coteries de Rennes 1505",
+      "delivery_mode": "group",
+      "intended_character_ref": null,
+      "schema_version": 1,
+      "payload": {
+        "schema_version": 1,
+        "id": "coteries_rennes_1505",
+        "title": "Registre stratégique — Coteries de Rennes 1505",
+        "intro_md": "\nCe registre est une vue opérationnelle dérivée du canon territorial du Drive.\n\nIl affiche les **scores effectifs courants**, et non d'anciens totaux de base : les tributs, investissements et modificateurs actifs sont déjà répercutés dans les valeurs finales. Chaque effet reste néanmoins visible avec son origine afin d'éviter les doubles comptes.\n\n\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.24); line-height:1.5;\">\n  <b>Lecture des indicateurs</b><br/>\n  0 ou 1 = contrôle faible ; 2 ou 3 = contrôle partiel ; 4 ou 5 = contrôle fort.<br/><br/>\n  Les valeurs affichées sont les <b>scores effectifs courants</b> de Viandis, Servage et Rempart : potentiels contrôlés, bonus de contrôle, portes, tributs et autres modificateurs chiffrés sont déjà intégrés.<br/>\n  Chaque gain, coût ou tribut est détaillé séparément afin de conserver son origine.\n</div>\n\n\nQuelle coterie souhaites-tu consulter ?\n",
+        "choices": [
+          {
+            "id": "coterie_cot_main_prince",
+            "label": "La Main du Prince",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : La Main du Prince<br/>\n    <b>Faction</b> : Camarilla<br/>\n    <b>Type</b> : Régence (+1 Viandis)<br/>\n    <b>Domaine / charge</b> : Cœur Bourgeois et Porte Saint-Michel\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 5 / Servage 4 / Rempart 3</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>Place des Lices</b> : +2 Viandis</li><li><b>Maison des Bourgeois</b> : +2 Servage, +1 Rempart</li><li><b>Grand Comptoir des Marchands</b> : +2 Viandis, +1 Servage</li><li><b>Contrôle complet du Cœur Bourgeois</b> : +1 Servage</li><li><b>Porte Saint-Michel</b> : +1 Servage, +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <ul><li><b>Régence</b> : +1 Viandis</li><li><b>Investissement de répression</b> : -1 Servage — pression et surveillance sur la Madeleine et les Anarchs</li><li><b>Tribut des Gardiens du Sacré</b> : +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  Pouvoir central, abondance de sang et leviers bourgeois. Son Rempart effectif inclut le tribut ventrue ; son Servage est réduit par l'investissement permanent de répression à la Madeleine.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "coterie_cot_gardiens_sacre",
+            "label": "Les Gardiens du Sacré",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : Les Gardiens du Sacré<br/>\n    <b>Faction</b> : Camarilla<br/>\n    <b>Type</b> : Firme (+1 Servage)<br/>\n    <b>Domaine / charge</b> : Cathédrale Saint-Pierre, Cloître des Chanoines et Porte Saint-Hélier\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 1 / Servage 3 / Rempart 4</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>Cathédrale Saint-Pierre</b> : +1 Servage, +2 Rempart</li><li><b>Cloître des Chanoines</b> : +2 Rempart</li><li><b>Porte Saint-Hélier</b> : +1 Servage, +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <ul><li><b>Firme</b> : +1 Servage</li><li><b>Tribut reçu des Héritiers d'Alexandrie</b> : +1 Viandis</li><li><b>Tribut versé à la Main du Prince</b> : -1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  Contrôle religieux très défensif. Les Archives du Chapitre ne leur appartiennent pas : elles restent à la Fondation, donc aucun bonus de contrôle complet de la Ceinture Sacrée n'est appliqué.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "coterie_cot_fondation_pierre_noire",
+            "label": "La Fondation",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : La Fondation<br/>\n    <b>Faction</b> : Camarilla<br/>\n    <b>Type</b> : Fondation précaire<br/>\n    <b>Domaine / charge</b> : Archives du Chapitre\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 1 / Servage 1 / Rempart 0</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>Archives du Chapitre</b> : +1 Viandis, +1 Servage</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <p><i>Aucun modificateur courant supplémentaire.</i></p>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  Ancrage territorial minimal mais stratégique. La Fondation tient un point précis de la Ceinture Sacrée, pas la zone entière.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "coterie_cot_heritiers_alexandrie",
+            "label": "Les Héritiers d'Alexandrie",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : Les Héritiers d'Alexandrie<br/>\n    <b>Faction</b> : Camarilla<br/>\n    <b>Type</b> : Bande de Crocs (+1 Viandis)<br/>\n    <b>Domaine / charge</b> : Ombres des Rues / Bas-quartiers\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 3 / Servage 2 / Rempart 1</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>Tanneries</b> : +2 Viandis</li><li><b>Caves, ruines et souterrains</b> : +1 Rempart</li><li><b>Quartier des paroisses populaires</b> : +1 Viandis, +1 Servage, +1 Rempart</li><li><b>Contrôle complet des Ombres des Rues</b> : +1 Servage</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <ul><li><b>Bande de Crocs</b> : +1 Viandis</li><li><b>Tribut versé aux Gardiens du Sacré</b> : -1 Viandis</li><li><b>Tribut versé aux Exécuteurs</b> : -1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  Le territoire produit beaucoup de sang, mais les deux tributs réduisent directement les ressources effectivement mobilisables de la coterie.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "coterie_cot_crocs_silencieux",
+            "label": "Les Crocs Silencieux",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : Les Crocs Silencieux<br/>\n    <b>Faction</b> : Camarilla<br/>\n    <b>Type</b> : Sentinelles (+1 Rempart)<br/>\n    <b>Domaine / charge</b> : Faubourgs Saint-Martin et Porte Saint-Martin\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 2 / Servage 2 / Rempart 3</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>Saint-Martin</b> : +1 Viandis</li><li><b>Jardins et Vignes</b> : +1 Viandis</li><li><b>Ferme Fortifiée</b> : +1 Rempart</li><li><b>Contrôle complet de Saint-Martin</b> : +1 Servage</li><li><b>Porte Saint-Martin</b> : +1 Servage, +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <ul><li><b>Sentinelles</b> : +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  Domaine de frontière équilibré et défensif. La mission juridique vers Saint-Germain ne transforme pas automatiquement Saint-Germain en domaine contrôlé ni en Viandis mobilisable.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "coterie_cot_executeurs",
+            "label": "Les Exécuteurs",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : Les Exécuteurs<br/>\n    <b>Faction</b> : Camarilla<br/>\n    <b>Type</b> : Instrument de coercition<br/>\n    <b>Domaine / charge</b> : Porte Madeleine et Porte Saint-Germain\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 0 / Servage 2 / Rempart 3</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>Porte Madeleine</b> : +1 Servage, +1 Rempart</li><li><b>Porte Saint-Germain</b> : +1 Servage, +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <ul><li><b>Tribut reçu des Héritiers d'Alexandrie</b> : +1 Rempart</li></ul>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  Les Exécuteurs contrôlent des seuils et des moyens de coercition, pas un terrain nourricier. Leur Rempart effectif inclut le tribut Brujah.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "coterie_cot_fracture",
+            "label": "La Fracture",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">Registre territorial courant</div>\n  <div style=\"margin-top:0.6rem; line-height:1.5;\">\n    <b>Coterie</b> : La Fracture<br/>\n    <b>Faction</b> : Anarchs<br/>\n    <b>Type</b> : Saboteur (+1 Rempart)<br/>\n    <b>Domaine / charge</b> : Faubourgs de la Madeleine\n  </div>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.16); border-radius:14px; background:rgba(0,0,0,0.28); line-height:1.55;\">\n  <b>Scores effectifs courants</b><br/>\n  <span style=\"font-size:1.08rem;\">Viandis 2 / Servage 2 / Rempart 1</span>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Assise territoriale</b>\n  <ul><li><b>La Madeleine</b> : +1 Viandis</li><li><b>Saint-Yves / Hospices</b> : +1 Viandis</li><li><b>Hôpital des Pèlerins</b> : +1 Servage</li><li><b>Contrôle complet de la Madeleine</b> : +1 Servage</li></ul>\n</div>\n\n<div style=\"margin:1rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.14); border-radius:14px; background:rgba(255,255,255,0.035); line-height:1.55;\">\n  <b>Tributs, investissements et modificateurs</b>\n  <ul><li><b>Saboteur</b> : +1 Rempart</li><li><b>Surveillance princière</b> : +1 difficulté aux chasses dans la Madeleine</li><li><b>Action hostile ordinaire</b> : -1 dé à l'acteur</li><li><b>Exception : Main du Prince ou autorité légale de Rennes</b> : +1 dé à l'acteur à la place de -1 dé</li></ul>\n</div>\n\n<div style=\"margin:1rem 0 0.4rem 0; padding:1rem 1.2rem; border-left:4px solid rgba(180,35,35,0.85); border-radius:12px; background:rgba(120,15,15,0.18); line-height:1.55;\">\n  <b>Lecture stratégique</b><br/>\n  La répression princière complique la chasse. Le Rempart Saboteur reste dans le score effectif ; son modificateur d'action est inversé au bénéfice de la Main du Prince et de l'autorité mortelle légale de Rennes.\n</div>\n",
+            "followups": [],
+            "ends_scene": true
+          }
+        ],
+        "allow_undo": true,
+        "allow_restart_after_choice": true
+      },
+      "source_kind": "git",
+      "legacy_source_path": "scenes.coteries_rennes_1505",
+      "source_git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+      "enabled": true
+    },
+    {
+      "scene_id": "generateur_de_chasse",
+      "title": "Générateur de chasse express — Rennes 1505 (MJ)",
+      "delivery_mode": "group",
+      "intended_character_ref": null,
+      "schema_version": 1,
+      "payload": {
+        "schema_version": 1,
+        "id": "generateur_de_chasse",
+        "title": "Générateur de chasse express — Rennes 1505 (MJ)",
+        "intro_md": "Outil MJ dérivé du canon actif du Drive, conçu pour enchaîner rapidement plusieurs chasses à la table.\n\nSélectionne une ou plusieurs **tables de rencontre**, puis choisis pour chacune le **style utilisé**, le **territoire / la coterie sur lequel la chasse a lieu** et le **point d'intérêt canonique**. L'outil affiche seulement un mémo compact : contrôle, Viandis du territoire, surveillance éventuelle, style inadapté (+2 difficulté) ou interdiction.\n\nLa qualification automatique **style × point d'intérêt** utilise actuellement une matrice préparatoire dérivée des descriptions de lieux de 05 : elle sert d'aide MJ et reste à valider comme canon exact.\n\nLes rencontres sélectionnées peuvent être générées ensemble et restent visibles dans des **bulles indépendantes**, chacune relançable séparément. Les dés et la décision du résultat restent physiques.\n\nRappel : succès = difficulté donne une **Victoire à la Pyrrhus** ; une **Victoire critique prime**. Résonance, tempérament et effet spécial peuvent être affichés avant le jet comme mémo MJ, mais ne sont acquis que si la chasse réussit.\n\nLes préréglages de style du Git sont ergonomiques et modifiables : ils ne définissent pas le Predator Type canonique d'un PJ. Un tirage ou un clic dans cet outil reste une préparation et ne constitue ni scène jouée, ni événement canonique, ni connaissance acquise par un PJ.",
+        "choices": [
+          {
+            "id": "retour_accueil",
+            "label": "Retour accueil",
+            "answer_md": "",
+            "followups": [],
+            "ends_scene": true
+          }
+        ],
+        "allow_undo": true,
+        "allow_restart_after_choice": true
+      },
+      "source_kind": "git",
+      "legacy_source_path": "scenes.generateur_de_chasse",
+      "source_git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+      "enabled": true
+    },
+    {
+      "scene_id": "rumeurs_elysium_1505",
+      "title": "Registre officieux – Rumeurs de l’Elysium",
+      "delivery_mode": "group",
+      "intended_character_ref": null,
+      "schema_version": 1,
+      "payload": {
+        "schema_version": 1,
+        "id": "rumeurs_elysium_1505",
+        "title": "Registre officieux – Rumeurs de l’Elysium",
+        "intro_md": "\nLa musique se fait plus discrète.  \nLes voix se rapprochent, mais ne s’élèvent jamais.\n\nOn t’accorde un murmure — un seul.\n\nTu as su écouter sans te faire remarquer.  \nÀ présent, choisis le nom que tu veux entendre.\n\nÀ Rennes, rien n’est jamais totalement vrai.  \nMais rien n’est jamais totalement faux non plus.\n\nQui souhaites-tu écouter ?\n",
+        "choices": [
+          {
+            "id": "heloise",
+            "label": "Héloïse de Fougères",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Ventrue &nbsp;•&nbsp; <b>Âge</b> : Ancilla &nbsp;•&nbsp; <b>Génération</b> : 10e<br/>\n    <b>Rôle</b> : Harpie &nbsp;•&nbsp; <b>Coterie</b> : Les Gardiens du Sacré<br/>\n    <b>Sire</b> : Odon\n  </div>\n</div>\n\nOn prononce son nom comme on effleure une lame.\n\n> « Héloïse ne lance pas les rumeurs.  \n> Elle les pèse… puis elle décide lesquelles méritent un avenir. »\n\nUn souffle plus discret :\n\n> « Ces derniers temps, elle semble écouter avec une attention particulière  \n> ceux qui confondent grâce princière et innocence. »\n\nUn sourire presque imperceptible.\n\n> « À Rennes, être récompensé ne signifie pas toujours  \n> que l’on a été irréprochable.  \n> Seulement que l’on a été utile. »\n\nIci, l’autorité n’a pas besoin de hausser la voix.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "aodren",
+            "label": "Aodren",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Gangrel &nbsp;•&nbsp; <b>Âge</b> : Ancilla &nbsp;•&nbsp; <b>Génération</b> : 10e<br/>\n    <b>Rôle</b> : Fléau &nbsp;•&nbsp; <b>Coterie</b> : Les Exécuteurs<br/>\n    <b>Sire</b> : Kerzu\n  </div>\n</div>\n\nLa voix baisse d’un ton, comme si la salle elle-même écoutait.\n\n> « Aodren est le bras du Prince.  \n> Il ne promet rien. Il applique. »\n\nPuis, plus bas encore :\n\n> « On dit que les Exécuteurs n’aiment pas qu’on marche sur leurs traces.  \n> Pourtant, récemment, certaines traces ont été partagées.  \n> Sans morsure. Sans sanction. »\n\nUn sourire prudent.\n\n> « Peut-être était-ce une exception.  \n> Peut-être un calcul.  \n> Avec Aodren, la différence est rarement visible. »\n\nOn ne nomme pas l’ennemi.  \nOn laisse la peur remplir le reste.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "maela",
+            "label": "Maëla la Veilleuse",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Gangrel &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 11e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Crocs Silencieux<br/>\n    <b>Sire</b> : Aodren\n  </div>\n</div>\n\nUn regard glisse vers les portes, puis revient sur toi.\n\n> « Maëla voit ce qui s’approche des frontières.  \n> Et quand elle se tait… ce n’est pas qu’elle ignore. »\n\nOn raconte qu’elle juge rarement.  \nParce qu’elle intervient avant qu’on puisse plaider.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "ysabeau",
+            "label": "Ysabeau",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Nosferatu &nbsp;•&nbsp; <b>Âge</b> : Ancilla &nbsp;•&nbsp; <b>Génération</b> : 11e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Main du Prince<br/>\n    <b>Sire</b> : Magda l'Ecorchée (détruite)\n  </div>\n</div>\n\nLe murmure a quelque chose d’amusé, comme une confidence partagée.\n\n> « Ysabeau sait toujours plus qu’elle ne devrait.  \n> La question n’est pas ce qu’elle sait…  \n> mais à qui ses secrets finissent par appartenir. »\n\nUn souffle discret.\n\n> « On dit que certains papiers disparaissent.  \n> Et que les copies, elles, voyagent mieux que les originaux. »\n\nÀ Rennes, l’information circule.  \nEt personne ne jure qu’elle circule seule.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "ysoria",
+            "label": "Ysoria la Silencieuse",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Tremere &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 11e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation<br/>\n    <b>Sire</b> : Magister Leopold von Hartheim (actif à Vienne)\n  </div>\n</div>\n\nLe souffle se refroidit.\n\n> « Tout le monde sait qu’Ysoria vient de Vienne.  \n> Arrivée sans qu’on l’ait vraiment demandée,  \n> installée sans qu’on l’ait franchement validée. »\n\nUn temps.\n\n> « La rumeur ne porte pas sur ses talents.  \n> Mais sur la main qui tient la plume  \n> lorsqu’elle rédige ses conclusions. »\n\nDans ce clan, on ne doute pas de la discipline.  \nOn doute de la destination.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "maloch",
+            "label": "Frère Maloch l’Insondable",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Malkavien &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 9e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation<br/>\n    <b>Sire</b> : Agnès des Murmures\n  </div>\n</div>\n\nUn rire nerveux précède la phrase, comme un réflexe.\n\n> « Maloch dit parfois la vérité par erreur.  \n> Ceux qui l’écoutent assez longtemps regrettent toujours d’avoir compris. »\n\nOn prétend qu’il délire.  \nMais personne ne le pousse à répéter.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "guillaume",
+            "label": "Guillaume",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Brujah &nbsp;•&nbsp; <b>Âge</b> : Ancilla &nbsp;•&nbsp; <b>Génération</b> : 9e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Héritiers d'Alexandrie<br/>\n    <b>Sire</b> : Gwilherm\n  </div>\n</div>\n\nLe nom tombe plus bas que les autres.\n\n> « Il y a des morts qui terminent une guerre.  \n> Et d’autres qui commencent une pourriture. »\n\nOn raconte qu’à la Porte de la Madeleine, dans Rennes même, pendant que les portes cédaient et que les paysans de la Madeleine envahissaient les rues, deux vampires s’affrontèrent à l’écart du tumulte.\n\nMikolai von Hohenberg — le Toreador brillant, prestigieux, trop éclatant pour qu’on imagine sa lumière s’éteindre ainsi.  \nEt Guillaume.\n\n> « Ceux qui disent se souvenir jurent qu’il n’y eut ni meute, ni embuscade.  \n> Un combat singulier.  \n> Du sang sur les pierres.  \n> Puis Guillaume debout… et la tête de Mikolai qui ne l’était plus. »\n\nUn silence suit toujours cette partie.\n\n> « Certains Anciens pourraient encore confirmer chaque pierre, chaque cri, peut-être même la façon dont Mikolai est tombé.  \n> Curieusement, ils aiment peu qu’on leur pose la question. »\n\nPuis vient le murmure que les Toreador détestent davantage :\n\n> « Peut-être que leur clan n’a pas commencé à mourir sous les flammes de l’Inquisition.  \n> Peut-être que cela avait commencé là.  \n> Quand Guillaume a séparé Mikolai de sa tête… et Rennes de l’idée que les Roses étaient intouchables. »\n\nPersonne ne peut prouver que cette nuit fut le commencement de leur chute.  \nMais à Rennes, certaines rumeurs survivent précisément parce qu’elles ressemblent trop à des souvenirs.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "ronan",
+            "label": "Ronan",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Brujah &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 10e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Héritiers d'Alexandrie<br/>\n    <b>Sire</b> : Sten Hurlesang\n  </div>\n</div>\n\nLe murmure se fait sec, presque fataliste.\n\n> « Tout le monde sait d’où vient Ronan.  \n> Son sire a choisi la rupture. Un traître, dit-on. »\n\nUn silence.\n\n> « S’il ne l'a pas rejoints, ce n’est pas par dévotion.  \n> Disons simplement qu’il existe des laisses  \n> qu’on ne voit pas… mais qu’on sent. »\n\nOn évite d’expliquer davantage.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "karel",
+            "label": "Karel",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Caitiff &nbsp;•&nbsp; <b>Âge</b> : Ancilla &nbsp;•&nbsp; <b>Génération</b> : 11e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Exécuteurs<br/>\n    <b>Sire</b> : Inconnu\n  </div>\n</div>\n\nLa voix se fait prudente, et l’on regarde autour avant de poursuivre.\n\n> « Karel n’a de place ici que parce que le Fléau l’accepte.  \n> Et parfois… c’est la seule légitimité qui compte. »\n\nUn silence.\n\n> « On dit qu’il a récemment escorté quelqu’un  \n> qui n’appartenait pas à ses affaires.  \n> Pas par bonté. Karel n’a pas ce genre de faiblesse. »\n\nUn sourire bref.\n\n> « Peut-être a-t-il vu une utilité.  \n> Peut-être a-t-il vu une dette.  \n> Ou peut-être a-t-il simplement reconnu  \n> qu’il valait mieux ramener certains témoins vivants. »\n\nLe rire est une monnaie dangereuse, à Rennes.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "pj_brujah",
+            "label": "PJ Brujah",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Brujah &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 9e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Héritiers d'Alexandrie<br/>\n    <b>Sire</b> : Gwilherm\n  </div>\n</div>\n\nLe murmure est teinté d’une ironie délicate.\n\n> « Il parle de libre arbitre.  \n> De justice.  \n> De défendre ceux que l’Elysium oublie. »\n\nUn sourire bref.\n\n> « C’est admirable.  \n> Surtout chez quelqu’un qu’il faut parfois sortir  \n> des mains des mortels comme un enfant pris en faute. »\n\nLa voix se fait plus basse.\n\n> « Pourtant, on dit aussi qu’il a tenu.  \n> Face à ce qui aurait dû le rompre.  \n> Trop fort pour être simplement imprudent.  \n> Trop visible pour être simplement innocent. »\n\nCertains idéaux sont offerts comme des cadeaux.  \nEt les cadeaux, parfois, portent une chaîne invisible.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "pj_ventrue",
+            "label": "PJ Ventrue",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Ventrue &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 10e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : Les Gardiens du Sacré<br/>\n    <b>Sire</b> : Odon\n  </div>\n</div>\n\nLa confidence prend un parfum de stratégie.\n\n> « Celui-là n’a pas été étreint pour errer.  \n> On l’a préparé. Formé. Placé. »\n\nUn temps.\n\n> « Et pourtant, même les pièces bien placées  \n> se retrouvent parfois sur de mauvaises cases. »\n\nUn sourire contrôlé.\n\n> « On raconte qu’il a été interrogé par des hommes du duché.  \n> Humiliant, sans doute.  \n> Mais instructif.  \n> Il est revenu. Propre. Vivant. Couvert par plus grand que lui. »\n\nÀ l’Elysium, la propreté est rarement innocente.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "pj_tremere",
+            "label": "PJ Tremere",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Trémère &nbsp;•&nbsp; <b>Âge</b> : Nouveau-né &nbsp;•&nbsp; <b>Génération</b> : 8e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Fondation<br/>\n    <b>Sire</b> : Simon\n  </div>\n</div>\n\nLa confidence se fait plus feutrée.\n\n> « On raconte qu’il n’a pas été étreint par nécessité…  \n> mais pour renforcer la position politique de son clan. »\n\nUn silence.\n\n> « La vraie question n’est pas pourquoi il est là.  \n> Mais au détriment de qui. »\n\nOn murmure que son sire est ambitieux —  \npour lui, le savoir est un pouvoir.  \nEt le pouvoir… une fin en soi.\n\nCertains observent cette expansion avec prudence.  \nReste à savoir si les rivalités s’exploiteront…  \nou si elles s’effaceront, le temps d’en contenir les velléités.\n",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "pj_toreador",
+            "label": "PJ Toréador",
+            "answer_md": "\n<div style=\"margin:0.8rem 0 1.2rem 0; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,0.18); border-radius:16px; background:linear-gradient(145deg, rgba(255,255,255,0.05), rgba(0,0,0,0.25)); box-shadow:0 8px 24px rgba(0,0,0,0.35);\">\n  <div style=\"font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.75;\">✦ Registre : identité consignée ✦</div>\n  <div style=\"margin-top:0.6rem; line-height:1.45;\">\n    <b>Clan</b> : Toréador &nbsp;•&nbsp; <b>Âge</b> : Nouveau-née &nbsp;•&nbsp; <b>Génération</b> : 9e<br/>\n    <b>Rôle</b> : — &nbsp;•&nbsp; <b>Coterie</b> : La Main du Prince<br/>\n    <b>Sire</b> : Aliénor de Dinan\n  </div>\n</div>\n\nLe murmure sonne presque tendre, mais l’intention est claire.\n\n> « Elle a vécu dans les jupons de sa sire,  \n> à l’abri des conflits, dans une cage dorée.  \n> Le velours n’adoucit pas les barreaux. »\n\nUn sourire.\n\n> « On dit qu’elle tremble quand les lames parlent.  \n> Mais qu’elle sait encore rappeler aux autres  \n> quand il faut se taire, mentir, sourire  \n> et laisser la ville croire ce qu’elle doit croire. »\n\nUn silence plus fin.\n\n> « Fragile, oui.  \n> Inutile, non.  \n> Et cela rend son cas beaucoup plus intéressant. »\n\nÀ Rennes, la liberté se négocie souvent au pas de quelqu’un d’autre.\n",
+            "followups": [],
+            "ends_scene": true
+          }
+        ],
+        "allow_undo": true,
+        "allow_restart_after_choice": true
+      },
+      "source_kind": "git",
+      "legacy_source_path": "scenes.rumeurs_elysium",
+      "source_git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+      "enabled": true
+    },
+    {
+      "scene_id": "scene_privee_benoit_fer_froid",
+      "title": "Le fer froid se souvient",
+      "delivery_mode": "individual",
+      "intended_character_ref": null,
+      "schema_version": 1,
+      "payload": {
+        "schema_version": 1,
+        "id": "scene_privee_benoit_fer_froid",
+        "title": "Le fer froid se souvient",
+        "intro_md": "Depuis que tu es entré au **Pain Amical**, quelque chose te crispe.\n\nLe fer est partout : clous trop épais, ferrures bâclées, crochets, chaînes réparées, métal grossier et mal travaillé. Ce n'est pas le fer froid de Bruges, pourtant ton corps le déteste sans que tu puisses l'expliquer rationnellement.\n\n**Effet tant que Benoît reste dans l'auberge : –1 dé à toutes ses actions.**\n\nGurvan devrait être beaucoup plus proche de la mort. Pourtant quelque chose travaille sa chair. Lorsque tu t'approches pour l'examiner, la cicatrice située sur ton cœur commence à brûler et le souvenir de Bruges remonte : Scalla, Simon, le cercle, le fer froid, la créature captive.",
+        "choices": [
+          {
+            "id": "benoit_reculer",
+            "label": "Reculer",
+            "answer_md": "Tu romps l'observation. La brûlure diminue.\n\nTu n'apprends rien de certain sur Gurvan. Tu sais seulement que quelque chose dans son état a réveillé la marque de Bruges.",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "benoit_forcer_sens",
+            "label": "Forcer tes sens à regarder au-delà de la chair",
+            "answer_md": "**Jet physique : Résolution + Auspex — Difficulté 2.**\n\nLe **–1 dé du Pain Amical** s'applique. La Volonté peut être utilisée normalement.\n\nEffectue le jet à table, puis sélectionne son résultat.",
+            "followups": [
+              {
+                "id": "benoit_resultat_echec",
+                "label": "Échec",
+                "answer_md": "Tu forces trop. Bruges se superpose à Gurvan et tu ne distingues plus ce que tu perçois réellement de ce que ta cicatrice te fait revivre.\n\n**Aucune information fiable.**\n\nTu peux accepter l'échec ou dépenser volontairement **1 Volonté** pour forcer la branche d'**échec brutal**.",
+                "followups": [
+                  {
+                    "id": "benoit_accepter_echec",
+                    "label": "Accepter l'échec",
+                    "answer_md": "Tu abandonnes l'examen. La sensation décroît lentement. **Aucune information obtenue.**",
+                    "followups": [],
+                    "ends_scene": true
+                  },
+                  {
+                    "id": "benoit_forcer_echec_brutal",
+                    "label": "Dépenser 1 Volonté et forcer",
+                    "answer_md": "Tu forces malgré l'absence de réponse claire. Bruges et Gurvan se confondent, sans information fiable.\n\nLa cicatrice située sur ton cœur s'ouvre brutalement et le sang traverse tes vêtements. Avec la douleur remonte la noirceur de ton âme maudite — peut-être seulement celle de tout vampire, peut-être aussi celle de l'hérésie et de l'horreur du rituel que l'on t'a fait subir.\n\n**Conséquences si cette branche est jouée :**\n- **+1 Soif**\n- **+1 Flétrissure**\n- aucune information fiable sur Gurvan\n\n### Inspiration rituelle\nCette branche brutale t'inspire une piste de recherche.\n\nSi Benoît consacre plus tard le temps nécessaire à **La Fondation de Rennes** pour créer ou développer un **nouveau rituel ayant un lien réel avec le monde féerique**, ce rituel coûte **1 XP de moins**.\n\n*Usage unique. Rien n'est acquis tant que cette branche n'a pas été effectivement jouée et confirmée par le MJ.*",
+                    "followups": [],
+                    "ends_scene": true
+                  }
+                ],
+                "ends_scene": false
+              },
+              {
+                "id": "benoit_resultat_echec_brutal",
+                "label": "Échec brutal",
+                "answer_md": "Tu forces malgré l'absence de réponse claire. Bruges et Gurvan se confondent, sans information fiable.\n\nLa cicatrice située sur ton cœur s'ouvre brutalement et le sang traverse tes vêtements. Avec la douleur remonte la noirceur de ton âme maudite — peut-être seulement celle de tout vampire, peut-être aussi celle de l'hérésie et de l'horreur du rituel que l'on t'a fait subir.\n\n**Conséquences si cette branche est jouée :**\n- **+1 Soif**\n- **+1 Flétrissure**\n- aucune information fiable sur Gurvan\n\n### Inspiration rituelle\nCette branche brutale t'inspire une piste de recherche.\n\nSi Benoît consacre plus tard le temps nécessaire à **La Fondation de Rennes** pour créer ou développer un **nouveau rituel ayant un lien réel avec le monde féerique**, ce rituel coûte **1 XP de moins**.\n\n*Usage unique. Rien n'est acquis tant que cette branche n'a pas été effectivement jouée et confirmée par le MJ.*",
+                "followups": [],
+                "ends_scene": true
+              },
+              {
+                "id": "benoit_resultat_succes",
+                "label": "Succès",
+                "answer_md": "La confusion disparaît. Tu ne sais pas ce qui travaille Gurvan, mais quelque chose en toi reconnaît immédiatement une absence.\n\n**Ce phénomène n'est pas féerique.**\n\nTu ignores comment ton Sang peut en être aussi certain.\n\nTu peux accepter ce succès ou dépenser volontairement **1 Volonté** pour forcer la branche de **succès brutal**.",
+                "followups": [
+                  {
+                    "id": "benoit_accepter_succes",
+                    "label": "Accepter le succès",
+                    "answer_md": "Tu t'arrêtes sur cette certitude. **Le phénomène n'est pas féerique.**",
+                    "followups": [],
+                    "ends_scene": true
+                  },
+                  {
+                    "id": "benoit_forcer_succes_brutal",
+                    "label": "Dépenser 1 Volonté et forcer",
+                    "answer_md": "Tu comprends successivement :\n\n**Ce n'est pas féerique.**\n\n**C'est profondément corrompu.**\n\nPuis tu perçois que cette corruption ne demeure pas simplement dans Gurvan : elle cherche à passer, s'étendre, contaminer et transformer.\n\n**Elle est infectieuse.**\n\nAu même instant, la cicatrice située sur ton cœur s'ouvre et saigne abondamment. Avec la douleur remonte la noirceur de ton âme maudite — celle de la Bête, celle du rituel de Bruges, ou les deux mêlées.\n\n**Conséquences si cette branche est jouée :**\n- **+1 Soif**\n- **+1 Flétrissure**\n\n### Inspiration rituelle\nCette branche brutale t'inspire une piste de recherche.\n\nSi Benoît consacre plus tard le temps nécessaire à **La Fondation de Rennes** pour créer ou développer un **nouveau rituel ayant un lien réel avec le monde féerique**, ce rituel coûte **1 XP de moins**.\n\n*Usage unique. Rien n'est acquis tant que cette branche n'a pas été effectivement jouée et confirmée par le MJ.*",
+                    "followups": [],
+                    "ends_scene": true
+                  }
+                ],
+                "ends_scene": false
+              },
+              {
+                "id": "benoit_resultat_critique",
+                "label": "Succès critique",
+                "answer_md": "La première certitude est immédiate : **ce phénomène n'est pas féerique**.\n\nPuis ta perception va plus profond. Tu reconnais une corruption qui paraît plus radicale encore que ta propre nature vampirique.\n\n**Informations obtenues :**\n- non féerique ;\n- profondément corrompu.\n\nTu n'en comprends ni l'origine ni le mécanisme.\n\n**Récompense exceptionnelle si cette branche est effectivement jouée :**\n- **+1 XP en Auspex**",
+                "followups": [],
+                "ends_scene": true
+              },
+              {
+                "id": "benoit_resultat_bestial",
+                "label": "Succès bestial (critique)",
+                "answer_md": "Tu comprends successivement :\n\n**Ce n'est pas féerique.**\n\n**C'est profondément corrompu.**\n\nPuis tu perçois que cette corruption ne demeure pas simplement dans Gurvan : elle cherche à passer, s'étendre, contaminer et transformer.\n\n**Elle est infectieuse.**\n\nAu même instant, la cicatrice située sur ton cœur s'ouvre et saigne abondamment. Avec la douleur remonte la noirceur de ton âme maudite — celle de la Bête, celle du rituel de Bruges, ou les deux mêlées.\n\n**Conséquences si cette branche est jouée :**\n- **+1 Soif**\n- **+1 Flétrissure**\n\n### Inspiration rituelle\nCette branche brutale t'inspire une piste de recherche.\n\nSi Benoît consacre plus tard le temps nécessaire à **La Fondation de Rennes** pour créer ou développer un **nouveau rituel ayant un lien réel avec le monde féerique**, ce rituel coûte **1 XP de moins**.\n\n*Usage unique. Rien n'est acquis tant que cette branche n'a pas été effectivement jouée et confirmée par le MJ.*",
+                "followups": [],
+                "ends_scene": true
+              }
+            ],
+            "ends_scene": false
+          }
+        ],
+        "allow_undo": true,
+        "allow_restart_after_choice": true
+      },
+      "source_kind": "git",
+      "legacy_source_path": "private:benoit_fer_froid.py",
+      "source_git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+      "enabled": true
+    },
+    {
+      "scene_id": "scene_privee_perrine_legs_chair",
+      "title": "Le legs de chair",
+      "delivery_mode": "individual",
+      "intended_character_ref": null,
+      "schema_version": 1,
+      "payload": {
+        "schema_version": 1,
+        "id": "scene_privee_perrine_legs_chair",
+        "title": "Le legs de chair",
+        "intro_md": "Saint-Germain commence à rester derrière vous et le chemin ramène vers Rennes.\n\nÀ l'écart, **Maël** t'attend. Il tient un long étui de cuir sombre, fermé par un sceau ancien.\n\n« Pour la dame de Dinan. De votre main à la sienne. »\n\n*Cette version suppose Maël vivant, libre et disponible. Si ce n'est pas le cas en jeu, le MJ remplace simplement le porteur par un fidèle discret du Vieux Qui Écoute sans modifier le contenu de la scène.*",
+        "choices": [
+          {
+            "id": "legs_accepter_immediat",
+            "label": "Prendre l'étui",
+            "answer_md": "Maël te remet l'étui. « De votre main à la sienne. » Puis il s'éloigne.",
+            "followups": [
+              {
+                "id": "legs_preserver_direct",
+                "label": "Préserver le sceau",
+                "answer_md": "Tu conserves l'étui intact. Son contenu reste destiné à Aliénor. La suite dépendra de ce que tu décideras réellement de faire de l'objet.",
+                "followups": [],
+                "ends_scene": true
+              },
+              {
+                "id": "legs_examiner_sceau",
+                "label": "Examiner le sceau",
+                "answer_md": "**Jet physique facultatif : Intelligence + Occultisme — Difficulté 4.**\n\nEffectue le jet à table, puis sélectionne le résultat.",
+                "followups": [
+                  {
+                    "id": "legs_sceau_echec",
+                    "label": "Échec",
+                    "answer_md": "Tu n'identifies que des symboles anciens, païens et manifestement hérétiques.",
+                    "followups": [
+                      {
+                        "id": "legs_sceau_echec_preserver",
+                        "label": "Préserver le sceau",
+                        "answer_md": "Tu conserves l'étui fermé et intact.",
+                        "followups": [],
+                        "ends_scene": true
+                      },
+                      {
+                        "id": "legs_sceau_echec_ouvrir",
+                        "label": "Rompre le sceau et ouvrir",
+                        "answer_md": "### L'œuvre\nAliénor est représentée nue, mais son corps n'est plus entièrement humain.\n\nDes ailes membraneuses naissent dans son dos. Des structures osseuses suivent ses flancs avec une élégance presque architecturale. Certaines excroissances pourraient éventrer un homme. Ses mains sont longues, fines, prédatrices. Son visage demeure parfaitement reconnaissable, mais ses pommettes sont plus hautes, ses lignes plus cruelles, ses proportions presque irréelles.\n\nChaque transformation monstrueuse semble obéir à la même règle : ne jamais sacrifier la beauté à l'efficacité lorsque les deux peuvent être obtenues ensemble. Des pigments subtils donnent même les teintes de la chair, des membranes et des reliefs osseux.\n\nL'auteur connaît le corps d'Aliénor avec une précision intime.\n\n**Effet immédiat si cette découverte est effectivement jouée : +1 Flétrissure et 1 dégât superficiel de Volonté.**\n\n### Les mots\n**Aliénor,**\n\nLa nature t'a presque achevée.  \nElle a eu peur au dernier instant.\n\nMoi non.\n\nJe me souviens de ta chair sous mes doigts et de ton Sang lorsqu'il cessait enfin de résister.\n\nTu pourrais commander.  \nTu as pourtant toujours préféré qu'une autre volonté te dise où mordre.\n\nAvec moi, je l'acceptais.  \nAvec les autres, c'est une faiblesse.\n\nJe ne veux plus que tu offres la gorge.  \nJe veux que l'on s'agenouille devant tes crocs.\n\nTes pommettes peuvent apprendre le mépris.  \nTes mains peuvent apprendre à posséder.\n\nTa beauté n'a jamais été faite pour être contemplée.  \nElle est faite pour soumettre.\n\nNe commence pas sur toi.  \nTu es trop précieuse pour porter tes premières erreurs.\n\nPrends de la matière qui ne compte pas.  \nApprends sur elle.\n\nEt lorsque tes mains ne trembleront plus, reprends possession de ta propre chair.",
+                        "followups": [
+                          {
+                            "id": "legs_arreter_recto",
+                            "label": "T'arrêter là",
+                            "answer_md": "Tu as déjà vu suffisamment pour comprendre que l'auteur connaît intimement Aliénor, son corps, son Sang et une part de sa nature. Le sceau est brisé.",
+                            "followups": [],
+                            "ends_scene": true
+                          },
+                          {
+                            "id": "legs_lire_revers",
+                            "label": "Lire le revers",
+                            "answer_md": "Le revers n'est plus une œuvre : ce sont des études techniques.\n\nLes pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.\n\nDes silhouettes humaines anonymes servent de matière d'entraînement.\n\n> **Le Sang restaure ce qu'il croit être toi. Force-le assez souvent à voir autre chose, et même lui finit par apprendre.**\n\n> **N'apprends jamais une erreur sur toi lorsque quelqu'un d'autre peut la porter.**\n\n> **Je sais ce que tu es lorsque personne ne choisit pour toi. C'est précisément pour cela que je veux t'apprendre à choisir pour les autres.**\n\n**Effet si cette lecture est effectivement jouée : le dégât de Volonté de la découverte devient aggravé au lieu de superficiel. Il ne s'agit pas d'un second dégât. La Flétrissure reste à +1.**",
+                            "followups": [],
+                            "ends_scene": true
+                          }
+                        ],
+                        "ends_scene": false
+                      }
+                    ],
+                    "ends_scene": false
+                  },
+                  {
+                    "id": "legs_sceau_succes",
+                    "label": "Succès",
+                    "answer_md": "Ce n'est pas une simple fantaisie hérétique. Le sceau appartenait à une **ancienne lignée noble disparue depuis plusieurs siècles**, associée à des traditions préchrétiennes et à une forme de **paganisme celtique**.\n\nLe nom exact de cette lignée ne t'est pas donné.",
+                    "followups": [
+                      {
+                        "id": "legs_sceau_succes_preserver",
+                        "label": "Préserver le sceau",
+                        "answer_md": "Tu conserves l'étui fermé et intact.",
+                        "followups": [],
+                        "ends_scene": true
+                      },
+                      {
+                        "id": "legs_sceau_succes_ouvrir",
+                        "label": "Rompre le sceau et ouvrir",
+                        "answer_md": "### L'œuvre\nAliénor est représentée nue, mais son corps n'est plus entièrement humain.\n\nDes ailes membraneuses naissent dans son dos. Des structures osseuses suivent ses flancs avec une élégance presque architecturale. Certaines excroissances pourraient éventrer un homme. Ses mains sont longues, fines, prédatrices. Son visage demeure parfaitement reconnaissable, mais ses pommettes sont plus hautes, ses lignes plus cruelles, ses proportions presque irréelles.\n\nChaque transformation monstrueuse semble obéir à la même règle : ne jamais sacrifier la beauté à l'efficacité lorsque les deux peuvent être obtenues ensemble. Des pigments subtils donnent même les teintes de la chair, des membranes et des reliefs osseux.\n\nL'auteur connaît le corps d'Aliénor avec une précision intime.\n\n**Effet immédiat si cette découverte est effectivement jouée : +1 Flétrissure et 1 dégât superficiel de Volonté.**\n\n### Les mots\n**Aliénor,**\n\nLa nature t'a presque achevée.  \nElle a eu peur au dernier instant.\n\nMoi non.\n\nJe me souviens de ta chair sous mes doigts et de ton Sang lorsqu'il cessait enfin de résister.\n\nTu pourrais commander.  \nTu as pourtant toujours préféré qu'une autre volonté te dise où mordre.\n\nAvec moi, je l'acceptais.  \nAvec les autres, c'est une faiblesse.\n\nJe ne veux plus que tu offres la gorge.  \nJe veux que l'on s'agenouille devant tes crocs.\n\nTes pommettes peuvent apprendre le mépris.  \nTes mains peuvent apprendre à posséder.\n\nTa beauté n'a jamais été faite pour être contemplée.  \nElle est faite pour soumettre.\n\nNe commence pas sur toi.  \nTu es trop précieuse pour porter tes premières erreurs.\n\nPrends de la matière qui ne compte pas.  \nApprends sur elle.\n\nEt lorsque tes mains ne trembleront plus, reprends possession de ta propre chair.",
+                        "followups": [
+                          {
+                            "id": "legs_arreter_recto",
+                            "label": "T'arrêter là",
+                            "answer_md": "Tu as déjà vu suffisamment pour comprendre que l'auteur connaît intimement Aliénor, son corps, son Sang et une part de sa nature. Le sceau est brisé.",
+                            "followups": [],
+                            "ends_scene": true
+                          },
+                          {
+                            "id": "legs_lire_revers",
+                            "label": "Lire le revers",
+                            "answer_md": "Le revers n'est plus une œuvre : ce sont des études techniques.\n\nLes pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.\n\nDes silhouettes humaines anonymes servent de matière d'entraînement.\n\n> **Le Sang restaure ce qu'il croit être toi. Force-le assez souvent à voir autre chose, et même lui finit par apprendre.**\n\n> **N'apprends jamais une erreur sur toi lorsque quelqu'un d'autre peut la porter.**\n\n> **Je sais ce que tu es lorsque personne ne choisit pour toi. C'est précisément pour cela que je veux t'apprendre à choisir pour les autres.**\n\n**Effet si cette lecture est effectivement jouée : le dégât de Volonté de la découverte devient aggravé au lieu de superficiel. Il ne s'agit pas d'un second dégât. La Flétrissure reste à +1.**",
+                            "followups": [],
+                            "ends_scene": true
+                          }
+                        ],
+                        "ends_scene": false
+                      }
+                    ],
+                    "ends_scene": false
+                  }
+                ],
+                "ends_scene": false
+              },
+              {
+                "id": "legs_ouvrir_direct",
+                "label": "Rompre le sceau et ouvrir",
+                "answer_md": "### L'œuvre\nAliénor est représentée nue, mais son corps n'est plus entièrement humain.\n\nDes ailes membraneuses naissent dans son dos. Des structures osseuses suivent ses flancs avec une élégance presque architecturale. Certaines excroissances pourraient éventrer un homme. Ses mains sont longues, fines, prédatrices. Son visage demeure parfaitement reconnaissable, mais ses pommettes sont plus hautes, ses lignes plus cruelles, ses proportions presque irréelles.\n\nChaque transformation monstrueuse semble obéir à la même règle : ne jamais sacrifier la beauté à l'efficacité lorsque les deux peuvent être obtenues ensemble. Des pigments subtils donnent même les teintes de la chair, des membranes et des reliefs osseux.\n\nL'auteur connaît le corps d'Aliénor avec une précision intime.\n\n**Effet immédiat si cette découverte est effectivement jouée : +1 Flétrissure et 1 dégât superficiel de Volonté.**\n\n### Les mots\n**Aliénor,**\n\nLa nature t'a presque achevée.  \nElle a eu peur au dernier instant.\n\nMoi non.\n\nJe me souviens de ta chair sous mes doigts et de ton Sang lorsqu'il cessait enfin de résister.\n\nTu pourrais commander.  \nTu as pourtant toujours préféré qu'une autre volonté te dise où mordre.\n\nAvec moi, je l'acceptais.  \nAvec les autres, c'est une faiblesse.\n\nJe ne veux plus que tu offres la gorge.  \nJe veux que l'on s'agenouille devant tes crocs.\n\nTes pommettes peuvent apprendre le mépris.  \nTes mains peuvent apprendre à posséder.\n\nTa beauté n'a jamais été faite pour être contemplée.  \nElle est faite pour soumettre.\n\nNe commence pas sur toi.  \nTu es trop précieuse pour porter tes premières erreurs.\n\nPrends de la matière qui ne compte pas.  \nApprends sur elle.\n\nEt lorsque tes mains ne trembleront plus, reprends possession de ta propre chair.",
+                "followups": [
+                  {
+                    "id": "legs_arreter_recto",
+                    "label": "T'arrêter là",
+                    "answer_md": "Tu as déjà vu suffisamment pour comprendre que l'auteur connaît intimement Aliénor, son corps, son Sang et une part de sa nature. Le sceau est brisé.",
+                    "followups": [],
+                    "ends_scene": true
+                  },
+                  {
+                    "id": "legs_lire_revers",
+                    "label": "Lire le revers",
+                    "answer_md": "Le revers n'est plus une œuvre : ce sont des études techniques.\n\nLes pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.\n\nDes silhouettes humaines anonymes servent de matière d'entraînement.\n\n> **Le Sang restaure ce qu'il croit être toi. Force-le assez souvent à voir autre chose, et même lui finit par apprendre.**\n\n> **N'apprends jamais une erreur sur toi lorsque quelqu'un d'autre peut la porter.**\n\n> **Je sais ce que tu es lorsque personne ne choisit pour toi. C'est précisément pour cela que je veux t'apprendre à choisir pour les autres.**\n\n**Effet si cette lecture est effectivement jouée : le dégât de Volonté de la découverte devient aggravé au lieu de superficiel. Il ne s'agit pas d'un second dégât. La Flétrissure reste à +1.**",
+                    "followups": [],
+                    "ends_scene": true
+                  }
+                ],
+                "ends_scene": false
+              }
+            ],
+            "ends_scene": false
+          },
+          {
+            "id": "legs_refuser_immediat",
+            "label": "Refuser",
+            "answer_md": "Maël reprend simplement l'étui.\n\n« Comme vous voudrez. »\n\nIl s'éloigne. Cette rencontre ne t'apporte aucune **preuve nouvelle** sur l'identité de l'expéditeur. Ce que tu en déduis reste entièrement fondé sur les informations que tu possèdes déjà.",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "legs_questions",
+            "label": "« Attendez. J'ai des questions. »",
+            "answer_md": "Tu lui demandes qui l'envoie, pourquoi toi et ce que contient l'étui.\n\nMaël répond sans impatience :\n\n« Celui qui l'envoie ne souhaite pas venir jusqu'à Rennes. »\n\n« Vous, parce qu'elle vous laissera approcher. »\n\nIl regarde l'étui.\n\n« Je ne l'ai pas ouvert. Je n'étais pas celui à qui l'on demandait de décider s'il devait le rester. »\n\nIl n'en dira pas davantage.",
+            "followups": [
+              {
+                "id": "legs_questions_accepter",
+                "label": "Accepter l'étui",
+                "answer_md": "Maël te remet l'étui et s'éloigne.",
+                "followups": [
+                  {
+                    "id": "legs_preserver_direct",
+                    "label": "Préserver le sceau",
+                    "answer_md": "Tu conserves l'étui intact. Son contenu reste destiné à Aliénor. La suite dépendra de ce que tu décideras réellement de faire de l'objet.",
+                    "followups": [],
+                    "ends_scene": true
+                  },
+                  {
+                    "id": "legs_examiner_sceau",
+                    "label": "Examiner le sceau",
+                    "answer_md": "**Jet physique facultatif : Intelligence + Occultisme — Difficulté 4.**\n\nEffectue le jet à table, puis sélectionne le résultat.",
+                    "followups": [
+                      {
+                        "id": "legs_sceau_echec",
+                        "label": "Échec",
+                        "answer_md": "Tu n'identifies que des symboles anciens, païens et manifestement hérétiques.",
+                        "followups": [
+                          {
+                            "id": "legs_sceau_echec_preserver",
+                            "label": "Préserver le sceau",
+                            "answer_md": "Tu conserves l'étui fermé et intact.",
+                            "followups": [],
+                            "ends_scene": true
+                          },
+                          {
+                            "id": "legs_sceau_echec_ouvrir",
+                            "label": "Rompre le sceau et ouvrir",
+                            "answer_md": "### L'œuvre\nAliénor est représentée nue, mais son corps n'est plus entièrement humain.\n\nDes ailes membraneuses naissent dans son dos. Des structures osseuses suivent ses flancs avec une élégance presque architecturale. Certaines excroissances pourraient éventrer un homme. Ses mains sont longues, fines, prédatrices. Son visage demeure parfaitement reconnaissable, mais ses pommettes sont plus hautes, ses lignes plus cruelles, ses proportions presque irréelles.\n\nChaque transformation monstrueuse semble obéir à la même règle : ne jamais sacrifier la beauté à l'efficacité lorsque les deux peuvent être obtenues ensemble. Des pigments subtils donnent même les teintes de la chair, des membranes et des reliefs osseux.\n\nL'auteur connaît le corps d'Aliénor avec une précision intime.\n\n**Effet immédiat si cette découverte est effectivement jouée : +1 Flétrissure et 1 dégât superficiel de Volonté.**\n\n### Les mots\n**Aliénor,**\n\nLa nature t'a presque achevée.  \nElle a eu peur au dernier instant.\n\nMoi non.\n\nJe me souviens de ta chair sous mes doigts et de ton Sang lorsqu'il cessait enfin de résister.\n\nTu pourrais commander.  \nTu as pourtant toujours préféré qu'une autre volonté te dise où mordre.\n\nAvec moi, je l'acceptais.  \nAvec les autres, c'est une faiblesse.\n\nJe ne veux plus que tu offres la gorge.  \nJe veux que l'on s'agenouille devant tes crocs.\n\nTes pommettes peuvent apprendre le mépris.  \nTes mains peuvent apprendre à posséder.\n\nTa beauté n'a jamais été faite pour être contemplée.  \nElle est faite pour soumettre.\n\nNe commence pas sur toi.  \nTu es trop précieuse pour porter tes premières erreurs.\n\nPrends de la matière qui ne compte pas.  \nApprends sur elle.\n\nEt lorsque tes mains ne trembleront plus, reprends possession de ta propre chair.",
+                            "followups": [
+                              {
+                                "id": "legs_arreter_recto",
+                                "label": "T'arrêter là",
+                                "answer_md": "Tu as déjà vu suffisamment pour comprendre que l'auteur connaît intimement Aliénor, son corps, son Sang et une part de sa nature. Le sceau est brisé.",
+                                "followups": [],
+                                "ends_scene": true
+                              },
+                              {
+                                "id": "legs_lire_revers",
+                                "label": "Lire le revers",
+                                "answer_md": "Le revers n'est plus une œuvre : ce sont des études techniques.\n\nLes pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.\n\nDes silhouettes humaines anonymes servent de matière d'entraînement.\n\n> **Le Sang restaure ce qu'il croit être toi. Force-le assez souvent à voir autre chose, et même lui finit par apprendre.**\n\n> **N'apprends jamais une erreur sur toi lorsque quelqu'un d'autre peut la porter.**\n\n> **Je sais ce que tu es lorsque personne ne choisit pour toi. C'est précisément pour cela que je veux t'apprendre à choisir pour les autres.**\n\n**Effet si cette lecture est effectivement jouée : le dégât de Volonté de la découverte devient aggravé au lieu de superficiel. Il ne s'agit pas d'un second dégât. La Flétrissure reste à +1.**",
+                                "followups": [],
+                                "ends_scene": true
+                              }
+                            ],
+                            "ends_scene": false
+                          }
+                        ],
+                        "ends_scene": false
+                      },
+                      {
+                        "id": "legs_sceau_succes",
+                        "label": "Succès",
+                        "answer_md": "Ce n'est pas une simple fantaisie hérétique. Le sceau appartenait à une **ancienne lignée noble disparue depuis plusieurs siècles**, associée à des traditions préchrétiennes et à une forme de **paganisme celtique**.\n\nLe nom exact de cette lignée ne t'est pas donné.",
+                        "followups": [
+                          {
+                            "id": "legs_sceau_succes_preserver",
+                            "label": "Préserver le sceau",
+                            "answer_md": "Tu conserves l'étui fermé et intact.",
+                            "followups": [],
+                            "ends_scene": true
+                          },
+                          {
+                            "id": "legs_sceau_succes_ouvrir",
+                            "label": "Rompre le sceau et ouvrir",
+                            "answer_md": "### L'œuvre\nAliénor est représentée nue, mais son corps n'est plus entièrement humain.\n\nDes ailes membraneuses naissent dans son dos. Des structures osseuses suivent ses flancs avec une élégance presque architecturale. Certaines excroissances pourraient éventrer un homme. Ses mains sont longues, fines, prédatrices. Son visage demeure parfaitement reconnaissable, mais ses pommettes sont plus hautes, ses lignes plus cruelles, ses proportions presque irréelles.\n\nChaque transformation monstrueuse semble obéir à la même règle : ne jamais sacrifier la beauté à l'efficacité lorsque les deux peuvent être obtenues ensemble. Des pigments subtils donnent même les teintes de la chair, des membranes et des reliefs osseux.\n\nL'auteur connaît le corps d'Aliénor avec une précision intime.\n\n**Effet immédiat si cette découverte est effectivement jouée : +1 Flétrissure et 1 dégât superficiel de Volonté.**\n\n### Les mots\n**Aliénor,**\n\nLa nature t'a presque achevée.  \nElle a eu peur au dernier instant.\n\nMoi non.\n\nJe me souviens de ta chair sous mes doigts et de ton Sang lorsqu'il cessait enfin de résister.\n\nTu pourrais commander.  \nTu as pourtant toujours préféré qu'une autre volonté te dise où mordre.\n\nAvec moi, je l'acceptais.  \nAvec les autres, c'est une faiblesse.\n\nJe ne veux plus que tu offres la gorge.  \nJe veux que l'on s'agenouille devant tes crocs.\n\nTes pommettes peuvent apprendre le mépris.  \nTes mains peuvent apprendre à posséder.\n\nTa beauté n'a jamais été faite pour être contemplée.  \nElle est faite pour soumettre.\n\nNe commence pas sur toi.  \nTu es trop précieuse pour porter tes premières erreurs.\n\nPrends de la matière qui ne compte pas.  \nApprends sur elle.\n\nEt lorsque tes mains ne trembleront plus, reprends possession de ta propre chair.",
+                            "followups": [
+                              {
+                                "id": "legs_arreter_recto",
+                                "label": "T'arrêter là",
+                                "answer_md": "Tu as déjà vu suffisamment pour comprendre que l'auteur connaît intimement Aliénor, son corps, son Sang et une part de sa nature. Le sceau est brisé.",
+                                "followups": [],
+                                "ends_scene": true
+                              },
+                              {
+                                "id": "legs_lire_revers",
+                                "label": "Lire le revers",
+                                "answer_md": "Le revers n'est plus une œuvre : ce sont des études techniques.\n\nLes pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.\n\nDes silhouettes humaines anonymes servent de matière d'entraînement.\n\n> **Le Sang restaure ce qu'il croit être toi. Force-le assez souvent à voir autre chose, et même lui finit par apprendre.**\n\n> **N'apprends jamais une erreur sur toi lorsque quelqu'un d'autre peut la porter.**\n\n> **Je sais ce que tu es lorsque personne ne choisit pour toi. C'est précisément pour cela que je veux t'apprendre à choisir pour les autres.**\n\n**Effet si cette lecture est effectivement jouée : le dégât de Volonté de la découverte devient aggravé au lieu de superficiel. Il ne s'agit pas d'un second dégât. La Flétrissure reste à +1.**",
+                                "followups": [],
+                                "ends_scene": true
+                              }
+                            ],
+                            "ends_scene": false
+                          }
+                        ],
+                        "ends_scene": false
+                      }
+                    ],
+                    "ends_scene": false
+                  },
+                  {
+                    "id": "legs_ouvrir_direct",
+                    "label": "Rompre le sceau et ouvrir",
+                    "answer_md": "### L'œuvre\nAliénor est représentée nue, mais son corps n'est plus entièrement humain.\n\nDes ailes membraneuses naissent dans son dos. Des structures osseuses suivent ses flancs avec une élégance presque architecturale. Certaines excroissances pourraient éventrer un homme. Ses mains sont longues, fines, prédatrices. Son visage demeure parfaitement reconnaissable, mais ses pommettes sont plus hautes, ses lignes plus cruelles, ses proportions presque irréelles.\n\nChaque transformation monstrueuse semble obéir à la même règle : ne jamais sacrifier la beauté à l'efficacité lorsque les deux peuvent être obtenues ensemble. Des pigments subtils donnent même les teintes de la chair, des membranes et des reliefs osseux.\n\nL'auteur connaît le corps d'Aliénor avec une précision intime.\n\n**Effet immédiat si cette découverte est effectivement jouée : +1 Flétrissure et 1 dégât superficiel de Volonté.**\n\n### Les mots\n**Aliénor,**\n\nLa nature t'a presque achevée.  \nElle a eu peur au dernier instant.\n\nMoi non.\n\nJe me souviens de ta chair sous mes doigts et de ton Sang lorsqu'il cessait enfin de résister.\n\nTu pourrais commander.  \nTu as pourtant toujours préféré qu'une autre volonté te dise où mordre.\n\nAvec moi, je l'acceptais.  \nAvec les autres, c'est une faiblesse.\n\nJe ne veux plus que tu offres la gorge.  \nJe veux que l'on s'agenouille devant tes crocs.\n\nTes pommettes peuvent apprendre le mépris.  \nTes mains peuvent apprendre à posséder.\n\nTa beauté n'a jamais été faite pour être contemplée.  \nElle est faite pour soumettre.\n\nNe commence pas sur toi.  \nTu es trop précieuse pour porter tes premières erreurs.\n\nPrends de la matière qui ne compte pas.  \nApprends sur elle.\n\nEt lorsque tes mains ne trembleront plus, reprends possession de ta propre chair.",
+                    "followups": [
+                      {
+                        "id": "legs_arreter_recto",
+                        "label": "T'arrêter là",
+                        "answer_md": "Tu as déjà vu suffisamment pour comprendre que l'auteur connaît intimement Aliénor, son corps, son Sang et une part de sa nature. Le sceau est brisé.",
+                        "followups": [],
+                        "ends_scene": true
+                      },
+                      {
+                        "id": "legs_lire_revers",
+                        "label": "Lire le revers",
+                        "answer_md": "Le revers n'est plus une œuvre : ce sont des études techniques.\n\nLes pommettes sont reprises en plusieurs étapes. Puis viennent les mains : chair ouverte, doigts progressivement allongés et affinés, blessures répétées puis régénérées avec le Sang. Les annotations alternent modelage volontaire de la chair, observation de sa régénération et reprises successives destinées à apprendre à imposer une forme avec précision plutôt qu'à la subir.\n\nDes silhouettes humaines anonymes servent de matière d'entraînement.\n\n> **Le Sang restaure ce qu'il croit être toi. Force-le assez souvent à voir autre chose, et même lui finit par apprendre.**\n\n> **N'apprends jamais une erreur sur toi lorsque quelqu'un d'autre peut la porter.**\n\n> **Je sais ce que tu es lorsque personne ne choisit pour toi. C'est précisément pour cela que je veux t'apprendre à choisir pour les autres.**\n\n**Effet si cette lecture est effectivement jouée : le dégât de Volonté de la découverte devient aggravé au lieu de superficiel. Il ne s'agit pas d'un second dégât. La Flétrissure reste à +1.**",
+                        "followups": [],
+                        "ends_scene": true
+                      }
+                    ],
+                    "ends_scene": false
+                  }
+                ],
+                "ends_scene": false
+              },
+              {
+                "id": "legs_questions_refuser",
+                "label": "Refuser",
+                "answer_md": "Maël reprend simplement l'étui.\n\n« Comme vous voudrez. »\n\nIl s'éloigne. Cette rencontre ne t'apporte aucune **preuve nouvelle** sur l'identité de l'expéditeur. Ce que tu en déduis reste entièrement fondé sur les informations que tu possèdes déjà.",
+                "followups": [],
+                "ends_scene": true
+              }
+            ],
+            "ends_scene": false
+          }
+        ],
+        "allow_undo": true,
+        "allow_restart_after_choice": true
+      },
+      "source_kind": "git",
+      "legacy_source_path": "private:perrine_legs_chair.py",
+      "source_git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+      "enabled": true
+    },
+    {
+      "scene_id": "scene_privee_perrine_une_seule_question",
+      "title": "Une seule question",
+      "delivery_mode": "individual",
+      "intended_character_ref": null,
+      "schema_version": 1,
+      "payload": {
+        "schema_version": 1,
+        "id": "scene_privee_perrine_une_seule_question",
+        "title": "Une seule question",
+        "intro_md": "**Aliénor — Une seule question**\n\n*Aliénor la regarde longtemps avant de parler.*\n\n« Je me souviens de la nuit où je t’ai Étreinte. De ce que tu étais… et de ce que j’ai choisi de **garder**. »\n\n*Elle effleure sa joue.*\n\n« Depuis, tu poses des questions. Sur moi. Sur notre Sang. Sur nos morts. Sur tout ce que je préférerais parfois laisser **enterré**. »\n\n*Un faible sourire.*\n\n« Tu es mon infante. C’est ainsi que notre monde te nomme. »\n\n*Sa main demeure un instant contre son visage.*\n\n« Ce n’est pas faux. C’est seulement incomplet. »\n\n*Elle laisse cette phrase vivre sans l’expliquer.*\n\n« Ce qui m’a façonnée finira toujours par t’atteindre. Alors, ce soir, je t’accorde **une question**. Une seule. Sur moi, notre lignée, ceux qui nous ont précédées… ou ce que j’entends encore faire de nous. »\n\n*Elle marque une pause.*\n\n« Je ne te promets pas toute la vérité. Je te promets une réponse **réelle**, et suffisamment complète selon mon propre jugement. »\n\n*Son regard se durcit légèrement.*\n\n« Si je refuse de répondre, je te devrai une **faveur mineure**. Elle sera inscrite au registre de la Gardienne de l’Élysium. »\n\n*Puis un sourire presque amusé.*\n\n« Je doute que la Gardienne conteste ma parole. »\n\n*Elle retire enfin sa main.*\n\n« Mais choisis bien. Tu ne fouilles pas seulement dans ton histoire. Tu fouilles dans la **mienne**. »\n\n*Un silence.*\n\n« Certaines réponses peuvent te mettre en colère contre moi. Je peux le supporter. »\n\n*Son regard ne quitte pas le sien.*\n\n« Je suis moins certaine de supporter qu’elles te fassent **cesser de m’aimer**. »\n\n*Puis, simplement :*\n\n« **Demande.** »",
+        "choices": [
+          {
+            "id": "une_question_ceux_qui_nous_ont_precedees",
+            "label": "CEUX QUI NOUS ONT PRÉCÉDÉES — Que dois-je savoir de notre lignée ?",
+            "answer_md": "*Aliénor prend quelques instants avant de répondre.*\n\n« Que notre lignée ne se résume pas aux morts dont on connaît encore le nom. »\n\n*Un léger silence.*\n\n« Et que nous avons déjà survécu deux fois à ce qui aurait dû nous faire disparaître. »\n\n« Isabelle de Penthièvre était ma sire. Elle était aussi Princesse de Rennes. Lorsqu’elle m’Étreignit, vers 1312, le clan Toreador n’était pas toléré dans la ville : il était l’un des centres autour desquels la ville nocturne s’organisait. »\n\n« Isabelle avait des terres, des familles, des artistes, des débiteurs, des alliés. Elle pouvait entretenir un poète pendant des années pour une seule œuvre et faire supplicier un ennemi avec le même souci de la forme. »\n\n*Quelque chose de très ancien traverse son visage.*\n\n« Elle pouvait être atroce. Et magnifique. À cette époque, je n’étais pas certaine que ces deux mots dussent s’interdire l’un à l’autre. »\n\n« Nous étions quatre infants d’Isabelle encore en vie lorsque l’ancien ordre commença à céder. Mikolai et moi étions deux d’entre eux. »\n\n« Isabelle Étreignait rarement. Mais lorsqu’elle donnait son Sang, elle ne laissait pas partir. »\n\n*Un sourire presque sans joie.*\n\n« Tu me trouves possessive. Je le suis. Ma sire l’était davantage. »\n\n« Une demeure propre, une charge, des serviteurs, des artistes : tout cela était permis. Une fidélité intime qui ne passait plus par elle l’était beaucoup moins. Une ambition qui nous éloignait d’elle devenait une offense. »\n\n« Isabelle n’avait aucune difficulté à aimer ce qui lui appartenait. Elle avait davantage de difficulté à concevoir que ce qu’elle aimait puisse ne pas lui appartenir. »\n\n*Aliénor incline légèrement la tête.*\n\n« Je ne te raconte pas cela pour l’accuser. »\n\n« Je te le raconte parce que certaines éducations survivent très longtemps à ceux qui les ont données. »\n\n*Elle reprend.*\n\n« En 1362, l’ancien équilibre de Rennes s’effondra. Un de mes frères de Sang mourut cette année-là. Isabelle fut prise, suppliciée puis exposée jusqu’au lever du jour. Je la regardai mourir. »\n\n« Un autre de mes frères refusa de croire que tout était terminé. Il mourut en 1364, alors que la guerre de Succession de Bretagne n’avait pas encore livré son dernier verdict. »\n\n« Après Auray, il ne resta plus que Mikolai et moi parmi les quatre infants d’Isabelle. »\n\n*Un silence.*\n\n« Alors nous avons recommencé. »\n\n« Pas son règne. Le clan. »\n\n« Une maison. Un artiste. Une famille. Une dette. Un refuge. Puis un autre. »\n\n« Et c’est là que Mikolai et moi avons vraiment cessé de nous ressembler. »\n\n« Pour lui, transmettre comptait presque davantage que conserver. Il Étreignit plusieurs infants. Certains partirent jusqu’à Paris. Il acceptait qu’ils bâtissent quelque chose qu’il ne verrait peut-être jamais, dans une ville où son autorité ne pourrait pas les suivre. »\n\n*Un vrai sourire apparaît un instant.*\n\n« Je trouvais cela imprudent. »\n\n« Il appelait cela avoir confiance dans ce que l’on avait transmis. »\n\n« J’ai compris trop tard qu’il avait peut-être raison. »\n\n*Le sourire disparaît.*\n\n« Moi aussi, j’ai eu un infant avant toi. »\n\n*Aliénor ne détourne pas les yeux.*\n\n« Il est mort en 1493. »\n\n« Je ne te donnerai pas son nom ce soir. Pas parce qu’il serait honteux. Parce que je refuse encore de réduire ce qu’il fut à une pièce que l’on pose sur une table pour expliquer ce que je suis devenue. »\n\n« Mais je peux te dire ce que j’ai fait. »\n\n« Je l’ai gardé près de moi. »\n\n« Je voulais le protéger. Le former. Corriger ce qui pouvait le mettre en danger. Être là lorsqu’il aurait besoin de moi. »\n\n*Un sourire amer.*\n\n« Nous autres, êtres possessifs, trouvons toujours des mots très nobles pour expliquer pourquoi quelqu’un doit rester auprès de nous. »\n\n« Mikolai dispersait son héritage. Moi, je conservais le mien à portée de main. »\n\n« Lorsque Rennes s’embrasa en 1493, certains de ceux qui étaient partis loin de Mikolai pouvaient encore exister quelque part. »\n\n« Ce qui était resté près de moi mourut ici. »\n\n*Elle laisse passer quelques secondes.*\n\n« Je ne sais pas si mon infant serait encore vivant si je l’avais laissé partir. Je ne transformerai pas un regret en certitude simplement parce qu’elle me ferait souffrir davantage. »\n\n« Mais je sais qu’il n’a jamais eu cette chance. »\n\n*Son regard s’arrête sur Perrine.*\n\n« Et maintenant il y a toi. »\n\n« Tu peux entendre cette histoire comme une promesse : je ne répéterai pas les fautes d’Isabelle. »\n\n*Elle secoue très légèrement la tête.*\n\n« Ce serait une promesse trop confortable. »\n\n« Entends-la plutôt comme un avertissement : je connais ma nature. Je sais les mots que j’emploie lorsque j’ai peur de perdre quelqu’un. Protection. Prudence. Patience. Encore un peu de temps. »\n\n« Si un jour je t’empêche de partir en prétendant que c’est pour ton bien, demande-toi d’abord si je protège réellement ta vie… ou la place que ta présence occupe dans la mienne. »\n\n*Silence.*\n\n« Quant à ceux qui nous ont précédées, ne les crois pas tous disparus. »\n\n« Mikolai a envoyé des infants hors de Rennes. Certains jusqu’à Paris. Je ne connais ni leur nombre actuel, ni leurs descendants, ni même lesquels ont survécu. »\n\n« D’anciennes familles peuvent encore honorer des dettes dont elles ont oublié l’origine. Des œuvres peuvent avoir survécu sous d’autres noms. Des ennemis également. »\n\n*Un sourire froid.*\n\n« Ceux-là ont souvent une excellente mémoire. »\n\n« Si quelqu’un vient un soir te dire qu’il descend de Mikolai, qu’un de ses ancêtres servit Isabelle, ou qu’il possède quelque chose qui appartenait à notre ancienne maison… »\n\n« Ne le crois pas immédiatement. »\n\n« Mais écoute. »\n\n« Nous avons perdu trop de notre histoire pour brûler chaque fantôme avant de lui avoir demandé son nom. »\n\n*Aliénor se tait, et le nom qu’elle a refusé de prononcer reste précisément celui que Perrine connaît le moins.*",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "une_question_chute_des_toreador",
+            "label": "LA CHUTE DES TOREADOR — Pourquoi le clan Toreador est-il réellement tombé en 1493 ?",
+            "answer_md": "*Aliénor devient immobile.*\n\n« Parce que nous avions survécu assez longtemps pour confondre puissance et invulnérabilité. »\n\n*Un silence.*\n\n« Tu connais la mort de Mikolai. Guillaume. La Porte de la Madeleine. Le duel. La décapitation. Cette histoire est vraie. »\n\n« Elle est seulement trop simple. »\n\n« Deux vampires. Un combat. Un vainqueur. Un mort. Cela permet de croire qu’un clan peut mourir comme un homme. »\n\n« Le clan Toreador n’est pas tombé ainsi. »\n\n*Elle croise les mains.*\n\n« En 1493, Rennes ne connut pas une guerre. Elle en connut plusieurs à la fois. »\n\n« Les Brujah combattaient la coalition du Prince et des Toreador. La Main du Prince menait un autre front contre les Lasombra. Des forces du Prince et des Gangrel combattaient parallèlement les Tzimisce. »\n\n« Chaque clan avait sa guerre, ses raisons, ses morts, ses haines. »\n\n« Les mortels, eux, ne voyaient pas nos distinctions. »\n\n*Elle compte presque les mots.*\n\n« Ils voyaient les cadavres. Les disparitions. Les maisons vides. Les blessés incapables d’expliquer ce qui les avait frappés. Les rues où l’on cessait de sortir après la tombée du jour. »\n\n« Ils voyaient trop. Depuis trop longtemps. »\n\n« L’Inquisition n’eut pas besoin qu’Amaury, Kermorvan ou moi la créions. Nous l’avions attirée collectivement. »\n\n« Toreador. Brujah. Ventrue. Lasombra. Tzimisce. Tous ceux qui avaient commencé à croire que les mortels resteraient éternellement aveugles parce que cela nous arrangeait. »\n\n*Son expression se durcit.*\n\n« Et nous, Toreador, étions particulièrement exposés. »\n\n« Nous avions passé plus d’un siècle à nous réenraciner. Artistes. Familles. Demeures. Bourgeois. Nobles. Ateliers. Relations. »\n\n« Notre puissance avait une forme visible. Lorsque des hommes commencent à chercher les monstres, ce qui vous rend puissant peut devenir exactement ce qui leur permet de vous trouver. »\n\n« Puis Mikolai mourut. »\n\n« Sa mort ne créa pas la catastrophe. Mais elle arracha au clan son centre au moment où il en avait le plus besoin. »\n\n*Aliénor détourne brièvement les yeux.*\n\n« C’est alors que certains d’entre nous crurent encore pouvoir administrer le désastre. »\n\n« Choisir ce qui serait exposé. Ce qui serait protégé. Quelles familles étaient nécessaires. Quelles maisons pouvaient être abandonnées. Quels noms pouvaient apparaître dans un dossier sans que tout le reste s’effondre. »\n\n*Un silence plus lourd.*\n\n« Tu détestes Kermorvan. »\n\n*Elle ne lui laisse pas le temps de répondre.*\n\n« Je ne vais pas te demander de cesser. Je vais seulement t’interdire une facilité. »\n\n« Arnaut de Kermorvan n’a pas inventé seul les dossiers qui se sont retrouvés entre ses mains. Il fut placé devant des personnes qu’il ne pouvait pas toutes défendre avec le mandat dont il disposait. »\n\n« Il a fait ses choix. Il répond de ses choix. »\n\n*Le regard d’Aliénor devient très calme.*\n\n« Mais une partie des renseignements qui rendaient ces choix possibles venait de moi. »\n\n*Elle laisse enfin le silence tomber.*\n\n« Je savais qu’ils seraient utilisés. »\n\n« Je ne les avais pas donnés pour détruire le clan Toreador. Je les avais donnés pour atteindre une cible précise, en exigeant que le reste du clan soit épargné. »\n\n« Je ne te donnerai pas le nom de cette cible dans cette réponse. »\n\n« Tu m’as demandé pourquoi notre clan était tombé. Voilà une partie de la réponse que je t’avais toujours cachée. »\n\n*Sa voix devient plus basse.*\n\n« J’ai cru qu’une menace assez vaste pour nous tuer pouvait être dirigée avec suffisamment de précision pour ne frapper que là où je l’avais décidé. »\n\n« J’ai cru que je pourrais participer au choix de ce qui serait sacrifié sans devenir moi-même une partie du mécanisme de la purge. »\n\n« J’avais tort. »\n\n« Les renseignements devinrent des dossiers. Les dossiers devinrent des décisions. Les décisions prirent une vie que je ne contrôlais plus. »\n\n« Lorsque j’ai compris que des artistes, des bourgeois et d’autres personnes liées à notre monde étaient déjà emportés, la distinction entre orienter une menace et nourrir cette menace avait cessé de m’être utile. »\n\n*Aliénor regarde Perrine droit dans les yeux.*\n\n« Alors si tu veux comprendre 1493, ne cherche pas un seul coupable. »\n\n« Guillaume a tué Mikolai. »\n\n« L’Inquisition a tué et détruit. »\n\n« Kermorvan a choisi qui il pouvait encore défendre. »\n\n« Amaury a utilisé le pouvoir dont il disposait. »\n\n« Les clans avaient déjà transformé Rennes en terrain de guerre. »\n\n« Et moi… j’avais déjà accepté l’idée que certaines personnes puissent devenir des pièces sur un échiquier, à condition de croire que je choisissais encore lesquelles. »\n\n*Un temps.*\n\n« Ne te sers donc pas de Kermorvan pour laver mes mains. »\n\n« Et ne te sers pas de moi pour laver les siennes. »\n\n« Le clan Toreador est tombé parce que trop de gens, moi comprise, pensaient encore pouvoir contrôler la forme exacte du désastre après l’avoir laissé entrer dans la ville. »\n\n*Un sourire sans joie.*\n\n« La question qui devrait maintenant t’intéresser n’est peut-être plus seulement : qui nous a détruits ? »\n\n« Mais : qu’avais-je voulu détruire, moi, avant que tout le reste ne brûle ? »\n\n*Aliénor se tait.*",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "une_question_zvonimir",
+            "label": "ZVONIMIR — Qu’a réellement été Zvonimir pour toi ?",
+            "answer_md": "*Cette fois, le silence est différent.*\n\n*Aliénor ne cherche pas ses souvenirs. Elle choisit lesquels elle accepte de laisser sortir.*\n\n« Zvonimir fut mon amant. »\n\n*Elle dit la phrase sans détour.*\n\n« Très longtemps avant que tu naisses. Très longtemps avant que Rennes ne décide que les Tzimisce devaient être regardés comme des ennemis que l’on tolère seulement lorsqu’on ne peut pas les atteindre. »\n\n« Lorsque j’étais jeune dans le Sang, son clan appartenait à l’alliance de l’ancien ordre. Zvonimir venait à la cour d’Isabelle. Il pouvait s’asseoir à sa table, négocier avec elle, parler devant ses conseillers. »\n\n*Un léger sourire apparaît.*\n\n« Je pouvais donc le regarder devant tout le monde. »\n\n« Il fallait seulement que personne ne remarque comment. »\n\n*Elle laisse les mots s’installer.*\n\n« Ce qui existait entre nous commença lorsque j’avais à peu près ton âge dans le Sang. »\n\n« Nous avons gardé cela secret, non parce qu’il était Tzimisce, mais parce que j’étais l’infante d’Isabelle. »\n\n« Ma sire aurait supporté que je possède une charge, des serviteurs, des artistes, une influence. Elle aurait beaucoup moins supporté que je donne librement une part intime de moi-même à quelqu’un qui ne dépendait pas d’elle. »\n\n« Et Zvonimir dépendait de très peu de monde. »\n\n*Son expression se referme un instant.*\n\n« Nous nous voyions rarement. Des mois pouvaient passer. Puis une nuit. Parfois une seule. »\n\n« Il n’y eut jamais de promesse mortelle entre nous. Pas de foyer. Pas de fidélité simple. Rien qui puisse être raconté proprement. »\n\n« Il y avait du désir. De la confiance. De la peur. Une curiosité réciproque qui aurait dû être plus prudente. »\n\n*Aliénor baisse brièvement les yeux.*\n\n« Et il m’apprit quelque chose qu’Isabelle n’avait jamais pu m’enseigner. »\n\n« Elle m’avait appris à posséder. »\n\n« Lui m’apprit à abandonner. »\n\n*Silence.*\n\n« Pas à perdre. »\n\n« À choisir de remettre quelque chose entre les mains d’un autre alors même que l’on sait qu’il pourrait le briser. »\n\n« Tu trouveras peut-être cela malsain. Peut-être auras-tu raison. »\n\n« Moi, j’y trouvais une liberté que je n’avais jamais connue. »\n\n*Elle observe son infante.*\n\n« Et puisque tu m’as demandé ce qu’il a réellement été pour moi, je vais te donner une vérité que je n’avais pas l’intention de te donner si tôt. »\n\n*Aliénor demeure parfaitement immobile.*\n\n« Zvonimir a travaillé sur mon corps. »\n\n« Avec mon consentement. »\n\n« Pas seulement pour changer une apparence. Pas seulement pour produire une beauté passagère. »\n\n« Certaines transformations étaient faites pour être vues. »\n\n« D’autres ne l’ont jamais été. »\n\n*Un temps.*\n\n« Certaines existent encore. »\n\n*Elle laisse Perrine regarder son visage, ses mains, sa silhouette — précisément parce que rien n’y apporte de réponse.*\n\n« Pour Zvonimir, un corps n’était pas une vérité. C’était une matière capable de porter plusieurs vérités successives. »\n\n« Il m’a appris qu’une forme n’était pas sacrée simplement parce qu’elle avait été la première. »\n\n« Il m’a appris qu’une œuvre pouvait être cachée dans la chair elle-même. »\n\n*Ses yeux deviennent lointains.*\n\n« Certaines de ses leçons ne sont donc pas restées seulement dans ma mémoire. »\n\n« Et certaines œuvres ne se voient pas lorsqu’on regarde leur propriétaire. »\n\n*Elle ne développe pas.*\n\n« Ne confonds pas cela avec une corruption dont j’aurais été victime. »\n\n« Il n’a pas fait de moi quelque chose que je refusais d’être. Ce serait trop commode de lui donner cette responsabilité. »\n\n« Il fut simplement assez attentif pour reconnaître certaines de mes faims avant que je sois prête à les nommer. »\n\n*Un silence.*\n\n« En 1493, lorsque les Tzimisce furent frappés à Saint-Germain et que notre monde changea encore une fois, Zvonimir disparut de mes nuits. »\n\n« Douze ans. »\n\n« Aucun message dont je puisse être certaine. Aucun intermédiaire. Rien. »\n\n*Elle regarde Perrine.*\n\n« Puis vous l’avez rencontré. »\n\n« Il aurait pu vous tuer. »\n\n« Il vous a laissées repartir. »\n\n« Et il a choisi ta bouche pour me rendre quelques mots. »\n\n*Sa voix baisse.*\n\n« Les plus belles œuvres ne sont pas faites d’encre. »\n\n*Elle répète la phrase sans hésitation, comme si elle l’avait récitée seule bien des fois.*\n\n« Tu comprends maintenant pourquoi je ne l’ai pas entendue comme une simple élégance. »\n\n*Son regard glisse vers un coffret fermé. Une seconde. Pas davantage.*\n\n« J’ai encore certaines choses. »\n\n« Des choses anciennes. »\n\n« Rien que je sois prête à ouvrir pour toi ce soir. »\n\n*Elle reprend son contrôle.*\n\n« Si un jour un serviteur de son ancien monde t’approche, ou quelqu’un qui prétend pouvoir porter une parole jusqu’à lui, ne promets rien en mon nom. »\n\n« Ne donne rien en mon nom. »\n\n« Et ne suppose jamais qu’un Ancien Tzimisce t’épargnera demain parce qu’il t’a laissée repartir hier. »\n\n*Son regard retourne au coffret.*\n\n« Mais ne détruis pas non plus le chemin avant de savoir où il conduit. »\n\n*Un long silence.*\n\n« Si tu le revois, écoute très précisément les mots qu’il emploiera lorsqu’il parlera d’une œuvre. »\n\n« Ne suppose pas qu’il parle d’un objet. »\n\n*Elle s’interrompt, comme si elle venait déjà d’en dire davantage qu’elle ne l’avait prévu.*\n\n« Et ne le hais pas pour moi. »\n\n« Ce serait encore lui donner quelque chose qui m’appartient. »\n\n*Aliénor se tait.*",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "une_question_mes_fautes",
+            "label": "MES FAUTES — Quelle est la faute que tu regrettes le plus ?",
+            "answer_md": "*Aliénor ne répond pas immédiatement.*\n\n« Je pourrais t’en choisir une qui me rende intéressante. Une cruauté ancienne. Un mort dont personne ne se souvient. Une décision que deux siècles permettraient d’expliquer. »\n\n*Elle secoue légèrement la tête.*\n\n« Ce serait une façon très Toreador de mentir sans prononcer une seule phrase fausse. »\n\n« Ma pire faute est plus récente. »\n\n« En 1493, je voulais la place de Mikolai. »\n\n*Un silence.*\n\n« Et j’ai voulu sa mort. »\n\n*Aliénor ne détourne pas le regard.*\n\n« J’aimais mon frère. J’étais jalouse de lui. Il était Primogène du clan Toreador, celui que l’on écoutait d’abord, celui autour duquel les autres se rassemblaient. »\n\n« Je pensais pouvoir mieux faire certaines choses. J’en étais convaincue. »\n\n« Mais ne me laisse pas embellir le reste avec cette conviction. »\n\n« Je voulais aussi sa place parce qu’elle était la sienne. »\n\n*Sa voix devient plus basse.*\n\n« Lorsque l’Inquisition commença à regarder Rennes, je suis allée trouver Amaury. »\n\n« Nous ne l’avions pas créée. Les guerres de nos clans lui donnaient déjà assez de raisons de venir. »\n\n« Mais j’ai cru qu’une menace existante pouvait être dirigée. »\n\n« J’ai donné à Amaury des renseignements destinés à rendre Mikolai vulnérable à ceux qui nous cherchaient. »\n\n« Je voulais qu’ils atteignent **lui**. »\n\n« Et je voulais croire que je pouvais poser une limite : Mikolai, mais pas le reste du clan Toreador. »\n\n*Un sourire sans joie.*\n\n« Voilà l’orgueil véritable. »\n\n« Décider qu’un homme peut mourir, puis se croire encore moralement maître de la propreté du mécanisme qui doit le tuer. »\n\n« Guillaume tua Mikolai avant que ce que j’avais contribué à mettre en mouvement ne l’atteigne. »\n\n« À cet instant, mon complot n’avait plus de cible. »\n\n*Un silence.*\n\n« Les mécanismes, eux, ne disparurent pas. »\n\n« Lorsque je compris que d’autres personnes liées au clan étaient déjà menacées, je suis retournée voir Amaury. »\n\n« Je lui ai demandé d’arrêter ce que nous avions mis en place autour de cette menace. »\n\n« Il ne l’a pas arrêté. »\n\n*Aliénor serre légèrement les doigts.*\n\n« À partir de là, il existe des détails que je ne te donnerai pas ce soir. »\n\n« Des noms. »\n\n« Des dossiers. »\n\n« Des personnes que mes renseignements ont exposées. »\n\n« Et la manière dont, au milieu de cette catastrophe, je suis restée en vie alors que beaucoup des miens ne le sont pas restés. »\n\n*Elle soutient le regard de Perrine.*\n\n« Je ne sais pas à quel moment exact Amaury décida d’aller au-delà de ce que j’avais accepté. »\n\n« Je ne vais pas inventer cette réponse pour rendre ma culpabilité plus simple. »\n\n« Ce que je sais suffit. »\n\n« Je suis allée le trouver. »\n\n« Je lui ai donné une porte. »\n\n« Je l’ai fait parce que je voulais la mort de mon frère et sa place. »\n\n*Le silence devient presque physique.*\n\n« Ma pire faute n’est donc pas d’avoir été trompée par Amaury. »\n\n« Ce serait encore une manière de me rendre victime de ma propre histoire. »\n\n« Ma faute est d’avoir cru que l’amour que j’avais pour Mikolai pouvait cohabiter avec la décision de le faire mourir… et que mes bonnes intentions envers tous les autres me sépareraient des conséquences. »\n\n*Elle regarde son infante.*\n\n« Alors si un jour je viens à toi avec une nécessité, un sacrifice, une personne qu’il faudrait abandonner pour sauver le clan… »\n\n« Écoute-moi. »\n\n« Mais ne me laisse pas être la seule à décider si mes raisons suffisent. »\n\n« Je sais donner une belle forme aux choses. Je peux rendre une décision atroce cohérente. »\n\n*Un temps.*\n\n« Ne m’absous pas simplement parce que tu m’aimes. »\n\n« Et ne me condamne pas assez vite pour pouvoir partir avec la conscience propre. »\n\n« Reste assez près pour voir ce que je fais. »\n\n« Et assez libre pour refuser de l’appeler beau simplement parce que je le fais. »\n\n*Aliénor se tait sans avoir expliqué ce qu’Amaury fit réellement après que la cible prévue fut déjà morte.*",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "une_question_notre_avenir",
+            "label": "NOTRE AVENIR — Que veux-tu accomplir ?",
+            "answer_md": "*Aliénor reste silencieuse un moment.*\n\n« Je veux que le clan Toreador cesse de devoir sa présence à Rennes à la tolérance des autres clans. »\n\n*Elle se lève.*\n\n« Prince. Primogène. Gardienne. Les titres comptent, mais un titre n’est jamais qu’une promesse que les autres acceptent encore de respecter. »\n\n« Je veux quelque chose de plus difficile à retirer. »\n\n« Je veux des racines. »\n\n« Des familles qui ont leurs propres raisons de vouloir que nous existions demain. Des alliances qui ne dépendent pas d’une seule personne. Des dettes, des serments, des œuvres, des habitudes assez anciennes pour que nous retirer de Rennes coûte davantage que nous y supporter. »\n\n« Isabelle savait bâtir ainsi. Mikolai aussi, à sa manière. »\n\n*Elle marche lentement.*\n\n« Les Penthièvre ne règnent plus ici. Leur nom et leur histoire n’ont pourtant pas disparu avec leur défaite. »\n\n« Et certaines anciennes fidélités ont laissé des traces. »\n\n*Son regard se refroidit.*\n\n« Trévalec en est une. »\n\n« Cette maison servit autrefois les Penthièvre. Puis elle prêta serment à Montfort et survécut là où presque toutes les dernières maisons liées à notre ancien monde furent emportées. »\n\n« Aujourd’hui, elle demeure une maison mortelle ancienne, enracinée, et officiellement sous le contrôle des Exécuteurs. »\n\n« Je ne peux pas tendre la main vers elle sans que les Gangrel qui la surveillent, Amaury et probablement une bonne partie de la Cour se demandent pourquoi. »\n\n*Un sourire froid.*\n\n« Et je ne sais pas encore si je veux la reprendre, lui pardonner, l’utiliser… ou lui faire payer une fidélité abandonnée par des morts à des morts. »\n\n« La dernière option serait injuste. »\n\n« Les rancunes qui durent plus longtemps que les hommes finissent toujours par manquer de coupables. »\n\n*Aliénor revient à Perrine.*\n\n« Toi, en revanche, tu possèdes encore quelque chose que le temps m’a retiré. »\n\n« Beaucoup peuvent te regarder et ne voir qu’une jeune Toreador. »\n\n« Laisse-les commettre cette erreur aussi longtemps qu’elle t’est utile. »\n\n« Si une porte vers Trévalec s’ouvre un jour devant toi, ne la franchis ni avec ma vengeance ni avec mon ambition dans la tête. Regarde d’abord. Écoute. Comprends ce qu’ils sont devenus. »\n\n« Je veux que tu puisses avoir des relations qui ne soient pas seulement des prolongements des miennes. »\n\n*Elle s’interrompt.*\n\n« C’est une leçon que Mikolai avait comprise avant moi. »\n\n« Une lignée qui ne sait pas laisser ses descendants devenir autre chose qu’elle-même finit par ne produire que des copies… ou des prisonniers. »\n\n*Un silence.*\n\n« J’essaie encore d’apprendre cela avec toi. »\n\n*La phrase semble lui coûter davantage que toute la stratégie qui la précédait.*\n\n« Mais ce n’est pas toute ma réponse. »\n\n*Aliénor retourne s’asseoir. Lorsqu’elle reprend, sa voix est plus calme.*\n\n« Tout ce que je viens de te décrire est politique. »\n\n« Ce n’est pas tout ce que je veux. »\n\n« Je veux des œuvres. »\n\n« Des familles. »\n\n« Des alliances. »\n\n« Des dettes. »\n\n*Son regard revient sur Perrine.*\n\n« D’autres enfants. »\n\n*Elle laisse les deux mots entre elles.*\n\n*Elle ne les corrige pas. Elle ne les explique pas non plus.*\n\n« Des choses qui continueront à exister lorsque je ne serai plus là pour les regarder. »\n\n*Aliénor voit nécessairement la question naître sur le visage de Perrine. Elle ne lui donne rien pour l’éteindre.*\n\n« Tu m’as demandé ce que je voulais accomplir. »\n\n« Je viens de te répondre. »\n\n*Un très léger sourire.*\n\n« Je n’ai pas promis que chacune de mes réponses te laisserait moins de questions qu’avant. »\n\n*Elle se penche légèrement vers elle.*\n\n« Si j’ai réussi, le jour où quelqu’un voudra arracher le clan Toreador de Rennes, il découvrira qu’il est déjà trop tard. »\n\n« Parce qu’il ne saura plus très bien quelle part de la ville il devrait arracher avec nous. »\n\n*Aliénor se tait. Le mot qu’elle a choisi — enfants — reste là, et le pluriel n’en est peut-être même pas la partie la plus étrange.*",
+            "followups": [],
+            "ends_scene": true
+          },
+          {
+            "id": "une_question_pourquoi_m_avoir_choisie",
+            "label": "POURQUOI MOI ? — Pourquoi m’avoir choisie ?",
+            "answer_md": "*Aliénor ne répond pas immédiatement.*\n\n« Tu crois que je t’ai choisie à Saint-Georges. »\n\n*Quelque chose passe dans son regard. Presque un sourire, mais trop triste pour en être un.*\n\n« C’est une réponse raisonnable. »\n\n« Elle est seulement fausse. »\n\n*Elle laisse quelques secondes s’écouler.*\n\n« Je te connaissais bien avant que tu ne me connaisses. »\n\n« Et lorsque j’ai commencé à veiller sur toi, je ne pensais pas encore à t’Étreindre. »\n\n*Aliénor observe attentivement la réaction de Perrine.*\n\n« Tu n’étais pas un projet d’infante. »\n\n« Tu n’étais pas une candidate que j’évaluais depuis l’ombre. »\n\n« Je savais seulement que je ne parvenais déjà plus à te regarder comme une étrangère. »\n\n*Un silence.*\n\n« Alors oui, j’ai veillé sur toi de beaucoup plus loin que tu ne l’imagines. »\n\n« J’ai su des choses sur ta vie que tu ne pensais pas me concerner. »\n\n« Et bien avant Saint-Georges, j’avais déjà dû prendre une décision à ton sujet. »\n\n*Sa voix devient plus basse.*\n\n« Te laisser vivre sans moi. »\n\n*Elle ne précise pas ce que cette phrase signifie exactement.*\n\n« Je l’ai fait. »\n\n« J’ai cru que je pouvais accepter cela. »\n\n*Un sourire très bref, sans joie.*\n\n« J’ai même réussi pendant longtemps à appeler cela de la sagesse. »\n\n*Aliénor détourne un instant les yeux.*\n\n« Tu veux savoir pourquoi toi ? »\n\n« Parce que je t’avais déjà vue survivre à quelque chose qui aurait dû t’emporter. »\n\n« Parce que je savais que ta vie avait commencé par une fragilité que les gens autour de toi avaient appris à expliquer autrement. »\n\n« Parce que j’avais déjà eu peur de te perdre avant même que tu sois capable de connaître mon nom. »\n\n*Elle revient à Perrine.*\n\n« Et parce qu’après t’avoir laissée suivre une vie qui n’était pas la mienne, je t’ai retrouvée des années plus tard à Saint-Georges. »\n\n« Pas comme la personne que j’aurais fabriquée. »\n\n« Comme celle que tu étais devenue sans moi. »\n\n*Un silence plus long.*\n\n« Ton refus de la vie que l’on voulait choisir pour toi. »\n\n« Tes livres. »\n\n« Ta curiosité. »\n\n« Cette manière de chercher des monstres dans les histoires sans imaginer encore que certains te regardaient déjà depuis l’autre côté de la page. »\n\n*Un vrai sourire apparaît, puis disparaît.*\n\n« Je ne t’ai pas Étreinte parce que j’avais attendu quarante ans pour fabriquer une Toreador convenable. »\n\n« Je t’ai Étreinte parce qu’au moment où je risquais de te perdre une seconde fois, j’ai découvert que la première séparation ne m’avait jamais appris à le supporter. »\n\n*Aliénor laisse cette phrase reposer entre elles.*\n\n« Tu es mon infante. »\n\n*Elle reprend exactement le mot de l’ouverture.*\n\n« C’est vrai. »\n\n« Mais ce n’est pas là que mon attachement à toi a commencé. »\n\n*Son regard se fait plus dur, comme si elle venait d’atteindre la limite exacte qu’elle s’était imposée.*\n\n« Je ne te dirai pas ce qui a failli t’emporter. »\n\n« Je ne te dirai pas comment je te connaissais alors. »\n\n« Je ne te dirai pas non plus qui m’a aidée. »\n\n*Un très léger silence après cette dernière phrase.*\n\n« Pas ce soir. »\n\n« Mais si tu veux réellement comprendre pourquoi je t’ai choisie… »\n\n« Commence peut-être par te demander pourquoi une vampire que tu croyais avoir rencontrée en 1492 parle de la peur de te perdre avant même que tu puisses connaître son nom. »\n\n*Aliénor ne baisse pas les yeux.*\n\n« Tu avais droit à une question. »\n\n« Je t’ai répondu. »",
+            "followups": [],
+            "ends_scene": true
+          }
+        ],
+        "allow_undo": false,
+        "allow_restart_after_choice": false
+      },
+      "source_kind": "git",
+      "legacy_source_path": "private:perrine_une_seule_question.py",
+      "source_git_sha": "923fb5669c1c0b3b5fbf63e43ebd720df22df4ba",
+      "enabled": true
+    }
+  ]
+}
