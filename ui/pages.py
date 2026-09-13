@@ -33,7 +33,11 @@ HUNT_TOOL_SCENE_ID = "generateur_de_chasse"
 
 
 def _is_private_scene(module_name: str) -> bool:
-    """Identifie les scènes regroupées dans le sous-menu MJ dédié."""
+    """Identifie les scènes individuelles regroupées dans le sous-menu MJ dédié.
+
+    Le préfixe ``private:`` est historique et ne décrit aucune confidentialité
+    technique ; il correspond au mode de diffusion individuel/solo.
+    """
     return str(module_name).startswith("private:")
 
 
@@ -98,8 +102,11 @@ def _render_scene_launch_card(
         card_close()
         return
 
+    restarting_active_scene = bool(
+        state.active_scene_id == scene_id and state.run_state is not None
+    )
     if state.active_scene_id and state.run_state is not None:
-        if scene_id == state.active_scene_id:
+        if restarting_active_scene:
             launch_label = f"Recommencer : {title}"
         else:
             launch_label = f"Lancer : {title} (remplace la scène suspendue)"
@@ -109,7 +116,10 @@ def _render_scene_launch_card(
     if primary_button(launch_label, key=f"{key_prefix}_{scene_id}"):
         if scene_id == HUNT_TOOL_SCENE_ID:
             _clear_hunt_runtime_state()
-        start_scene(scene_id, scene)
+        if restarting_active_scene:
+            restart_scene(scene_id, scene)
+        else:
+            start_scene(scene_id, scene)
         st.rerun()
 
     card_close()
@@ -136,15 +146,15 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
             st.rerun()
         card_close()
 
-    private_items = _scene_items(scenes, private=True)
+    individual_items = _scene_items(scenes, private=True)
     card_open()
-    st.markdown("### Scènes privées")
-    if private_items:
-        count = len(private_items)
-        st.caption(f"{count} scène(s) disponible(s).")
+    st.markdown("### Scènes individuelles / solo")
+    if individual_items:
+        count = len(individual_items)
+        st.caption(f"{count} scène(s) individuelle(s) disponible(s).")
     else:
-        st.caption("Aucune scène n'est actuellement disponible dans cette section.")
-    if primary_button("Ouvrir les scènes privées", key="open_private_scenes"):
+        st.caption("Aucune scène individuelle n'est actuellement disponible dans cette section.")
+    if primary_button("Ouvrir les scènes individuelles", key="open_private_scenes"):
         go_private_scenes()
         st.rerun()
     card_close()
@@ -154,7 +164,7 @@ def page_home(scenes: Dict[str, Tuple[str, object]]) -> None:
 
 
 def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
-    header("Scènes privées", "Choisis la scène à lancer.")
+    header("Scènes individuelles / solo", "Choisis la scène individuelle à lancer.")
     state = get_state()
 
     if state.last_error:
@@ -164,15 +174,18 @@ def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
         go_home()
         st.rerun()
 
-    private_items = _scene_items(scenes, private=True)
-    if not private_items:
+    individual_items = _scene_items(scenes, private=True)
+    if not individual_items:
         card_open(fade=True)
-        section_label("Aucune scène privée disponible")
+        section_label("Aucune scène individuelle disponible")
         st.markdown(
-            "Aucun module de scène n'est actuellement détecté dans `scenes_private/` "
+            "Aucun module de scène individuelle n'est actuellement détecté dans `scenes_private/` "
             "ou `runtime_local_private/`."
         )
-        st.caption("Le dossier local sensible est facultatif et peut rester absent du dépôt Git.")
+        st.caption(
+            "Ces noms de dossiers sont historiques : ils décrivent un regroupement individuel/solo, "
+            "pas une protection technique ni un niveau de confidentialité."
+        )
         card_close()
         return
 
@@ -182,7 +195,7 @@ def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
             suspended_scene = suspended_entry[1]
             suspended_title = getattr(suspended_scene, "title", state.active_scene_id)
             card_open(fade=True)
-            section_label("Scène privée suspendue")
+            section_label("Scène individuelle suspendue")
             st.markdown(f"### {suspended_title}")
             st.caption("La conversation et les choix sont conservés.")
             if primary_button(
@@ -193,7 +206,7 @@ def page_private_scenes(scenes: Dict[str, Tuple[str, object]]) -> None:
                 st.rerun()
             card_close()
 
-    for title, scene_id, module_name, scene in private_items:
+    for title, scene_id, module_name, scene in individual_items:
         _render_scene_launch_card(
             title,
             scene_id,

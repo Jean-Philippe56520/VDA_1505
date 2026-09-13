@@ -19,14 +19,24 @@ if not exist ".venv\Scripts\python.exe" (
         pause
         exit /b 1
     )
+)
 
-    echo [INFO] Installation des dependances...
-    call ".venv\Scripts\python.exe" -m pip install -r requirements.txt
-    if errorlevel 1 (
-        echo [ERREUR] Echec de l'installation des dependances.
-        pause
-        exit /b 1
-    )
+set "REQ_FILE=requirements.lock.txt"
+if not exist "%REQ_FILE%" set "REQ_FILE=requirements.txt"
+
+echo [INFO] Verification des dependances depuis %REQ_FILE%...
+call ".venv\Scripts\python.exe" -m pip install -r "%REQ_FILE%"
+if errorlevel 1 (
+    echo [ERREUR] Echec de l'installation des dependances.
+    pause
+    exit /b 1
+)
+
+call ".venv\Scripts\python.exe" -m pip check
+if errorlevel 1 (
+    echo [ERREUR] Environnement Python incoherent.
+    pause
+    exit /b 1
 )
 
 echo [INFO] Lancement de Streamlit...

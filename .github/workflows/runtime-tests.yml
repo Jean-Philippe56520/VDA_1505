@@ -1,0 +1,56 @@
+name: Runtime tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - supabase-v1-runtime
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.lock.txt
+      - name: Verify dependency consistency
+        run: python -m pip check
+      - name: Compile Python
+        run: python -m compileall -q .
+      - name: Run unit tests
+        env:
+          VDA_SUPABASE_ENABLED: "false"
+        run: python -m unittest discover -s tests -v
+      - name: Build runtime snapshot
+        env:
+          VDA_SUPABASE_ENABLED: "false"
+          SOURCE_GIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python -m scripts.build_runtime_snapshot --git-sha "$SOURCE_GIT_SHA" --output runtime_snapshot.json
+      - name: Upload runtime snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: runtime-snapshot
+          path: runtime_snapshot.json
+          if-no-files-found: error
+          retention-days: 7
+      - name: Export validated runtime snapshot branch
+        if: github.event_name == 'push'
+        env:
+          SOURCE_GIT_SHA: ${{ github.sha }}
+        run: |
+          cp runtime_snapshot.json /tmp/runtime_snapshot.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan runtime-snapshot-export-tmp
+          git rm -rf .
+          cp /tmp/runtime_snapshot.json runtime_snapshot.json
+          git add runtime_snapshot.json
+          git commit -m "snapshot: ${SOURCE_GIT_SHA}"
+          git push --force origin HEAD:runtime-snapshot-export

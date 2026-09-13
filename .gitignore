@@ -1,1 +1,10 @@
 # Les scènes de l'outil sont versionnées dans Git, y compris /scenes_private/.
+
+# Python / local runtime
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.streamlit/secrets.toml
+.vda_1505/
+runtime_snapshot.json
