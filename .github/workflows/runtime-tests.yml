@@ -28,3 +28,14 @@ jobs:
         env:
           VDA_SUPABASE_ENABLED: "false"
         run: python -m unittest discover -s tests -v
+      - name: Build runtime snapshot
+        env:
+          VDA_SUPABASE_ENABLED: "false"
+        run: python -m scripts.build_runtime_snapshot --git-sha "$GITHUB_SHA" --output runtime_snapshot.json
+      - name: Upload runtime snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: runtime-snapshot
+          path: runtime_snapshot.json
+          if-no-files-found: error
+          retention-days: 7
