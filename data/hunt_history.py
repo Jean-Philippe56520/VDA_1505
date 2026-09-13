@@ -2,9 +2,9 @@ from __future__ import annotations
 
 """Historique local des rencontres de chasse explicitement marquées « Jouée ».
 
-Le fichier est volontairement stocké hors du dépôt Git afin de ne jamais publier
-les traces de partie. Il constitue un journal runtime pratique, pas un substitut
-à 04A ni à la consolidation canonique de fin de séance.
+Le fichier local reste le fallback de table et ne remplace jamais 04A. Quand
+Supabase est configuré, la même trace est synchronisée comme donnée runtime ;
+elle reste non canonique jusqu'à confirmation et consolidation par le MJ.
 """
 
 import json
@@ -12,9 +12,12 @@ import os
 from pathlib import Path
 from typing import Any
 
+from repositories.runtime import ensure_campaign_session, record_event, upsert_hunt_run
+
 
 RUNTIME_DIR = Path(os.environ.get("VDA_1505_RUNTIME_DIR", Path.home() / ".vda_1505"))
 HUNT_HISTORY_PATH = RUNTIME_DIR / "hunt_played.json"
+APP_VERSION = os.environ.get("VDA_APP_VERSION") or os.environ.get("GIT_COMMIT_SHA")
 
 
 def load_played_hunts() -> list[dict[str, Any]]:
@@ -26,6 +29,31 @@ def load_played_hunts() -> list[dict[str, Any]]:
     if not isinstance(data, list):
         return []
     return [item for item in data if isinstance(item, dict)]
+
+
+def _sync_runtime(record: dict[str, Any]) -> None:
+    try:
+        session = ensure_campaign_session(app_version=APP_VERSION)
+        run = {
+            "session_id": session["id"],
+            "draw_id": str(record.get("draw_id")),
+            "generated_at": record.get("generated_at"),
+            "played_at": record.get("played_at"),
+            "play_status": "unconfirmed",
+            "payload": record,
+            "source_app_version": APP_VERSION,
+        }
+        upsert_hunt_run(run)
+        record_event(
+            "hunt_marked_played",
+            session_id=session["id"],
+            payload=record,
+            source_app_version=APP_VERSION,
+            play_status="unconfirmed",
+        )
+    except Exception:
+        # The physical session must continue even if remote persistence fails.
+        pass
 
 
 def record_played_hunt(record: dict[str, Any]) -> bool:
@@ -46,6 +74,7 @@ def record_played_hunt(record: dict[str, Any]) -> bool:
         encoding="utf-8",
     )
     temp_path.replace(HUNT_HISTORY_PATH)
+    _sync_runtime(record)
     return True
 
 

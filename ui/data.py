@@ -1,17 +1,15 @@
 from __future__ import annotations
 
-from typing import Dict, Tuple, Optional
+from typing import Dict, Optional, Tuple
 
 import streamlit as st
 
-from domain.loader import load_scenes
+from repositories.scenes import load_scenes
 
 
 @st.cache_data(show_spinner=False)
 def get_scenes_cached() -> Dict[str, Tuple[str, object]]:
-    """
-    Retourne {scene_id: (module_name, scene)}
-    """
+    """Return {scene_id: (source_name, scene)} from the configured repository."""
     return load_scenes()
 
 
