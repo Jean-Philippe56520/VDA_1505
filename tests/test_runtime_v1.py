@@ -72,6 +72,20 @@ class RuntimeRepositoryTests(unittest.TestCase):
         self.assertEqual(len(queue), 1)
         self.assertEqual(queue[0]["payload"]["title"], "Two")
 
+    def test_offline_queue_flushes_after_connectivity_returns(self) -> None:
+        payload = {"id": "00000000-0000-0000-0000-000000000011", "title": "Offline"}
+        runtime._queue_remote("campaign_sessions", payload, "id")
+
+        with patch.object(runtime, "supabase_enabled", return_value=True), patch.object(
+            runtime, "get_supabase_client", return_value=object()
+        ), patch.object(runtime, "_remote_upsert", return_value=True) as remote_upsert:
+            result = runtime.flush_pending_remote()
+
+        self.assertEqual(result, {"synced": 1, "remaining": 0})
+        remote_upsert.assert_called_once_with("campaign_sessions", payload, "id")
+        queue = json.loads(runtime.PENDING_REMOTE_PATH.read_text(encoding="utf-8"))
+        self.assertEqual(queue, [])
+
     def test_scene_content_is_not_logged_until_render_hook(self) -> None:
         class Scene:
             id = "scene_test"
