@@ -31,7 +31,8 @@ jobs:
       - name: Build runtime snapshot
         env:
           VDA_SUPABASE_ENABLED: "false"
-        run: python -m scripts.build_runtime_snapshot --git-sha "$GITHUB_SHA" --output runtime_snapshot.json
+          SOURCE_GIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python -m scripts.build_runtime_snapshot --git-sha "$SOURCE_GIT_SHA" --output runtime_snapshot.json
       - name: Upload runtime snapshot
         uses: actions/upload-artifact@v4
         with:
