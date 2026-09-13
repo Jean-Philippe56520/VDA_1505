@@ -22,6 +22,22 @@ class SceneBackendContractTests(unittest.TestCase):
         ), patch.object(scenes, "load_supabase_scenes", return_value={}):
             self.assertEqual(scenes.load_scenes(), sentinel)
 
+    def test_hybrid_remote_projection_overlays_matching_local_scene(self) -> None:
+        local_scene = object()
+        remote_scene = object()
+        local = {
+            "shared": ("scenes.shared", local_scene),
+            "local_only": ("scenes.local_only", object()),
+        }
+        remote = {"shared": ("runtime:shared", remote_scene)}
+        with patch.dict(os.environ, {"VDA_SCENE_BACKEND": "hybrid"}), patch.object(
+            scenes, "load_local_scenes", return_value=dict(local)
+        ), patch.object(scenes, "load_supabase_scenes", return_value=remote):
+            loaded = scenes.load_scenes()
+
+        self.assertIs(loaded["shared"][1], remote_scene)
+        self.assertIn("local_only", loaded)
+
     def test_supabase_backend_falls_back_to_snapshot_then_local(self) -> None:
         local = {"local": ("scenes.local", object())}
         snapshot = {"snap": ("runtime:snap", object())}
